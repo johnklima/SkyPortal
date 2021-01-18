@@ -5,6 +5,11 @@ using UnityEngine;
 public class IKSystem : MonoBehaviour
 {
     public IKSegment[] segments;
+    public Transform target = null;
+
+    private IKSegment lastSegment = null;
+    private IKSegment firstSegment = null;
+
 
     int childcount;
     void Awake()    {
@@ -19,10 +24,13 @@ public class IKSystem : MonoBehaviour
             i++;
         }
 
+        firstSegment = segments[0];
+        lastSegment = segments[childcount - 1];
+
     }
 
-        // Start is called before the first frame update
-        void Start()
+    // Start is called before the first frame update
+    void Start()
     {
         
     }
@@ -30,6 +38,6 @@ public class IKSystem : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        lastSegment.drag(target.position);
     }
 }

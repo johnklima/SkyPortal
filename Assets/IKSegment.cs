@@ -10,9 +10,13 @@ public class IKSegment : MonoBehaviour
         
     }
 
-    // Update is called once per frame
-    void Update()
+    public void drag(Vector3 target)
     {
-        
+        //simply looks at target
+        transform.LookAt(target);       
+
+
     }
+
+
 }
