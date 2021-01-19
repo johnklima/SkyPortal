@@ -78,15 +78,23 @@ public class gravity : MonoBehaviour {
         transform.position += velocity * Time.deltaTime;
 
         if (transform.position.x > 100 || transform.position.x < -100 )
+        { 
             transform.position -= new Vector3(velocity.x * Time.deltaTime, 0, 0);
+            velocity.x = 0;
+        }
 
-        if (transform.position.z > 100 || transform.position.z < -100  )
+
+        if (transform.position.z > 100 || transform.position.z < -100)
+        {
             transform.position -= new Vector3(0, 0, velocity.z * Time.deltaTime);
+            velocity.z = 0;
+        }
 
-
-        if (transform.position.y > 100 || transform.position.y < 1 )
+        if (transform.position.y > 100 || transform.position.y < 1)
+        {
             transform.position -= new Vector3(0, velocity.y * Time.deltaTime, 0);
-
+            velocity.y = 0;
+        }
         //reset thrust
         thrust.Set(0, 0, 0);
 

@@ -21,6 +21,7 @@ public class IKSystem : MonoBehaviour
         foreach (Transform seg in transform)
         {
             segments[i] = seg.GetComponent<IKSegment>();
+            segments[i].system = this;
             i++;
         }
 
@@ -63,7 +64,7 @@ public class IKSystem : MonoBehaviour
         //which is the position of the IK system itself
 
         //COMMENT NEXT LINE AND IK ROOT WILL FOLLLOW TARGET:
-        firstSegment.transform.position = transform.position;
+        //firstSegment.transform.position = transform.position;
 
         firstSegment.updateSegmentAndChildren();
 

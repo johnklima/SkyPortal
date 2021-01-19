@@ -9,6 +9,7 @@ public class IKSegment : MonoBehaviour
     public float length = 3.0f;
     public IKSegment parent = null;
     public IKSegment child = null;
+    public IKSystem system = null;
 
     public Vector3 Apos = new Vector3(0, 0, 0);
     public Vector3 Bpos = new Vector3(0, 0, 0);
@@ -57,6 +58,7 @@ public class IKSegment : MonoBehaviour
         else
         {
             //Apos is always my position
+            transform.position = system.transform.position;
             Apos = transform.position;
         }
         //Bpos is always where the endpoint will be, as calculated from length 
