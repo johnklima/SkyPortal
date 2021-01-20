@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class MenuScript : MonoBehaviour
 {
-    public void buttonStart()
+    public void buttonPlay()
     {
         SceneManager.LoadScene(0);
     }
@@ -17,6 +17,7 @@ public class MenuScript : MonoBehaviour
 
     public void buttonQuit()
     {
+        Debug.Log("Quit Game");
         Application.Quit();
     }
 }
