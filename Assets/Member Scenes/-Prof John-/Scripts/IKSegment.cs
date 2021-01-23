@@ -58,7 +58,7 @@ public class IKSegment : MonoBehaviour
         else
         {
             //Apos is always my position
-            transform.position = system.transform.position;
+            //transform.position = system.transform.position;
             Apos = transform.position;
         }
         //Bpos is always where the endpoint will be, as calculated from length 

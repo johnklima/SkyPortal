@@ -17,6 +17,9 @@ public class gravity : MonoBehaviour {
     public float mass = 1.0f;
     public float energy = 10000.0f;
 
+
+    Vector3 prevPosition;
+
     // Use this for initialization
     void Start () {
 		
@@ -25,10 +28,11 @@ public class gravity : MonoBehaviour {
 	// Update is called once per frame
 	void Update ()
     {
-
+        
         handleInput();
         handleMovement();
-		
+        
+        
 	}
 
     void handleInput()
@@ -95,8 +99,7 @@ public class gravity : MonoBehaviour {
             transform.position -= new Vector3(0, velocity.y * Time.deltaTime, 0);
             velocity.y = 0;
         }
-        //reset thrust
-        thrust.Set(0, 0, 0);
+       
 
 
     }
