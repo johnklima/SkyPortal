@@ -80,7 +80,7 @@ public class gravity : MonoBehaviour {
 
         //move the player
         transform.position += velocity * Time.deltaTime;
-
+/*
         if (transform.position.x > 100 || transform.position.x < -100 )
         { 
             transform.position -= new Vector3(velocity.x * Time.deltaTime, 0, 0);
@@ -99,7 +99,7 @@ public class gravity : MonoBehaviour {
             transform.position -= new Vector3(0, velocity.y * Time.deltaTime, 0);
             velocity.y = 0;
         }
-       
+  */     
 
 
     }
