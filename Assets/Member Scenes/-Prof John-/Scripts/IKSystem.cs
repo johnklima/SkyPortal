@@ -64,7 +64,7 @@ public class IKSystem : MonoBehaviour
         //which is the position of the IK system itself
 
         //COMMENT NEXT LINE AND IK ROOT WILL FOLLLOW TARGET:
-        //firstSegment.transform.position = transform.position;
+        firstSegment.transform.position = transform.position;
 
         firstSegment.updateSegmentAndChildren();
 

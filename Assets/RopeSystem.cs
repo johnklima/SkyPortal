@@ -16,40 +16,31 @@ public class RopeSystem : MonoBehaviour
     public float springConstant;                               //A constant to represent the stiffness of the spring
     public float springLength = 1.0f;                          //The length that the spring does not exert any force
     public float springFrictionConstant;
-    
     public Vector3 gravitation;                        //gravitational acceleration (gravity will be applied to all Masses)
-
     public Vector3 ropeConnectionPos;                  //a point in space that is used to set the position of the 
                                                        //first Mass in the system (Mass with index 0)
 
     public Vector3 ropeConnectionVel;                   //a variable to move the ropeConnectionPos 
-
     public Vector3 ropeConnectionEndPos;                //a point in space that is used to set the position of the 
                                                         //last Mass in the system (Mass with index num masses)
 
     public float groundRepulsionConstant;                      //a constant to represent how much the ground shall repel the Masses
-
     public float groundFrictionConstant;                       //a constant of friction applied to Masses by the ground
-                                                               //(used for the sliding of rope on the ground)
-
-    public float groundAbsorptionConstant;                     //a constant of absorption friction applied to Masses by the ground
-                                                               //(used for vertical collisions of the rope with the ground)
-
-    public float groundHeight;                                 //a value to represent the z position value of the ground
-                                                               //(the ground is a planer surface facing +z direction)
-
+                                                        //(used for the sliding of rope on the ground)
+    float groundAbsorptionConstant;                     //a constant of absorption friction applied to Masses by the ground
+                                                        //(used for vertical collisions of the rope with the ground)
+    public float groundHeight;                                 //a value to represent the z position value of the ground                                                               //(the ground is a planer surface facing +z direction)
     public float groundOffset;
     public bool usesEndPos;                                    //is the last spring ALSO movable/anchorable
-
     public float airFrictionConstant;						 //a constant of air friction applied to Masses
 
 
     private void Start()
     {
         //hardcode some values
-
-        massEach = 0.05f;                    // Each Particle Has A Weight Of 50 Grams
-        springConstant = 10000.0f;          // springConstant In The Rope
+        /*
+        massEach = 1.0f;                    // Each Particle Has A Weight Of 50 Grams
+        springConstant = 1.0f;              // springConstant In The Rope
         springLength = 0.5f;                // Normal Length Of Springs In The Rope
         springFrictionConstant = 0.2f;      // Spring Inner Friction Constant
         gravitation = new Vector3(0, -9.81f, 0);           // Gravitational Acceleration
@@ -59,7 +50,8 @@ public class RopeSystem : MonoBehaviour
         groundAbsorptionConstant = 2.0f;    // Ground Absoption Constant
         groundHeight = -1.0f;               // Height Of Ground
 
-        
+        */
+
         //lets buffer our masses in an array
         masscount = transform.childCount;
         masses = new RopeMass [masscount];
@@ -115,13 +107,17 @@ public class RopeSystem : MonoBehaviour
     }
     void solve()
     {
-        for (int a = 0; a < masscount - 1; ++a)         //apply force of all springs
+        for (int i = 0; i < masscount - 1; i++)         //apply force of all springs
         {
-            if (a == masscount - 2 && usesEndPos)       //numOfMasses - 2 is the spring connecting the last 2 masses
-                springs[a].solve(true);                 //Spring with index "a" should apply its force
-
+            if (i == masscount - 2 && usesEndPos)       //numOfMasses - 2 is the spring connecting the last 2 masses
+            {
+                springs[i].solve(true); 
+            }                   
             else
-                springs[a].solve(false);
+            { 
+                springs[i].solve(false); 
+            }
+                
         }
 
         
@@ -129,7 +125,7 @@ public class RopeSystem : MonoBehaviour
         {
 
             masses[a].applyForce(gravitation * masses[a].mass);                    //The gravitational force
-            masses[a].applyForce(-masses[a].velocity * airFrictionConstant);      //The air friction
+            //masses[a].applyForce(-masses[a].velocity * airFrictionConstant);      //The air friction
 
 
             if (false && masses[a].transform.position.y  < groundHeight)        //Forces from the ground are applied if a Mass collides with the ground

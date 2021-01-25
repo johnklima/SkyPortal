@@ -19,7 +19,7 @@ public class Spring : MonoBehaviour
         float r = Vector3.Magnitude(springVector);                             //distance between the two Masses
         Vector3 force = Vector3.zero;                                                  //force initially has a zero value
 
-        if (r != 0)                                                                                //to avoid a division by zero check if r is zero
+        if (r != 0)                                                                 //to avoid a division by zero check if r is zero
             force += (springVector / r) * (r - springLength) * (-springConstant);   //the spring force is added to the force
 
         force += -(mass1.velocity - mass2.velocity) * springFrictionConstant;                     //the friction force is added to the force
@@ -31,7 +31,7 @@ public class Spring : MonoBehaviour
 
         if (!endpoint)
         {
-            mass2.applyForce(-force);                                                  //the opposite of force is applied to Mass2      
+            mass2.applyForce(-force);      //the opposite of force is applied to Mass2      
         }
 
     }
