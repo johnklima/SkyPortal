@@ -44,7 +44,7 @@ public class RopeMass : MonoBehaviour
         velocity += (force / mass) * dt;        // Change in velocity is added to the velocity.
                                                 // The change is proportinal with the acceleration (force / m) and change in time
 
-        transform.position += velocity * dt;   // Change in position is added to the position.
-                                                 // Change in position is velocity times the change in time
+        //transform.position += velocity * dt;   // Change in position is added to the position.
+                                               // Change in position is velocity times the change in time
     }
 }
