@@ -8,4 +8,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/-Project Folder-/Project_Scene.unity
     guid: 1ff6642d4e689384fb34f64ac8386151
+  - enabled: 1
+    path: Assets/-Project Folder-/Credits.unity
+    guid: f08d27809ccf1f649b3a5405ffad1c5b
+  - enabled: 1
+    path: Assets/Member Scenes/Thomas/Thomas_Scene.unity
+    guid: 0de1e29b8af26064688a5297a455b254
   m_configObjects: {}
