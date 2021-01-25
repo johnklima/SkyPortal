@@ -4,8 +4,7 @@ using UnityEngine;
 
 public class RotateAndHover : MonoBehaviour
 {
-    public float rotspeed = 0.5f;
-
+    
     public float degreesPerSecond = 15.0f;
     public float amplitude = 0.5f;
     public float frequency = 1f;
@@ -26,7 +25,7 @@ public class RotateAndHover : MonoBehaviour
     void Update()
     {
         //gameObject.transform.rotation = OBJVector + v;
-        transform.Rotate(Vector3.forward * rotspeed);
+        //transform.Rotate(Vector3.forward * rotspeed);
 
         // Spin object around Y-Axis
         transform.Rotate(new Vector3(0f, Time.deltaTime * degreesPerSecond, 0f), Space.World);
