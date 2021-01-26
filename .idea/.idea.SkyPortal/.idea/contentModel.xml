@@ -48,6 +48,7 @@
                 <e p="CameraController.cs" t="Include" />
                 <e p="PlayerScript.cs" t="Include" />
                 <e p="SlopeDetection.cs" t="Include" />
+                <e p="WallDetection.cs" t="Include" />
               </e>
             </e>
             <e p="TESTING" t="Include">

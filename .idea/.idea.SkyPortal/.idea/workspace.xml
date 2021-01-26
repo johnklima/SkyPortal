@@ -1,13 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="027939e5-7c2f-4db4-9f74-cc92c988d5a2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.SkyPortal/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SkyPortal/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.SkyPortal/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SkyPortal/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.SkyPortal/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SkyPortal/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Member Scenes/Christian/Christian_Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Member Scenes/Christian/Christian_Scene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Member Scenes/Christian/TESTING/PlayerScript/CameraController.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Member Scenes/Christian/TESTING/PlayerScript/CameraController.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Member Scenes/Christian/FINISHED/Player/PlayerScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Member Scenes/Christian/FINISHED/Player/PlayerScript.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Member Scenes/Christian/FINISHED/Player/SlopeDetection.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Member Scenes/Christian/FINISHED/Player/SlopeDetection.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,12 +34,17 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Member Scenes/Christian/FINISHED/Player/WallDetection.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Assets/Member Scenes/Christian/TESTING/Boids/Boids.cs" />
-        <option value="$PROJECT_DIR$/Assets/Member Scenes/Christian/FINISHED/Player/SlopeDetection.cs" />
         <option value="$PROJECT_DIR$/Assets/Member Scenes/Christian/TESTING/PlayerScript/Respawn.cs" />
+        <option value="$PROJECT_DIR$/Assets/Member Scenes/Christian/FINISHED/Player/PlayerScript.cs" />
+        <option value="$PROJECT_DIR$/Assets/Member Scenes/Christian/FINISHED/Player/WallDetection.cs" />
+        <option value="$PROJECT_DIR$/Assets/Member Scenes/Christian/FINISHED/Player/SlopeDetection.cs" />
       </list>
     </option>
   </component>
@@ -68,7 +90,7 @@
       <workItem from="1611141670370" duration="635000" />
       <workItem from="1611142697717" duration="1102000" />
       <workItem from="1611665026713" duration="24000" />
-      <workItem from="1611665178313" duration="323000" />
+      <workItem from="1611665178313" duration="7858000" />
     </task>
     <servers />
   </component>
@@ -77,6 +99,17 @@
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>

@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using Unity.Collections;
 using UnityEngine;
@@ -94,6 +95,7 @@ public class PlayerScript : MonoBehaviour
             if (hit.distance < minDist)
             {
                 isGrounded = true;
+                
             }
             else
             {
