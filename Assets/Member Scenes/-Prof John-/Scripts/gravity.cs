@@ -14,6 +14,7 @@ public class gravity : MonoBehaviour {
     public Vector3 finalForce = new Vector3(0, 0, 0);           //final force to be applied this frame
 
     public Vector3 jump;
+    public Vector3 bounce;
    
     public float mass = 1.0f;
     public float energy = 10000.0f;
@@ -31,7 +32,6 @@ public class gravity : MonoBehaviour {
     {
         
         handleInput();
-
         handleMovement();
         
         
@@ -45,7 +45,7 @@ public class gravity : MonoBehaviour {
             jump.y = 5.0f;
             energy -= 1.0f * Time.deltaTime;
         }
-        /*
+        /* //jet pack
         if (Input.GetKey(KeyCode.A) && energy > 0.0f)
         {
             thrust.x = -5.0f;
@@ -82,6 +82,9 @@ public class gravity : MonoBehaviour {
         
         //jump is a oneshot impulse
         velocity += jump;
+        //bounce is also
+        velocity += bounce;
+
         //move the player
         transform.position += velocity * Time.deltaTime;
         /*
@@ -107,12 +110,22 @@ public class gravity : MonoBehaviour {
             {
                 transform.position -= new Vector3(0, velocity.y * Time.deltaTime, 0);
                 velocity.y = 0;
+
+                
             }
         }
         //reset thrust
         thrust = Vector3.zero;
         jump = Vector3.zero;
+        bounce = Vector3.zero;
+
+        //add friction on x/z
+        Vector3 temp = velocity;
+        temp *= 0.8f;
+        velocity.x = temp.x;
+        velocity.z = temp.z;
+
     }
 
-    
+
 }
