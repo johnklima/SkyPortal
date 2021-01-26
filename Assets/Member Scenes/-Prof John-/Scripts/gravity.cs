@@ -13,6 +13,7 @@ public class gravity : MonoBehaviour {
     public Vector3 thrust = new Vector3(0, 0, 0);               //player applied thrust vector
     public Vector3 finalForce = new Vector3(0, 0, 0);           //final force to be applied this frame
 
+    public Vector3 jump;
    
     public float mass = 1.0f;
     public float energy = 10000.0f;
@@ -30,6 +31,7 @@ public class gravity : MonoBehaviour {
     {
         
         handleInput();
+
         handleMovement();
         
         
@@ -37,13 +39,13 @@ public class gravity : MonoBehaviour {
 
     void handleInput()
     {
-        if (Input.GetKey(KeyCode.Space) && energy > 0.0f)
+        //one shot jump
+        if (Input.GetKeyDown(KeyCode.Space) && energy > 0.0f)
         {
-            thrust.y = 20.0f;
+            jump.y = 5.0f;
             energy -= 1.0f * Time.deltaTime;
-
         }
-
+        /*
         if (Input.GetKey(KeyCode.A) && energy > 0.0f)
         {
             thrust.x = -5.0f;
@@ -66,7 +68,7 @@ public class gravity : MonoBehaviour {
             thrust.z = 5.0f;
             energy -= 0.25f * Time.deltaTime;
         }
-
+        */
     }
     
     void handleMovement()
@@ -77,31 +79,39 @@ public class gravity : MonoBehaviour {
         
         acceleration = finalForce / mass;
         velocity += acceleration * Time.deltaTime;
-
+        
+        //jump is a oneshot impulse
+        velocity += jump;
         //move the player
         transform.position += velocity * Time.deltaTime;
-/*
-        if (transform.position.x > 100 || transform.position.x < -100 )
-        { 
-            transform.position -= new Vector3(velocity.x * Time.deltaTime, 0, 0);
-            velocity.x = 0;
-        }
+        /*
+                if (transform.position.x > 100 || transform.position.x < -100 )
+                { 
+                    transform.position -= new Vector3(velocity.x * Time.deltaTime, 0, 0);
+                    velocity.x = 0;
+                }
 
 
-        if (transform.position.z > 100 || transform.position.z < -100)
+                if (transform.position.z > 100 || transform.position.z < -100)
+                {
+                    transform.position -= new Vector3(0, 0, velocity.z * Time.deltaTime);
+                    velocity.z = 0;
+                }
+        */
+        //check ground and undo if we are lower
+        LayerMask mask = 1 << 8;
+        RaycastHit hit;
+        if (Physics.Raycast(transform.position ,-transform.up, out hit, 100f,mask))
         {
-            transform.position -= new Vector3(0, 0, velocity.z * Time.deltaTime);
-            velocity.z = 0;
+            if (hit.distance < 1.0f)
+            {
+                transform.position -= new Vector3(0, velocity.y * Time.deltaTime, 0);
+                velocity.y = 0;
+            }
         }
-
-        if (transform.position.y > 100 || transform.position.y < 1)
-        {
-            transform.position -= new Vector3(0, velocity.y * Time.deltaTime, 0);
-            velocity.y = 0;
-        }
-  */     
-
-
+        //reset thrust
+        thrust = Vector3.zero;
+        jump = Vector3.zero;
     }
 
     
