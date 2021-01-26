@@ -101,7 +101,7 @@ public class gravity : MonoBehaviour {
         //check ground and undo if we are lower
         LayerMask mask = 1 << 8;
         RaycastHit hit;
-        if (Physics.Raycast(transform.position ,-transform.up, out hit, 100f,mask))
+        if (Physics.Raycast(transform.position + transform.up ,-transform.up, out hit, 100f,mask))
         {
             if (hit.distance < 1.0f)
             {
