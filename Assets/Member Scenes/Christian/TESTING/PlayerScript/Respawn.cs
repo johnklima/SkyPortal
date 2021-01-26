@@ -8,7 +8,7 @@ public class Respawn : MonoBehaviour
     public GameObject player;
     public Transform spawnPoint;
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerStay(Collider other)
     {
         if (other.CompareTag("Player"))
         {

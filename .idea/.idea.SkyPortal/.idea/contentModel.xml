@@ -6,9 +6,11 @@
     <e p="D:\Game Development Study\Technical Direction\GitHub\SkyPortal" t="IncludeRecursive">
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
+        <e p="Controller.cs" t="Include" />
         <e p="Member Scenes" t="Include">
           <e p="-Prof John-" t="Include">
             <e p="Scripts" t="Include">
+              <e p="Boid.cs" t="Include" />
               <e p="ContributorsScripts" t="Include">
                 <e p="Christian_kollbaer.cs" t="Include" />
                 <e p="Jonatha_Guasco.cs" t="Include" />
@@ -21,13 +23,33 @@
                 <e p="ThomasStokkan.cs" t="Include" />
                 <e p="Ådne_Buraas.cs" t="Include" />
               </e>
+              <e p="FollowCamera.cs" t="Include" />
               <e p="gravity.cs" t="Include" />
               <e p="IKSegment.cs" t="Include" />
               <e p="IKSystem.cs" t="Include" />
+              <e p="LookAtTarget.cs" t="Include" />
+              <e p="RopeMass.cs" t="Include" />
+              <e p="RopeSystem.cs" t="Include" />
               <e p="SimpleCameraController.cs" t="Include" />
+              <e p="SineWave.cs" t="Include" />
+              <e p="Spring.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Adne" t="Include">
+            <e p="FINISHED" t="Include">
+              <e p="Tree" t="Include">
+                <e p="HoverScript.cs" t="Include" />
+              </e>
             </e>
           </e>
           <e p="Christian" t="Include">
+            <e p="FINISHED" t="Include">
+              <e p="Player" t="Include">
+                <e p="CameraController.cs" t="Include" />
+                <e p="PlayerScript.cs" t="Include" />
+                <e p="SlopeDetection.cs" t="Include" />
+              </e>
+            </e>
             <e p="TESTING" t="Include">
               <e p="Boids" t="Include">
                 <e p="Boids.cs" t="Include" />
@@ -39,13 +61,51 @@
               </e>
               <e p="PlayerScript" t="Include">
                 <e p="PlayerController.cs" t="Include" />
+                <e p="Respawn.cs" t="Include" />
               </e>
+            </e>
+          </e>
+          <e p="Sindre S" t="Include">
+            <e p="TESTING" t="Include">
+              <e p="RotateAndHover.cs" t="Include" />
             </e>
           </e>
           <e p="Thomas" t="Include">
             <e p="TESTING" t="Include">
               <e p="MenuScript.cs" t="Include" />
+              <e p="TitleScreen.cs" t="Include" />
             </e>
+          </e>
+        </e>
+        <e p="TextMesh Pro" t="Include">
+          <e p="Fonts" t="Include">
+            <e p="LiberationSans - OFL.txt" t="Include" />
+          </e>
+          <e p="Resources" t="Include">
+            <e p="LineBreaking Following Characters.txt" t="Include" />
+            <e p="LineBreaking Leading Characters.txt" t="Include" />
+          </e>
+          <e p="Shaders" t="Include">
+            <e p="TMP_Bitmap-Custom-Atlas.shader" t="Include" />
+            <e p="TMP_Bitmap-Mobile.shader" t="Include" />
+            <e p="TMP_Bitmap.shader" t="Include" />
+            <e p="TMP_SDF Overlay.shader" t="Include" />
+            <e p="TMP_SDF SSD.shader" t="Include" />
+            <e p="TMP_SDF-Mobile Masking.shader" t="Include" />
+            <e p="TMP_SDF-Mobile Overlay.shader" t="Include" />
+            <e p="TMP_SDF-Mobile SSD.shader" t="Include" />
+            <e p="TMP_SDF-Mobile.shader" t="Include" />
+            <e p="TMP_SDF-Surface-Mobile.shader" t="Include" />
+            <e p="TMP_SDF-Surface.shader" t="Include" />
+            <e p="TMP_SDF.shader" t="Include" />
+            <e p="TMP_Sprite.shader" t="Include" />
+            <e p="TMPro.cginc" t="Include" />
+            <e p="TMPro_Mobile.cginc" t="Include" />
+            <e p="TMPro_Properties.cginc" t="Include" />
+            <e p="TMPro_Surface.cginc" t="Include" />
+          </e>
+          <e p="Sprites" t="Include">
+            <e p="EmojiOne Attribution.txt" t="Include" />
           </e>
         </e>
       </e>
