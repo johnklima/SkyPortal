@@ -51,6 +51,9 @@
                 <e p="SlopeDetection.cs" t="Include" />
                 <e p="WallDetection.cs" t="Include" />
               </e>
+              <e p="UI" t="Include">
+                <e p="JetpackBar.cs" t="Include" />
+              </e>
             </e>
             <e p="TESTING" t="Include">
               <e p="Boids" t="Include">

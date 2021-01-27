@@ -259,7 +259,7 @@ GameObject:
   - component: {fileID: 7574817481824054112}
   - component: {fileID: 7574817481824054049}
   m_Layer: 0
-  m_Name: PlayerHolder 1
+  m_Name: PlayerHolder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -272,7 +272,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7574817481824054111}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -3.5, y: 13.55, z: -4.3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -297,9 +297,9 @@ MonoBehaviour:
   runSpeed: 12
   minDist: 0.1
   jumpHeight: 0
-  boostAmount: 0.08
-  fuel: 15
-  maxFuel: 15
+  boostAmount: 0.05
+  fuel: 6
+  maxFuel: 6
   rechargeAmount: 5
   fuelUsage: 0.02
   timerBeforeJetPack: 0.4
