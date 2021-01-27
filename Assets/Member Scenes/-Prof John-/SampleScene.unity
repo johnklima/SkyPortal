@@ -195,6 +195,7 @@ MonoBehaviour:
   bounce: {x: 0, y: 0, z: 0}
   mass: 1
   energy: 10000
+  hitNormal: {x: 0, y: 0, z: 0}
 --- !u!1 &9262349
 GameObject:
   m_ObjectHideFlags: 0
@@ -478,6 +479,7 @@ MonoBehaviour:
   bounce: {x: 0, y: 0, z: 0}
   mass: 1
   energy: 10000
+  hitNormal: {x: 0, y: 0, z: 0}
 --- !u!1 &124985005
 GameObject:
   m_ObjectHideFlags: 0
@@ -985,6 +987,7 @@ MonoBehaviour:
   bounce: {x: 0, y: 0, z: 0}
   mass: 1
   energy: 10000
+  hitNormal: {x: 0, y: 0, z: 0}
 --- !u!1 &241223986
 GameObject:
   m_ObjectHideFlags: 0
@@ -1057,6 +1060,7 @@ MonoBehaviour:
   bounce: {x: 0, y: 0, z: 0}
   mass: 1
   energy: 10000
+  hitNormal: {x: 0, y: 0, z: 0}
 --- !u!1 &286655194
 GameObject:
   m_ObjectHideFlags: 0
@@ -2081,6 +2085,7 @@ MonoBehaviour:
   bounce: {x: 0, y: 0, z: 0}
   mass: 1
   energy: 10000
+  hitNormal: {x: 0, y: 0, z: 0}
 --- !u!1 &529863477
 GameObject:
   m_ObjectHideFlags: 0
@@ -2092,8 +2097,8 @@ GameObject:
   - component: {fileID: 529863478}
   - component: {fileID: 529863481}
   - component: {fileID: 529863480}
+  - component: {fileID: 529863483}
   - component: {fileID: 529863479}
-  - component: {fileID: 529863482}
   m_Layer: 0
   m_Name: player geom
   m_TagString: Untagged
@@ -2115,20 +2120,22 @@ Transform:
   m_Father: {fileID: 1285437888}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!136 &529863479
-CapsuleCollider:
+--- !u!54 &529863479
+Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 529863477}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.5
-  m_Height: 0.5
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!23 &529863480
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2178,22 +2185,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 529863477}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
---- !u!54 &529863482
-Rigidbody:
+--- !u!114 &529863483
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 529863477}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29fe4ac50e851b0409e5a9655821aa12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &556914896
 GameObject:
   m_ObjectHideFlags: 0
@@ -2382,6 +2385,7 @@ MonoBehaviour:
   bounce: {x: 0, y: 0, z: 0}
   mass: 1
   energy: 10000
+  hitNormal: {x: 0, y: 0, z: 0}
 --- !u!1 &561347209
 GameObject:
   m_ObjectHideFlags: 0
@@ -2549,6 +2553,7 @@ MonoBehaviour:
   bounce: {x: 0, y: 0, z: 0}
   mass: 1
   energy: 10000
+  hitNormal: {x: 0, y: 0, z: 0}
 --- !u!1 &589635065
 GameObject:
   m_ObjectHideFlags: 0
@@ -3077,6 +3082,7 @@ MonoBehaviour:
   bounce: {x: 0, y: 0, z: 0}
   mass: 1
   energy: 10000
+  hitNormal: {x: 0, y: 0, z: 0}
 --- !u!1 &626530545
 GameObject:
   m_ObjectHideFlags: 0
@@ -3805,6 +3811,7 @@ MonoBehaviour:
   bounce: {x: 0, y: 0, z: 0}
   mass: 1
   energy: 10000
+  hitNormal: {x: 0, y: 0, z: 0}
 --- !u!1 &773498828
 GameObject:
   m_ObjectHideFlags: 0
@@ -4083,6 +4090,7 @@ MonoBehaviour:
   bounce: {x: 0, y: 0, z: 0}
   mass: 1
   energy: 10000
+  hitNormal: {x: 0, y: 0, z: 0}
 --- !u!1 &849603182
 GameObject:
   m_ObjectHideFlags: 0
@@ -4802,6 +4810,7 @@ MonoBehaviour:
   bounce: {x: 0, y: 0, z: 0}
   mass: 1
   energy: 10000
+  hitNormal: {x: 0, y: 0, z: 0}
 --- !u!1 &1025066228
 GameObject:
   m_ObjectHideFlags: 0
@@ -5394,6 +5403,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58943a819efa7d44dbc14804d61aacbb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isOnGround: 0
+  isAtWall: 0
 --- !u!114 &1285437890
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5415,6 +5426,7 @@ MonoBehaviour:
   bounce: {x: 0, y: 0, z: 0}
   mass: 1
   energy: 10000
+  hitNormal: {x: 0, y: 0, z: 0}
 --- !u!1 &1302926013
 GameObject:
   m_ObjectHideFlags: 0
@@ -5677,6 +5689,7 @@ MonoBehaviour:
   bounce: {x: 0, y: 0, z: 0}
   mass: 1
   energy: 10000
+  hitNormal: {x: 0, y: 0, z: 0}
 --- !u!1 &1412678689
 GameObject:
   m_ObjectHideFlags: 0
@@ -6249,6 +6262,7 @@ MonoBehaviour:
   bounce: {x: 0, y: 0, z: 0}
   mass: 1
   energy: 10000
+  hitNormal: {x: 0, y: 0, z: 0}
 --- !u!1 &1629459322
 GameObject:
   m_ObjectHideFlags: 0
@@ -6321,6 +6335,7 @@ MonoBehaviour:
   bounce: {x: 0, y: 0, z: 0}
   mass: 1
   energy: 10000
+  hitNormal: {x: 0, y: 0, z: 0}
 --- !u!1001 &1647763339
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7643,6 +7658,7 @@ MonoBehaviour:
   bounce: {x: 0, y: 0, z: 0}
   mass: 1
   energy: 10000
+  hitNormal: {x: 0, y: 0, z: 0}
 --- !u!1 &1972107304
 GameObject:
   m_ObjectHideFlags: 0
@@ -7896,6 +7912,7 @@ MonoBehaviour:
   bounce: {x: 0, y: 0, z: 0}
   mass: 1
   energy: 10000
+  hitNormal: {x: 0, y: 0, z: 0}
 --- !u!1 &2027564192
 GameObject:
   m_ObjectHideFlags: 0
@@ -8701,6 +8718,7 @@ MonoBehaviour:
   bounce: {x: 0, y: 0, z: 0}
   mass: 1
   energy: 10000
+  hitNormal: {x: 0, y: 0, z: 0}
 --- !u!1 &2135600644
 GameObject:
   m_ObjectHideFlags: 0
