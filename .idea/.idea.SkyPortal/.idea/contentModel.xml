@@ -7,6 +7,7 @@
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="Controller.cs" t="Include" />
+        <e p="Ground.cs" t="Include" />
         <e p="Member Scenes" t="Include">
           <e p="-Prof John-" t="Include">
             <e p="Scripts" t="Include">

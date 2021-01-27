@@ -4565,7 +4565,7 @@ MonoBehaviour:
   acceleration: {x: 0, y: 0, z: 0}
   finalForce: {x: 0, y: 0, z: 0}
   isGrounded: 0
-  distToGround: 1
+  distToGround: 0.4
   groundLayer:
     serializedVersion: 2
     m_Bits: 0
@@ -4639,7 +4639,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1709105000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.152, y: 0.489, z: 0}
+  m_LocalPosition: {x: -7.75, y: 0.489, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -4825,7 +4825,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1974914252}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 11.67, y: -1.46, z: -5.17}
+  m_LocalPosition: {x: 10.73, y: -1.46, z: -5.17}
   m_LocalScale: {x: 6.5028477, y: 1.4133, z: 21.355461}
   m_Children: []
   m_Father: {fileID: 0}
