@@ -1,42 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="027939e5-7c2f-4db4-9f74-cc92c988d5a2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/-Project Folder-/VFX/WaterfallTEST/NoiseOriginal.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/-Project Folder-/VFX/WaterfallTEST/NoiseOriginal.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/-Project Folder-/VFX/WaterfallTEST/PSWaterfall.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/-Project Folder-/VFX/WaterfallTEST/PSWaterfall.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/-Project Folder-/VFX/WaterfallTEST/Waterfall.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/-Project Folder-/VFX/WaterfallTEST/Waterfall.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.SkyPortal/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SkyPortal/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.SkyPortal/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SkyPortal/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Member Scenes/-Prof John-/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Member Scenes/-Prof John-/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Member Scenes/-Prof John-/Scripts/gravity.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Member Scenes/-Prof John-/Scripts/gravity.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Member Scenes/Christian/Christian_Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Member Scenes/Christian/Christian_Scene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Member Scenes/Miguel/Assets.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Member Scenes/Miguel/Assets.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Member Scenes/Miguel/Assets/LOWs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Member Scenes/Miguel/Assets/LOWs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Member Scenes/Miguel/Assets/LOWs/Island_01.obj.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Member Scenes/Miguel/Assets/LOWs/Island_01.obj.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Member Scenes/Miguel/Assets/LOWs/Island_Clutter_01.obj.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Member Scenes/Miguel/Assets/LOWs/Island_Clutter_01.obj.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Member Scenes/Miguel/Assets/LOWs/Island_Waterfall_01.obj.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Member Scenes/Miguel/Assets/LOWs/Island_Waterfall_01.obj.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Member Scenes/Miguel/Assets/LOWs/Materials.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Member Scenes/Miguel/Assets/LOWs/Materials.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Member Scenes/Miguel/Assets/LOWs/Materials/Island_01-defaultMat.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Member Scenes/Miguel/Assets/LOWs/Materials/Island_01-defaultMat.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Member Scenes/Miguel/Assets/LOWs/Materials/Island_01-defaultMat.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Member Scenes/Miguel/Assets/LOWs/Materials/Island_01-defaultMat.mat.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Member Scenes/Miguel/Assets/LOWs/Materials/Island_Clutter_01-defaultMat.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Member Scenes/Miguel/Assets/LOWs/Materials/Island_Clutter_01-defaultMat.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Member Scenes/Miguel/Assets/LOWs/Materials/Island_Clutter_01-defaultMat.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Member Scenes/Miguel/Assets/LOWs/Materials/Island_Clutter_01-defaultMat.mat.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Member Scenes/Miguel/Assets/Textures.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Member Scenes/Miguel/Assets/Textures.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Member Scenes/Miguel/Assets/Textures/Island_01_initialShadingGroup_AlbedoTransparency.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Member Scenes/Miguel/Assets/Textures/Island_01_initialShadingGroup_AlbedoTransparency.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Member Scenes/Miguel/Assets/Textures/Island_01_initialShadingGroup_MetallicSmoothness.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Member Scenes/Miguel/Assets/Textures/Island_01_initialShadingGroup_MetallicSmoothness.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Member Scenes/Miguel/Assets/Textures/Island_01_initialShadingGroup_Normal.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Member Scenes/Miguel/Assets/Textures/Island_01_initialShadingGroup_Normal.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Member Scenes/Miguel/Assets/Textures/Island_Clutter_01_initialShadingGroup_AlbedoTransparency.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Member Scenes/Miguel/Assets/Textures/Island_Clutter_01_initialShadingGroup_AlbedoTransparency.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Member Scenes/Miguel/Assets/Textures/Island_Clutter_01_initialShadingGroup_MetallicSmoothness.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Member Scenes/Miguel/Assets/Textures/Island_Clutter_01_initialShadingGroup_MetallicSmoothness.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Member Scenes/Miguel/Assets/Textures/Island_Clutter_01_initialShadingGroup_Normal.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Member Scenes/Miguel/Assets/Textures/Island_Clutter_01_initialShadingGroup_Normal.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Member Scenes/Miguel/Assets/Textures/Island_Waterfall_01_initialShadingGroup_AlbedoTransparency.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Member Scenes/Miguel/Assets/Textures/Island_Waterfall_01_initialShadingGroup_AlbedoTransparency.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Member Scenes/Miguel/Assets/Textures/Island_Waterfall_01_initialShadingGroup_MetallicSmoothness.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Member Scenes/Miguel/Assets/Textures/Island_Waterfall_01_initialShadingGroup_MetallicSmoothness.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Member Scenes/Miguel/Assets/Textures/Island_Waterfall_01_initialShadingGroup_Normal.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Member Scenes/Miguel/Assets/Textures/Island_Waterfall_01_initialShadingGroup_Normal.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Member Scenes/Sindre S/SindresS_Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Member Scenes/Sindre S/SindresS_Scene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Member Scenes/Sindre S/TESTING/Flower1.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Member Scenes/Sindre S/TESTING/Flower1.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Member Scenes/Sindre S/TESTING/Flower2.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Member Scenes/Sindre S/TESTING/Flower2.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Member Scenes/Sindre S/TESTING/Flower3.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Member Scenes/Sindre S/TESTING/Flower3.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Member Scenes/Sindre S/TESTING/New Material 1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Member Scenes/Sindre S/TESTING/New Material 1.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Member Scenes/Sindre S/TESTING/New Material 1.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Member Scenes/Sindre S/TESTING/New Material 1.mat.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Member Scenes/Sindre S/TESTING/New Material.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Member Scenes/Sindre S/TESTING/New Material.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Member Scenes/Sindre S/TESTING/New Material.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Member Scenes/Sindre S/TESTING/New Material.mat.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Member Scenes/Sindre T/TESTING/SindreTorshamarTEST.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Member Scenes/Sindre T/TESTING/SindreTorshamarTEST.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Settings/ForwardRenderer.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/ForwardRenderer.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Member Scenes/Christian/FINISHED/Player/PlayerHolder.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Member Scenes/Christian/FINISHED/Player/PlayerHolder.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Member Scenes/Christian/FINISHED/Player/PlayerHolder.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Member Scenes/Christian/FINISHED/Player/PlayerHolder.prefab.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Member Scenes/Christian/FINISHED/Player/PlayerScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Member Scenes/Christian/FINISHED/Player/PlayerScript.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -47,10 +38,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Member Scenes/Christian/FINISHED/Player/WallDetection.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Assets/Member Scenes/Christian/TESTING/Boids/Boids.cs" />
+        <option value="$PROJECT_DIR$/Assets/Member Scenes/Christian/TESTING/PlayerScript/Respawn.cs" />
+        <option value="$PROJECT_DIR$/Assets/Member Scenes/Christian/FINISHED/Player/SlopeDetection.cs" />
+        <option value="$PROJECT_DIR$/Assets/Member Scenes/Christian/FINISHED/Player/WallDetection.cs" />
+        <option value="$PROJECT_DIR$/Assets/Member Scenes/Christian/FINISHED/Player/PlayerScript.cs" />
+        <option value="$PROJECT_DIR$/Assets/Member Scenes/-Prof John-/Scripts/gravity.cs" />
       </list>
     </option>
   </component>
@@ -60,6 +59,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -94,6 +94,10 @@
       <updated>1611141662748</updated>
       <workItem from="1611141670370" duration="635000" />
       <workItem from="1611142697717" duration="1102000" />
+      <workItem from="1611665026713" duration="24000" />
+      <workItem from="1611665178313" duration="7858000" />
+      <workItem from="1611746189108" duration="1350000" />
+      <workItem from="1611753281835" duration="2425000" />
     </task>
     <servers />
   </component>
@@ -102,6 +106,18 @@
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
