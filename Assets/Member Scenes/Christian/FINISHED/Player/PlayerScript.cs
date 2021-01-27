@@ -6,9 +6,8 @@ using UnityEngine;
 
 public class PlayerScript : MonoBehaviour
 {
-    // Public
-    public float playerMass;
-    
+    gravity grav;
+
     // Player Specs
     public float walkSpeed;
     public float runSpeed;
@@ -26,12 +25,6 @@ public class PlayerScript : MonoBehaviour
     [ReadOnly]
     private float timerForJetPackReadOnly = 0.4f;
     
-    // Gravity
-    public Vector3 finalForce;
-    public Vector3 accel;
-    public Vector3 velocity;
-    private float gravity = -9.81f;
-    public LayerMask _mask = 1 << 15;
     
     // Checks
     public bool isGrounded;
@@ -39,8 +32,13 @@ public class PlayerScript : MonoBehaviour
     public bool isUsingJetpack = false;
     public bool isRunning;
 
-    // Start is called before the first frame update
+    public float gravconstant = -9.8f;
 
+    // Start is called before the first frame update
+    private void Start()
+    {
+        grav = transform.GetComponent<gravity>();
+    }
     // Update is called once per frame
     void Update()
     {
@@ -51,16 +49,14 @@ public class PlayerScript : MonoBehaviour
         // Checks if grounded and if we are not we apply Gravity
         if (!isGrounded)
         {
-            finalForce.Set(0, gravity * playerMass, 0);
-            accel = finalForce / playerMass;
-            velocity += accel * Time.deltaTime;
+
         }
         else
         {
             // Else we want to check if we are jumping, if we are not then set velocity to 0 to prevent falling through the floor
             if (!isJumping)
             {
-                velocity.y = 0f;
+                
             }
         }
         
@@ -70,7 +66,7 @@ public class PlayerScript : MonoBehaviour
         Vector2 inputDir = input.normalized;
         
         // Inputs combined with velocity to apply the gravity
-        Vector3 move = new Vector3(inputDir.x, velocity.y, inputDir.y);
+        Vector3 move = new Vector3(inputDir.x, grav.velocity.y, inputDir.y);
 
         // Checking if we are running as we'll adjust speed depending on true || false
         if (isRunning)
@@ -87,25 +83,7 @@ public class PlayerScript : MonoBehaviour
             transform.Translate(move * walkSpeed * Time.deltaTime);
         }
         
-        // Raycast to check if we are grounded to allow us jumping etc
-        RaycastHit hit;
-        if (Physics.Raycast(transform.position, Vector3.down, out hit, 100f, _mask))
-        {
-            // if distance is less then min distance then we are grounded else we are not :)
-            if (hit.distance < minDist)
-            {
-                isGrounded = true;
-                
-            }
-            else
-            {
-                isGrounded = false;
-            }
-        }
-        else
-        {
-            isGrounded = false;
-        }
+        
         
         // Another check to see if we are grounded to allow jumping (I put it here seperate from the gravity to easier know what each part does... its early ok..)
         if (isGrounded)
@@ -120,7 +98,7 @@ public class PlayerScript : MonoBehaviour
             {
                 
                 // Math stuff to counter act the Gravity and have a smooth jump yayy :)
-                velocity.y = Mathf.Sqrt(-3 * gravity * jumpHeight * Time.deltaTime);
+                grav.velocity.y = Mathf.Sqrt(-3 * gravconstant * jumpHeight * Time.deltaTime);
                 
                 // Of course we need to tell the script that NOW we are jumping.
                 isJumping = true;
@@ -155,14 +133,14 @@ public class PlayerScript : MonoBehaviour
             // This just ensures that when isUsingJetpack is true then we actually move upwards
             if (isUsingJetpack)
             {
-                velocity.y += boostAmount;
+                grav.velocity.y += boostAmount;
 
                 fuel -= fuelUsage;
             }
             else
             {
                 // If we are not using the jetpack then i dont want it to interfere with our velocity anymore.
-                velocity.y = 0;
+                grav.velocity.y = 0;
             }
 
         }
