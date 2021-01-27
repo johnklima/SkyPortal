@@ -19,7 +19,7 @@ public class gravity : MonoBehaviour {
     public float mass = 1.0f;
     public float energy = 10000.0f;
 
-    Controller controller;
+    PlayerScript controller;
     public Vector3 hitNormal;
 
     Vector3 prevPosition;
@@ -27,7 +27,7 @@ public class gravity : MonoBehaviour {
     // Use this for initialization
     void Start () {
 
-        controller = transform.GetComponent<Controller>();
+        controller = transform.GetComponent<PlayerScript>();
         hitNormal = Vector3.up;
 	}
 	
@@ -35,7 +35,7 @@ public class gravity : MonoBehaviour {
 	void Update ()
     {
         
-        handleInput();
+        //handleInput();
         handleMovement();
         
         
@@ -123,14 +123,14 @@ public class gravity : MonoBehaviour {
                 transform.position -= new Vector3(0, velocity.y * Time.deltaTime, 0);
                 velocity.y = 0;
 
-                controller.isOnGround = true;
+                controller.isGrounded = true;
 
                 transform.position = new Vector3(transform.position.x, hit.point.y, transform.position.z);
 
                 if (Mathf.Abs(Vector3.Angle(hit.normal, Vector3.up)) > 45)
                 {
                     controller.isAtWall = true;
-                    bounce = hitNormal * 2;
+                    bounce = hitNormal * 4;
                 }
                 else 
                 {
@@ -145,12 +145,12 @@ public class gravity : MonoBehaviour {
             }
             else
             {
-                controller.isOnGround = false;
+                controller.isGrounded = false;
             }
         }
         else 
         {
-            controller.isOnGround = false;
+            controller.isGrounded = false;
         }
         
 

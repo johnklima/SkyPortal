@@ -32,6 +32,8 @@ public class PlayerScript : MonoBehaviour
     public bool isUsingJetpack = false;
     public bool isRunning;
 
+    public bool isAtWall;
+
     public float gravconstant = -9.8f;
 
     // Start is called before the first frame update
@@ -42,10 +44,10 @@ public class PlayerScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        isRunning = Input.GetKey(KeyCode.LeftShift); // Allows for a very cool high skill mechanic double jump && Adjust falling speed mid air
+        //isRunning = Input.GetKey(KeyCode.LeftShift); // Allows for a very cool high skill mechanic double jump && Adjust falling speed mid air
         
-        // running = Input.GetKey(KeyCode.LeftShift) && isGrounded; // Does not allow the above && makes run only function when grounded
-        
+        isRunning = Input.GetKey(KeyCode.LeftShift) && isGrounded; // Does not allow the above && makes run only function when grounded
+
         // Checks if grounded and if we are not we apply Gravity
         if (!isGrounded)
         {
@@ -69,16 +71,15 @@ public class PlayerScript : MonoBehaviour
         Vector3 move = new Vector3(inputDir.x, grav.velocity.y, inputDir.y);
 
         // Checking if we are running as we'll adjust speed depending on true || false
-        if (isRunning)
+        if (isRunning && !isAtWall)
         {
-            if(!isUsingJetpack) transform.Translate(move * runSpeed * Time.deltaTime);
-            else
+            if (!isUsingJetpack)
             {
-                transform.Translate(move * walkSpeed * Time.deltaTime);
+                transform.Translate(move * runSpeed * Time.deltaTime);
             }
 
         }
-        else
+        else if(!isAtWall && !isRunning)
         {
             transform.Translate(move * walkSpeed * Time.deltaTime);
         }
@@ -94,11 +95,12 @@ public class PlayerScript : MonoBehaviour
             timerBeforeJetPack = timerForJetPackReadOnly;
             
             // If isJumping is false then we should be able to jump as we havent used up our jump!
-            if (Input.GetKey(KeyCode.Space) && !isJumping)
+            if (Input.GetKeyDown(KeyCode.Space) && !isJumping && !isAtWall)
             {
                 
                 // Math stuff to counter act the Gravity and have a smooth jump yayy :)
-                grav.velocity.y = Mathf.Sqrt(-3 * gravconstant * jumpHeight * Time.deltaTime);
+                //grav.velocity.y += Mathf.Sqrt(-3 * gravconstant * jumpHeight * Time.deltaTime);
+                grav.velocity += Vector3.up * 3f;
                 
                 // Of course we need to tell the script that NOW we are jumping.
                 isJumping = true;
@@ -124,7 +126,7 @@ public class PlayerScript : MonoBehaviour
     
     private void JetPack()
     {
-        
+        if(isAtWall) return;
         // First we need to check if the player is jumping so they dont overlap, during this we also have a timer for some finesse
         if (isJumping && fuel > 0 && Input.GetKey(KeyCode.Space) && timerBeforeJetPack <= 0)
         {
