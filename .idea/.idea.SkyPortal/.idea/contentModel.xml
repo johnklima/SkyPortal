@@ -38,6 +38,9 @@
           </e>
           <e p="Adne" t="Include">
             <e p="FINISHED" t="Include">
+              <e p="Portal" t="Include">
+                <e p="HoverPortal.cs" t="Include" />
+              </e>
               <e p="Tree" t="Include">
                 <e p="HoverScript.cs" t="Include" />
               </e>
@@ -70,9 +73,24 @@
               </e>
             </e>
           </e>
+          <e p="Jonathan" t="Include">
+            <e p="FINISHED" t="Include">
+              <e p="Script" t="Include">
+                <e p="CrystalCollector.cs" t="Include" />
+                <e p="MouseLookController.cs" t="Include" />
+                <e p="PlayerMovement.cs" t="Include" />
+              </e>
+            </e>
+          </e>
           <e p="Sindre S" t="Include">
             <e p="TESTING" t="Include">
               <e p="RotateAndHover.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Stefan" t="Include">
+            <e p="TESTING" t="Include">
+              <e p="Portal_Controller.cs" t="Include" />
+              <e p="SC_FPS_Controller.cs" t="Include" />
             </e>
           </e>
           <e p="Thomas" t="Include">
@@ -114,6 +132,7 @@
             <e p="EmojiOne Attribution.txt" t="Include" />
           </e>
         </e>
+        <e p="UIManager.cs" t="Include" />
       </e>
       <e p="obj" t="ExcludeRecursive" />
       <e p="Packages" t="ExcludeRecursive" />

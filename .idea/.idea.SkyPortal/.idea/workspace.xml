@@ -20,27 +20,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="027939e5-7c2f-4db4-9f74-cc92c988d5a2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Member Scenes/Adne/Adne_Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Member Scenes/Adne/Adne_Scene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Member Scenes/Adne/FINISHED/Portal/Enclosed.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Member Scenes/Adne/FINISHED/Portal/Enclosed.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Member Scenes/Adne/FINISHED/Portal/Enclosed/Portal02_Default_OBJ_AlbedoTransparency.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Member Scenes/Adne/FINISHED/Portal/Enclosed/Portal02_Default_OBJ_AlbedoTransparency.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Member Scenes/Adne/FINISHED/Portal/Enclosed/Portal02_Default_OBJ_MetallicSmoothness.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Member Scenes/Adne/FINISHED/Portal/Enclosed/Portal02_Default_OBJ_MetallicSmoothness.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Member Scenes/Adne/FINISHED/Portal/Enclosed/Portal02_Default_OBJ_Normal.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Member Scenes/Adne/FINISHED/Portal/Enclosed/Portal02_Default_OBJ_Normal.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Member Scenes/Adne/FINISHED/Portal/HoverPortal.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Member Scenes/Adne/FINISHED/Portal/HoverPortal.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Member Scenes/Adne/FINISHED/Portal/HoverPortal.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Member Scenes/Adne/FINISHED/Portal/HoverPortal.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Member Scenes/Adne/FINISHED/Portal/PortalEntrance.shadergraph" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Member Scenes/Adne/FINISHED/Portal/PortalEntrance.shadergraph" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Member Scenes/Adne/FINISHED/Portal/PortalEntrance.shadergraph.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Member Scenes/Adne/FINISHED/Portal/PortalEntrance.shadergraph.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Member Scenes/Adne/FINISHED/Portal/Portal_Enclosed.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Member Scenes/Adne/FINISHED/Portal/Portal_Enclosed.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Member Scenes/Adne/FINISHED/Portal/Portal_Enclosed.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Member Scenes/Adne/FINISHED/Portal/Portal_Enclosed.mat.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Member Scenes/Adne/FINISHED/Portal/Portal_VFXBlue.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Member Scenes/Adne/FINISHED/Portal/Portal_VFXBlue.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Member Scenes/Adne/FINISHED/Portal/Portal_VFXBlue.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Member Scenes/Adne/FINISHED/Portal/Portal_VFXBlue.mat.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Member Scenes/Adne/FINISHED/Portal/Portal_VFXPurple.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Member Scenes/Adne/FINISHED/Portal/Portal_VFXPurple.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Member Scenes/Adne/FINISHED/Portal/Portal_VFXPurple.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Member Scenes/Adne/FINISHED/Portal/Portal_VFXPurple.mat.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Member Scenes/Adne/FINISHED/Portal/Portal_VFXRed.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Member Scenes/Adne/FINISHED/Portal/Portal_VFXRed.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Member Scenes/Adne/FINISHED/Portal/Portal_VFXRed.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Member Scenes/Adne/FINISHED/Portal/Portal_VFXRed.mat.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Member Scenes/Adne/FINISHED/Portal/Portal_VFXYellow.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Member Scenes/Adne/FINISHED/Portal/Portal_VFXYellow.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Member Scenes/Adne/FINISHED/Portal/Portal_VFXYellow.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Member Scenes/Adne/FINISHED/Portal/Portal_VFXYellow.mat.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Member Scenes/Adne/FINISHED/Portal02.obj" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Member Scenes/Adne/FINISHED/Portal02.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Member Scenes/Adne/FINISHED/Portal02.obj.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Member Scenes/Adne/FINISHED/Portal02.obj.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.SkyPortal/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SkyPortal/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.SkyPortal/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SkyPortal/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Member Scenes/Jonathan/FINISHED/Script/CristalCollector.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Member Scenes/Jonathan/FINISHED/Script/CristalCollector.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Member Scenes/Sigurdur/FINISHED/Gold/GoldV6.spsm.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Member Scenes/Sigurdur/FINISHED/Gold/GoldV6.spsm.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Member Scenes/Sigurdur/FINISHED/Grass.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Member Scenes/Sigurdur/FINISHED/Grass.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Member Scenes/Sigurdur/FINISHED/Grass/Grass.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Member Scenes/Sigurdur/FINISHED/Grass/Grass.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Member Scenes/Sigurdur/FINISHED/Grass/Grass.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Member Scenes/Sigurdur/FINISHED/Grass/Grass.mat.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Member Scenes/Sigurdur/FINISHED/Grass/grass.shadergraph" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Member Scenes/Sigurdur/FINISHED/Grass/grass.shadergraph" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Member Scenes/Sigurdur/FINISHED/Grass/grass.shadergraph.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Member Scenes/Sigurdur/FINISHED/Grass/grass.shadergraph.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Member Scenes/Sigurdur/FINISHED/Grass/grass2.obj" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Member Scenes/Sigurdur/FINISHED/Grass/grass2.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Member Scenes/Sigurdur/FINISHED/Grass/grass2.obj.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Member Scenes/Sigurdur/FINISHED/Grass/grass2.obj.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Member Scenes/Sigurdur/FINISHED/Grass/grass_albedo2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Member Scenes/Sigurdur/FINISHED/Grass/grass_albedo2.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Member Scenes/Sigurdur/FINISHED/Grass/grass_alpha2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Member Scenes/Sigurdur/FINISHED/Grass/grass_alpha2.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Member Scenes/Stefan/Stefan_Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Member Scenes/Stefan/Stefan_Scene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Member Scenes/Stefan/TESTING/Portal_Controller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Member Scenes/Stefan/TESTING/Portal_Controller.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Member Scenes/Stefan/TESTING/Portal_Controller.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Member Scenes/Stefan/TESTING/Portal_Controller.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Member Scenes/Stefan/TESTING/SC_FPS_Controller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Member Scenes/Stefan/TESTING/SC_FPS_Controller.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Member Scenes/Stefan/TESTING/SC_FPS_Controller.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Member Scenes/Stefan/TESTING/SC_FPS_Controller.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -52,6 +50,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/UIManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Member Scenes/Christian/FINISHED/UI/JetpackBar.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Member Scenes/Christian/FINISHED/Player/WallDetection.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -65,6 +64,9 @@
         <option value="$PROJECT_DIR$/Assets/Member Scenes/Christian/FINISHED/Player/PlayerScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Member Scenes/-Prof John-/Scripts/gravity.cs" />
         <option value="$PROJECT_DIR$/Assets/Member Scenes/Christian/FINISHED/UI/JetpackBar.cs" />
+        <option value="$PROJECT_DIR$/Assets/Member Scenes/Jonathan/FINISHED/Script/CristalCollector.cs" />
+        <option value="$PROJECT_DIR$/Assets/UIManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Member Scenes/Jonathan/FINISHED/Script/CrystalCollector.cs" />
       </list>
     </option>
   </component>
@@ -113,6 +115,7 @@
       <workItem from="1611665178313" duration="7858000" />
       <workItem from="1611746189108" duration="1350000" />
       <workItem from="1611753281835" duration="3436000" />
+      <workItem from="1612177698553" duration="623000" />
     </task>
     <servers />
   </component>
