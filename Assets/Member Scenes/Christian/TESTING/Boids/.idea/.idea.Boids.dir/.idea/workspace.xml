@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="c15bd171-91be-4e06-aa0a-22bffd138ab6" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../../../../.idea/.idea.SkyPortal/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../.idea/.idea.SkyPortal/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Adne/Adne_Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Adne/Adne_Scene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Adne/FINISHED/Portal/Enclosed.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Adne/FINISHED/Portal/Enclosed.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Adne/FINISHED/Portal/Enclosed/Portal02_Default_OBJ_AlbedoTransparency.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Adne/FINISHED/Portal/Enclosed/Portal02_Default_OBJ_AlbedoTransparency.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Adne/FINISHED/Portal/Enclosed/Portal02_Default_OBJ_MetallicSmoothness.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Adne/FINISHED/Portal/Enclosed/Portal02_Default_OBJ_MetallicSmoothness.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Adne/FINISHED/Portal/Enclosed/Portal02_Default_OBJ_Normal.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Adne/FINISHED/Portal/Enclosed/Portal02_Default_OBJ_Normal.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Adne/FINISHED/Portal/HoverPortal.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Adne/FINISHED/Portal/HoverPortal.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Adne/FINISHED/Portal/HoverPortal.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Adne/FINISHED/Portal/HoverPortal.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Adne/FINISHED/Portal/PortalEntrance.shadergraph" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Adne/FINISHED/Portal/PortalEntrance.shadergraph" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Adne/FINISHED/Portal/PortalEntrance.shadergraph.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Adne/FINISHED/Portal/PortalEntrance.shadergraph.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Adne/FINISHED/Portal/Portal_Enclosed.mat" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Adne/FINISHED/Portal/Portal_Enclosed.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Adne/FINISHED/Portal/Portal_Enclosed.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Adne/FINISHED/Portal/Portal_Enclosed.mat.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Adne/FINISHED/Portal/Portal_VFXBlue.mat" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Adne/FINISHED/Portal/Portal_VFXBlue.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Adne/FINISHED/Portal/Portal_VFXBlue.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Adne/FINISHED/Portal/Portal_VFXBlue.mat.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Adne/FINISHED/Portal/Portal_VFXPurple.mat" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Adne/FINISHED/Portal/Portal_VFXPurple.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Adne/FINISHED/Portal/Portal_VFXPurple.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Adne/FINISHED/Portal/Portal_VFXPurple.mat.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Adne/FINISHED/Portal/Portal_VFXRed.mat" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Adne/FINISHED/Portal/Portal_VFXRed.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Adne/FINISHED/Portal/Portal_VFXRed.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Adne/FINISHED/Portal/Portal_VFXRed.mat.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Adne/FINISHED/Portal/Portal_VFXYellow.mat" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Adne/FINISHED/Portal/Portal_VFXYellow.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Adne/FINISHED/Portal/Portal_VFXYellow.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Adne/FINISHED/Portal/Portal_VFXYellow.mat.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Adne/FINISHED/Portal02.obj" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Adne/FINISHED/Portal02.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Adne/FINISHED/Portal02.obj.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Adne/FINISHED/Portal02.obj.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../UserSettings/EditorUserSettings.asset" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../../.." />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Boids.cs" root0="SKIP_HIGHLIGHTING" />
+  </component>
+  <component name="ProjectId" id="1nfKxeUqgzwqfiHmfuGVO6zlELq" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c15bd171-91be-4e06-aa0a-22bffd138ab6" name="Default Changelist" comment="" />
+      <created>1611775957937</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1611775957937</updated>
+      <workItem from="1611775965717" duration="594000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="null" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+</project>
