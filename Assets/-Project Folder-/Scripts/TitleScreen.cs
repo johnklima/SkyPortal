@@ -21,6 +21,8 @@ public class TitleScreen : MonoBehaviour
     public void Start()
     {
 
+        Pause();
+
         GameObject[] TitleScreenOBJs = GameObject.FindGameObjectsWithTag("TitleScreen");
 
         if (TitleScreenOBJs.Length > 1)
