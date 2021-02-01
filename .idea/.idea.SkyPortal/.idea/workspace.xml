@@ -20,7 +20,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="027939e5-7c2f-4db4-9f74-cc92c988d5a2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.SkyPortal/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SkyPortal/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Member Scenes/Miguel/Library.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Member Scenes/Miguel/Library/PackageCache.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Member Scenes/Miguel/Library/PackageCache/com.unity.textmeshpro@3.0.1.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Member Scenes/Miguel/Library/PackageCache/com.unity.textmeshpro@3.0.1/Package Resources.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Member Scenes/Miguel/Library/PackageCache/com.unity.textmeshpro@3.0.1/Package Resources/TMP Essential Resources.unitypackage.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Member Scenes/Miguel/Library/PackageCache/com.unity.textmeshpro@3.0.1/Package Resources/TMP Examples &amp; Extras.unitypackage.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Member Scenes/Miguel/Library/TempArtifacts.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Member Scenes/Miguel/Library/TempArtifacts/Extra.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Member Scenes/Miguel/Library/TempArtifacts/Primary.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Member Scenes/Miguel/Temp.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Member Scenes/Miguel/Temp/RefreshSync.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Member Scenes/Sindre S/SindresS_Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Member Scenes/Sindre S/SindresS_Scene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Member Scenes/Thomas/Thomas_Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Member Scenes/Thomas/Thomas_Scene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,6 +111,7 @@
       <workItem from="1611746189108" duration="1350000" />
       <workItem from="1611753281835" duration="3436000" />
       <workItem from="1612177698553" duration="2079000" />
+      <workItem from="1612202203163" duration="1000" />
     </task>
     <servers />
   </component>
