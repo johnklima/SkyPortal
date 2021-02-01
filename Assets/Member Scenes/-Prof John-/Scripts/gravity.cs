@@ -77,12 +77,18 @@ public class gravity : MonoBehaviour {
     
     void handleMovement()
     {
+        float dt = Time.deltaTime;
+        //hacky fix to potential fallthroughs??
+        if (dt > 0.1f)
+            dt = 0.01f;
+           
+
         //reset final force to the initial force of gravity
         finalForce.Set(0, GRAVITY_CONSTANT * mass, 0);
         finalForce += thrust;
         
         acceleration = finalForce / mass;
-        velocity += acceleration * Time.deltaTime;
+        velocity += acceleration * dt;
         
         //jump is a oneshot impulse
         velocity += jump;
@@ -94,8 +100,11 @@ public class gravity : MonoBehaviour {
         jump = Vector3.zero;
         bounce = Vector3.zero;
 
+        //clamp velocity (terminal velocity)
+        clampVelocity(8.0f); //meters per second max, i think, just shy of gravity?
+
         //move the player
-        transform.position += velocity * Time.deltaTime;
+        transform.position += velocity * dt;
         /*
                 if (transform.position.x > 100 || transform.position.x < -100 )
                 { 
@@ -161,6 +170,16 @@ public class gravity : MonoBehaviour {
         velocity.z = temp.z;
 
     }
+    public void clampVelocity(float max)
+    {
+        //GENERAL RULE OF VELOCITY : don't let them go too fast!!!        
+        float maxSpeedSquared = max * max;
+        float velMagSquared = velocity.magnitude * velocity.magnitude;
+        if (velMagSquared > maxSpeedSquared)
+        {
+            velocity *= (max / velocity.magnitude);
+        }
 
+    }
 
 }
