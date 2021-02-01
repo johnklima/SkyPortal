@@ -65,8 +65,8 @@
         <option value="$PROJECT_DIR$/Assets/Member Scenes/-Prof John-/Scripts/gravity.cs" />
         <option value="$PROJECT_DIR$/Assets/Member Scenes/Christian/FINISHED/UI/JetpackBar.cs" />
         <option value="$PROJECT_DIR$/Assets/Member Scenes/Jonathan/FINISHED/Script/CristalCollector.cs" />
-        <option value="$PROJECT_DIR$/Assets/UIManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Member Scenes/Jonathan/FINISHED/Script/CrystalCollector.cs" />
+        <option value="$PROJECT_DIR$/Assets/UIManager.cs" />
       </list>
     </option>
   </component>
@@ -115,7 +115,7 @@
       <workItem from="1611665178313" duration="7858000" />
       <workItem from="1611746189108" duration="1350000" />
       <workItem from="1611753281835" duration="3436000" />
-      <workItem from="1612177698553" duration="623000" />
+      <workItem from="1612177698553" duration="1483000" />
     </task>
     <servers />
   </component>
