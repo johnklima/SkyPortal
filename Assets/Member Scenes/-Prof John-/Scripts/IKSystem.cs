@@ -65,6 +65,7 @@ public class IKSystem : MonoBehaviour
 
         //COMMENT NEXT LINE AND IK ROOT WILL FOLLLOW TARGET:
         firstSegment.transform.position = transform.position;
+        firstSegment.transform.rotation = transform.parent.rotation;
 
         firstSegment.updateSegmentAndChildren();
 
