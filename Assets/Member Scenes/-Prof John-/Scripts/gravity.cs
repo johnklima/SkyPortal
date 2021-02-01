@@ -6,7 +6,7 @@ public class gravity : MonoBehaviour {
 
 
     //gravity in meters per second per second
-    public float GRAVITY_CONSTANT =  -9.8f;                      // -- for earth,  -1.6 for moon 
+    public float GRAVITY_CONSTANT = -9.8f;                      // -- for earth,  -1.6 for moon 
 
     public Vector3 velocity = new Vector3(0, 0, 0);             //current direction and speed of movement
     public Vector3 acceleration = new Vector3(0, 0, 0);         //movement controlled by player movement force and gravity
@@ -15,7 +15,7 @@ public class gravity : MonoBehaviour {
 
     public Vector3 jump;
     public Vector3 bounce;
-   
+
     public float mass = 1.0f;
     public float energy = 10000.0f;
 
@@ -25,21 +25,21 @@ public class gravity : MonoBehaviour {
     Vector3 prevPosition;
 
     // Use this for initialization
-    void Start () {
+    void Start() {
 
         controller = transform.GetComponent<PlayerScript>();
         hitNormal = Vector3.up;
-	}
-	
-	// Update is called once per frame
-	void Update ()
+    }
+
+    // Update is called once per frame
+    void Update()
     {
-        
+
         //handleInput();
         handleMovement();
-        
-        
-	}
+
+
+    }
 
     void handleInput()
     {
@@ -74,12 +74,25 @@ public class gravity : MonoBehaviour {
         }
         */
     }
-    
+
+    void antiGrav(float dt) 
+    {
+        finalForce.Set(0, -GRAVITY_CONSTANT * mass, 0);
+        
+
+        acceleration = finalForce / mass;
+        velocity += acceleration * dt;
+
+        transform.position += velocity * dt;
+
+
+    }
+
     void handleMovement()
     {
         float dt = Time.deltaTime;
         //hacky fix to potential fallthroughs??
-        if (dt > 0.1f)
+        if (dt > 0.01f)
             dt = 0.01f;
            
 
@@ -101,7 +114,7 @@ public class gravity : MonoBehaviour {
         bounce = Vector3.zero;
 
         //clamp velocity (terminal velocity)
-        clampVelocity(8.0f); //meters per second max, i think, just shy of gravity?
+        clampVelocity(5.0f); //meters per second max, i think, just shy of gravity?
 
         //move the player
         transform.position += velocity * dt;
@@ -122,7 +135,7 @@ public class gravity : MonoBehaviour {
         //check ground and undo if we are lower
         LayerMask mask = 1 << 8;
         RaycastHit hit;
-        if (Physics.Raycast(transform.position + Vector3.up, -Vector3.up, out hit, 100f, mask))
+        if (Physics.Raycast(transform.position + Vector3.up, -Vector3.up, out hit, 10000f, mask))
         {
             //make public the normal of the current polygon I am standing on
             hitNormal = hit.normal;
@@ -131,10 +144,13 @@ public class gravity : MonoBehaviour {
             {
                 transform.position -= new Vector3(0, velocity.y * Time.deltaTime, 0);
                 velocity.y = 0;
+                //antiGrav(dt);
 
                 controller.isGrounded = true;
 
                 transform.position = new Vector3(transform.position.x, hit.point.y, transform.position.z);
+
+
 
                 if (Mathf.Abs(Vector3.Angle(hit.normal, Vector3.up)) > 45)
                 {
