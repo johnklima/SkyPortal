@@ -19,17 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="027939e5-7c2f-4db4-9f74-cc92c988d5a2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.SkyPortal/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SkyPortal/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.SkyPortal/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SkyPortal/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Member Scenes/-Prof John-/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Member Scenes/-Prof John-/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Member Scenes/-Prof John-/Scripts/gravity.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Member Scenes/-Prof John-/Scripts/gravity.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Member Scenes/Christian/Christian_Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Member Scenes/Christian/Christian_Scene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Member Scenes/Christian/FINISHED/Player/PlayerHolder.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Member Scenes/Christian/FINISHED/Player/PlayerHolder.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Member Scenes/Christian/FINISHED/Player/PlayerHolder.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Member Scenes/Christian/FINISHED/Player/PlayerHolder.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Member Scenes/Christian/FINISHED/Player/PlayerScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Member Scenes/Christian/FINISHED/Player/PlayerScript.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
-    </list>
+    <list default="true" id="027939e5-7c2f-4db4-9f74-cc92c988d5a2" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -39,6 +29,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Member Scenes/Christian/FINISHED/UI/JetpackBar.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Member Scenes/Christian/FINISHED/Player/WallDetection.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -50,6 +41,7 @@
         <option value="$PROJECT_DIR$/Assets/Member Scenes/Christian/FINISHED/Player/WallDetection.cs" />
         <option value="$PROJECT_DIR$/Assets/Member Scenes/Christian/FINISHED/Player/PlayerScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Member Scenes/-Prof John-/Scripts/gravity.cs" />
+        <option value="$PROJECT_DIR$/Assets/Member Scenes/Christian/FINISHED/UI/JetpackBar.cs" />
       </list>
     </option>
   </component>
@@ -97,7 +89,7 @@
       <workItem from="1611665026713" duration="24000" />
       <workItem from="1611665178313" duration="7858000" />
       <workItem from="1611746189108" duration="1350000" />
-      <workItem from="1611753281835" duration="2425000" />
+      <workItem from="1611753281835" duration="3070000" />
     </task>
     <servers />
   </component>
