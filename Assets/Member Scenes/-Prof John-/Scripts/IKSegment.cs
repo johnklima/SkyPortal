@@ -22,11 +22,19 @@ public class IKSegment : MonoBehaviour
 
     public void drag(Vector3 target)
     {
-        //simply looks at target
-        transform.LookAt(target);
+        //simply looks at target 
+        transform.LookAt(target); 
 
-        //next move to
+        //but lets interpolate?
+        //Quaternion prevrot = transform.rotation;        //get where I am now
+        //transform.LookAt(target);                       //get where I need to look
+        //Quaternion nextrot = transform.rotation;        //pre interpolation
+        //interpolate the look
+        //transform.rotation = Quaternion.Lerp(prevrot, nextrot, Time.deltaTime * 100);
+
+
         transform.position = target - transform.forward * length;
+        
 
         //inform my parent
         if (parent)

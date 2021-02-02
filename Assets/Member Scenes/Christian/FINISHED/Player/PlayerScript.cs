@@ -7,6 +7,7 @@ using UnityEngine;
 public class PlayerScript : MonoBehaviour
 {
     gravity grav;
+    public IKSystem grapple;
 
     // Player Specs
     public float walkSpeed;
@@ -34,7 +35,7 @@ public class PlayerScript : MonoBehaviour
 
     public bool isAtWall;
 
-    public float gravconstant = -9.8f;
+    
 
     // Start is called before the first frame update
     private void Start()
@@ -48,19 +49,6 @@ public class PlayerScript : MonoBehaviour
         
         isRunning = Input.GetKey(KeyCode.LeftShift) && isGrounded; // Does not allow the above && makes run only function when grounded
 
-        // Checks if grounded and if we are not we apply Gravity
-        if (!isGrounded)
-        {
-
-        }
-        else
-        {
-            // Else we want to check if we are jumping, if we are not then set velocity to 0 to prevent falling through the floor
-            if (!isJumping)
-            {
-                
-            }
-        }
         
         // Move inputs
         
