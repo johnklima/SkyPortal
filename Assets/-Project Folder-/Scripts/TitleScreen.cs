@@ -18,10 +18,36 @@ public class TitleScreen : MonoBehaviour
 
     private GameObject[] TitleScreenObjs;
 
+    public GameObject player;
+
+    private PlayerScript _playerScript;
+
+    private Camera mainCamera;
+
+    private CameraController cameraController;
+
+    public GameObject canvasobj;
+
     public void Start()
     {
 
-        Pause();
+        if(player)
+        {
+            _playerScript = player.GetComponent<PlayerScript>();
+        }
+
+        //Disables the player script when game is paused
+        _playerScript.enabled = false;
+
+        mainCamera = Camera.main;
+       
+
+        if (mainCamera)
+        {
+            cameraController = mainCamera.GetComponent<CameraController>();
+        }
+
+        cameraController.enabled = false;
 
         GameObject[] TitleScreenOBJs = GameObject.FindGameObjectsWithTag("TitleScreen");
 
@@ -41,9 +67,7 @@ public class TitleScreen : MonoBehaviour
 
     //Press Credits button to load scene(1) (credits scene)
     public void buttonCredits()
-    {
-        SceneManager.LoadScene(1);
-        InCredits = true;
+    { 
         Credits();
     }
 
@@ -71,7 +95,7 @@ public class TitleScreen : MonoBehaviour
 
             if (InCredits && Input.GetKeyDown(KeyCode.Escape))
             {
-                SceneManager.LoadScene(2);
+                
                 Pause();
             }
         }
@@ -84,6 +108,15 @@ public class TitleScreen : MonoBehaviour
         TitleScreenUI.SetActive(false);
         Time.timeScale = 1f;
         GameIsPaused = false;
+        canvasobj.SetActive(false);
+
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
+
+        //Renables the player script when game is resumed
+        _playerScript.enabled = true;
+
+        cameraController.enabled = true;
     }
 
     //Pauses game
@@ -92,12 +125,22 @@ public class TitleScreen : MonoBehaviour
         TitleScreenUI.SetActive(true);
         Time.timeScale = 0f;
         GameIsPaused = true;
+        canvasobj.SetActive(false);
+
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+
+        _playerScript.enabled = false;
+
+        cameraController.enabled = false;
     }
 
     //In credits scene
     public void Credits ()
     {
         TitleScreenUI.SetActive(false);
+        canvasobj.SetActive(true);
+        InCredits = true;
         Time.timeScale = 0f;
     }
 

@@ -22,11 +22,21 @@ public class IKSegment : MonoBehaviour
 
     public void drag(Vector3 target)
     {
-        //simply looks at target
-        transform.LookAt(target);
+      
+        //simply looks at target 
+        transform.LookAt(target); 
 
-        //next move to
-        transform.position = target - transform.forward * length;
+        /*
+        //but lets interpolate?
+        Quaternion prevrot = transform.rotation;        //get where I am now
+        transform.LookAt(target);                       //get where I need to look
+        Quaternion nextrot = transform.rotation;        //pre interpolation
+        //interpolate the look
+        transform.rotation = Quaternion.Slerp(prevrot, nextrot, Time.deltaTime * 10);
+        */
+
+        transform.position = target - transform.forward * transform.GetChild(0).localScale.z;
+        
 
         //inform my parent
         if (parent)
@@ -67,6 +77,7 @@ public class IKSegment : MonoBehaviour
     }
     void calculateBpos()
     {
-        Bpos = Apos + transform.forward * length;
+        
+        Bpos = Apos + transform.forward * transform.GetChild(0).localScale.z;
     }
 }
