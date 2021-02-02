@@ -10,11 +10,11 @@ public class gravity : MonoBehaviour {
 
     public Vector3 velocity = new Vector3(0, 0, 0);             //current direction and speed of movement
     public Vector3 acceleration = new Vector3(0, 0, 0);         //movement controlled by player movement force and gravity
-    public Vector3 thrust = new Vector3(0, 0, 0);               //player applied thrust vector
     public Vector3 finalForce = new Vector3(0, 0, 0);           //final force to be applied this frame
 
-    public Vector3 jump;
-    public Vector3 bounce;
+    public Vector3 jump = new Vector3(0, 0, 0); 
+    public Vector3 bounce = new Vector3(0, 0, 0); 
+    public Vector3 thrust = new Vector3(0, 0, 0);               //player applied thrust vector
 
     public float mass = 1.0f;
     public float energy = 10000.0f;
@@ -75,6 +75,23 @@ public class gravity : MonoBehaviour {
         */
     }
 
+    public void applyJump(float force)
+    {
+
+        //one shot jump as impulse
+        jump.y = force;   
+         
+    }
+
+    public void applyJetpack(Vector3 jetforce)
+    {
+
+        //one frame thrust, continuous if key is held 
+        thrust = jetforce;
+
+        //maybe antigrav here? otherwise jetforce must be > GRAVITY_CONSTANT
+    }
+
     void antiGrav(float dt) 
     {
         finalForce.Set(0, -GRAVITY_CONSTANT * mass, 0);
@@ -82,9 +99,6 @@ public class gravity : MonoBehaviour {
 
         acceleration = finalForce / mass;
         velocity += acceleration * dt;
-
-        transform.position += velocity * dt;
-
 
     }
 
@@ -114,24 +128,11 @@ public class gravity : MonoBehaviour {
         bounce = Vector3.zero;
 
         //clamp velocity (terminal velocity)
-        clampVelocity(5.0f); //meters per second max, i think, just shy of gravity?
+        clampVelocity(100.0f); //meters per second max
 
         //move the player
         transform.position += velocity * dt;
-        /*
-                if (transform.position.x > 100 || transform.position.x < -100 )
-                { 
-                    transform.position -= new Vector3(velocity.x * Time.deltaTime, 0, 0);
-                    velocity.x = 0;
-                }
-
-
-                if (transform.position.z > 100 || transform.position.z < -100)
-                {
-                    transform.position -= new Vector3(0, 0, velocity.z * Time.deltaTime);
-                    velocity.z = 0;
-                }
-        */
+       
         //check ground and undo if we are lower
         LayerMask mask = 1 << 8;
         RaycastHit hit;
@@ -142,7 +143,7 @@ public class gravity : MonoBehaviour {
 
             if (hit.distance < 1.0f)
             {
-                transform.position -= new Vector3(0, velocity.y * Time.deltaTime, 0);
+                //transform.position -= new Vector3(0, velocity.y * Time.deltaTime, 0);
                 velocity.y = 0;
                 //antiGrav(dt);
 
@@ -162,10 +163,6 @@ public class gravity : MonoBehaviour {
                     controller.isAtWall = false;
                 }
 
-                //Vector3 look = Vector3.Cross(transform.right, hit.normal).normalized; //hit.normal
-                //transform.rotation = Quaternion.LookRotation(hit.normal) * Quaternion.FromToRotation(Vector3.right, Vector3.forward);
-                //transform.Rotate(0, 0, -90.0f);
-                //transform.LookAt(transform.position + look);
 
             }
             else
