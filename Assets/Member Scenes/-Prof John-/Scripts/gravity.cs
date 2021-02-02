@@ -35,45 +35,13 @@ public class gravity : MonoBehaviour {
     void Update()
     {
 
-        //handleInput();
+        
         handleMovement();
 
 
     }
 
-    void handleInput()
-    {
-        //one shot jump
-        if (Input.GetKeyDown(KeyCode.Space) && energy > 0.0f)
-        {
-            jump.y = 5.0f;
-            energy -= 1.0f * Time.deltaTime;
-        }
-        /* //jet pack
-        if (Input.GetKey(KeyCode.A) && energy > 0.0f)
-        {
-            thrust.x = -5.0f;
-            energy -= 0.25f * Time.deltaTime;
-
-        }
-
-        if (Input.GetKey(KeyCode.D) && energy > 0.0f)
-        {
-            thrust.x = 5.0f;
-            energy -= 0.25f * Time.deltaTime;
-        }
-        if (Input.GetKey(KeyCode.W) && energy > 0.0f)
-        {
-            thrust.z = -5.0f;
-            energy -= 0.25f * Time.deltaTime;
-        }
-        if (Input.GetKey(KeyCode.S) && energy > 0.0f)
-        {
-            thrust.z = 5.0f;
-            energy -= 0.25f * Time.deltaTime;
-        }
-        */
-    }
+    
 
     public void applyJump(float force)
     {
@@ -143,13 +111,11 @@ public class gravity : MonoBehaviour {
 
             if (hit.distance < 1.0f)
             {
-                //transform.position -= new Vector3(0, velocity.y * Time.deltaTime, 0);
                 velocity.y = 0;
-                //antiGrav(dt);
-
+               
                 controller.isGrounded = true;
 
-                transform.position = new Vector3(transform.position.x, hit.point.y, transform.position.z);
+                transform.position = hit.point;//new Vector3(transform.position.x, hit.point.y, transform.position.z);
 
 
 
