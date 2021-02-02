@@ -74,8 +74,8 @@ public class gravity : MonoBehaviour {
     {
         float dt = Time.deltaTime;
         //hacky fix to potential fallthroughs??
-        if (dt > 0.01f)
-            dt = 0.01f;
+        //if (dt > 0.01f)
+        //    dt = 0.01f;
            
 
         //reset final force to the initial force of gravity
@@ -96,7 +96,7 @@ public class gravity : MonoBehaviour {
         bounce = Vector3.zero;
 
         //clamp velocity (terminal velocity)
-        clampVelocity(100.0f); //meters per second max
+        //clampVelocity(100.0f); //meters per second max
 
         //move the player
         transform.position += velocity * dt;
