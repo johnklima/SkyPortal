@@ -3,26 +3,33 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using UnityEngine;
 
-public class Portal_Controller : MonoBehaviour
+public class Portal_controller : MonoBehaviour
 {
     private GameObject player;
+    private GameObject timer;
     public Collider player_collider;
+    public GameObject player_camera;
     public GameObject connected_portal;
-    public float test;
 
     // Start is called before the first frame update
     void Start()
     {
         player = GameObject.Find("FPS_Player");
+        timer = GameObject.Find("Portal_timer");
     }
 
     // Update is called once per frame
     void OnTriggerEnter(Collider collider)
     {
-        if (collider == player_collider)
+        if (timer.GetComponent<Portal_timer>().timer <= 0)
         {
-            test += 1;
-            player.transform.position = new Vector3(connected_portal.transform.position.x, connected_portal.transform.position.y, connected_portal.transform.position.z);
+            if (collider == player_collider)
+            {
+                timer.GetComponent<Portal_timer>().timer = 5;
+                player.transform.position = new Vector3(connected_portal.transform.position.x, connected_portal.transform.position.y, connected_portal.transform.position.z);
+                player_camera.transform.rotation = connected_portal.transform.rotation;
+            }
         }
+        
     }
 }
