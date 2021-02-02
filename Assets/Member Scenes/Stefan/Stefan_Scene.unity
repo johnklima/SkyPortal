@@ -123,6 +123,50 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &10825314
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 10825316}
+  - component: {fileID: 10825315}
+  m_Layer: 0
+  m_Name: Portal_timer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &10825315
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 10825314}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f0f4b60028b56a45973f556a146bdac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timer: 0
+--- !u!4 &10825316
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 10825314}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.1557417, y: -19.988108, z: 37.93372}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &373409000
 GameObject:
   m_ObjectHideFlags: 0
@@ -228,8 +272,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player_collider: {fileID: 373409002}
+  player_camera: {fileID: 961626366}
   connected_portal: {fileID: 1159503038}
-  test: 0
 --- !u!135 &593334450
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -299,13 +343,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 593334448}
-  m_LocalRotation: {x: -0, y: 0.20467131, z: -0, w: 0.9788308}
-  m_LocalPosition: {x: 7.998, y: 1.51, z: 5.57}
+  m_LocalRotation: {x: -0.6776498, y: 0.41567135, z: -0.04336866, w: -0.60508454}
+  m_LocalPosition: {x: 7.998, y: 52.6, z: -12.36}
   m_LocalScale: {x: 2.1975026, y: 3.96384, z: 0.3619141}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 23.621, z: 0}
+  m_LocalEulerAnglesHint: {x: 58.884, y: 239.28, z: -81.339}
 --- !u!1 &878211860
 GameObject:
   m_ObjectHideFlags: 0
@@ -397,7 +441,7 @@ Transform:
   m_GameObject: {fileID: 878211860}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2.0046, y: 2.0046, z: 2.0046}
+  m_LocalScale: {x: 4.014011, y: 4.014011, z: 4.014011}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
@@ -551,8 +595,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player_collider: {fileID: 373409002}
+  player_camera: {fileID: 961626366}
   connected_portal: {fileID: 593334448}
-  test: 0
 --- !u!135 &1159503040
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -622,13 +666,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1159503038}
-  m_LocalRotation: {x: -0, y: -0.2525043, z: -0, w: 0.9675958}
-  m_LocalPosition: {x: -2.9, y: 1.51, z: 5.57}
+  m_LocalRotation: {x: -0, y: 0.99353707, z: -0, w: 0.1135081}
+  m_LocalPosition: {x: 0.32, y: 1.51, z: 9.16}
   m_LocalScale: {x: 2.1975026, y: 3.96384, z: 0.3619141}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: -29.252, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 166.965, z: 0}
 --- !u!1 &1432529897
 GameObject:
   m_ObjectHideFlags: 0
@@ -655,13 +699,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1432529897}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0.009996103, z: -0, w: 0.9999501}
   m_LocalPosition: {x: 0, y: 1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 373409003}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -1.145, z: 0}
 --- !u!23 &1432529899
 MeshRenderer:
   m_ObjectHideFlags: 0
