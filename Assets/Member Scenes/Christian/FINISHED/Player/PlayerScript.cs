@@ -102,12 +102,11 @@ public class PlayerScript : MonoBehaviour
 
 
             }
+            
         }
-        else if (Input.GetKey(KeyCode.Space))
-        {
-            // Fires off The Jetpack Function bellow update
-            JetPack();
-        }
+
+        // Fires off The Jetpack Function bellow update
+        JetPack();
 
         if (isJumping)
         {

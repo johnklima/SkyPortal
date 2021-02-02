@@ -16,6 +16,6 @@ public class IKTarget : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.localPosition = Vector3.Lerp(transform.localPosition, targetPoint, Time.deltaTime * 2);
+        transform.localPosition = Vector3.Slerp(transform.localPosition, targetPoint, Time.deltaTime * 2);
     }
 }
