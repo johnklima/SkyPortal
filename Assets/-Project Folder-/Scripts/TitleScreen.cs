@@ -36,7 +36,6 @@ public class TitleScreen : MonoBehaviour
         //Disables the player script when game is paused
         _playerScript.enabled = false;
 
-        Pause();
 
         GameObject[] TitleScreenOBJs = GameObject.FindGameObjectsWithTag("TitleScreen");
 
@@ -52,7 +51,6 @@ public class TitleScreen : MonoBehaviour
     public void buttonPlay()
     {
         Resume();
-
     }
 
     //Press Credits button to load scene(1) (credits scene)
