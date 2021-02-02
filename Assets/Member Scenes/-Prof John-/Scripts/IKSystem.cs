@@ -10,7 +10,6 @@ public class IKSystem : MonoBehaviour
     private IKSegment lastSegment = null;
     private IKSegment firstSegment = null;
 
-    public float length = 1; //applied to geom scale
 
     int childcount;
     void Awake()    {
@@ -54,17 +53,6 @@ public class IKSystem : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
-        for (int i = 0; i < childcount; i++)
-        {
-
-            Vector3 scale = segments[i].transform.GetChild(0).localScale;
-            scale.z = length;
-            segments[i].transform.GetChild(0).localScale = scale;//.Set(scale.x,scale.y,scale.z);
-
-        }
-
-
         //if you want simple drag, uncomment below, and comment reach
         //lastSegment.drag(target.position);
 
