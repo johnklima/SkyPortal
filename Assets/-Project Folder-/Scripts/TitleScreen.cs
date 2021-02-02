@@ -18,10 +18,24 @@ public class TitleScreen : MonoBehaviour
 
     private GameObject[] TitleScreenObjs;
 
+    public GameObject player;
+
+    private PlayerScript _playerScript;
+
+    private Camera MainCamera;
+
+
     public void Start()
     {
 
-        Pause();
+        if(player)
+        {
+            _playerScript = player.GetComponent<PlayerScript>();
+        }
+
+        //Disables the player script when game is paused
+        _playerScript.enabled = false;
+
 
         GameObject[] TitleScreenOBJs = GameObject.FindGameObjectsWithTag("TitleScreen");
 
@@ -71,7 +85,7 @@ public class TitleScreen : MonoBehaviour
 
             if (InCredits && Input.GetKeyDown(KeyCode.Escape))
             {
-                SceneManager.LoadScene(2);
+                SceneManager.LoadScene(0);
                 Pause();
             }
         }
@@ -84,6 +98,12 @@ public class TitleScreen : MonoBehaviour
         TitleScreenUI.SetActive(false);
         Time.timeScale = 1f;
         GameIsPaused = false;
+
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
+
+        //Renables the player script when game is resumed
+        _playerScript.enabled = true;
     }
 
     //Pauses game
@@ -92,6 +112,9 @@ public class TitleScreen : MonoBehaviour
         TitleScreenUI.SetActive(true);
         Time.timeScale = 0f;
         GameIsPaused = true;
+
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
     }
 
     //In credits scene
@@ -99,6 +122,7 @@ public class TitleScreen : MonoBehaviour
     {
         TitleScreenUI.SetActive(false);
         Time.timeScale = 0f;
+        InCredits = true;
     }
 
 }
