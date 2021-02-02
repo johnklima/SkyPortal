@@ -17,7 +17,7 @@ public class TargetGround : MonoBehaviour
     void Start()
     {
         prevColor = reticule.color;
-        prevPoint = target.transform.localPosition;
+        prevPoint = target.transform.position;
         
     }
 
@@ -36,16 +36,22 @@ public class TargetGround : MonoBehaviour
             //make public the normal of the current polygon I am standing on
             //hitNormal = hit.normal;
 
-            //we need to transform world point to local point so we can
-            //return the arm to a local default position
-            target.targetPoint = target.transform.worldToLocalMatrix.MultiplyPoint(hit.point); //set world position if in range, as local matrix
+            if(Input.GetKey(KeyCode.Mouse0))
+            {
+                target.targetPoint = hit.point;
+                prevPoint = hit.point;
+            }
+                 
+
+
+
             reticule.color = Color.red;
 
         }
         else
         {
             prevColor = reticule.color;
-
+            prevPoint = target.targetPoint;
         }
     }
 }
