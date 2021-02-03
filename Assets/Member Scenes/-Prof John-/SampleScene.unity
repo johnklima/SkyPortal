@@ -5309,6 +5309,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 7574817481824054110, guid: a110a0fcafdd482458e49e9d942e0a04, type: 3}
+      propertyPath: grapple
+      value: 
+      objectReference: {fileID: 1925877647}
+    - target: {fileID: 7574817481824054110, guid: a110a0fcafdd482458e49e9d942e0a04, type: 3}
       propertyPath: jumpForce
       value: 5
       objectReference: {fileID: 0}
@@ -7966,7 +7970,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   segments: []
-  target: {fileID: 773498833}
+  target: {fileID: 773498834}
+  player: {fileID: 1976993127}
   length: 1
   dragmode: 0
   reachmode: 1
@@ -8281,6 +8286,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 7574817481824054111, guid: a110a0fcafdd482458e49e9d942e0a04, type: 3}
   m_PrefabInstance: {fileID: 1306820410}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1976993127 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7574817481824054110, guid: a110a0fcafdd482458e49e9d942e0a04, type: 3}
+  m_PrefabInstance: {fileID: 1306820410}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1976993124}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fac8f8dc418225b43986d7576d2d7943, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1980825713
 GameObject:
   m_ObjectHideFlags: 0

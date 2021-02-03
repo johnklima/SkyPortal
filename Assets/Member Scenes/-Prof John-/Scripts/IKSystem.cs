@@ -5,10 +5,12 @@ using UnityEngine;
 public class IKSystem : MonoBehaviour
 {
     public IKSegment[] segments;
-    public Transform target = null;
+    public IKTarget target = null;
 
     private IKSegment lastSegment = null;
     private IKSegment firstSegment = null;
+
+    public PlayerScript player;
 
     public float length = 1; //applied to geom scale
     public bool dragmode = false;
@@ -76,13 +78,13 @@ public class IKSystem : MonoBehaviour
         //if you want simple drag
         if (dragmode && !reachmode)
         {
-            lastSegment.drag(target.position);
+            lastSegment.drag(target.transform.position);
         }
 
         //call reach on the last
         if (!dragmode && reachmode)
         {
-            lastSegment.reach(target.position);
+            lastSegment.reach(target.transform.position);
             
             //and forward update on the first
             //we needed to maintain that first segment original position

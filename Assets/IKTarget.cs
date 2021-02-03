@@ -8,6 +8,7 @@ public class IKTarget : MonoBehaviour
     public Vector3 targetPoint; 
     public IKSystem iksystem;
     public bool caught = false;
+    public bool isThrown = false;
     
 
     // Start is called before the first frame update
@@ -20,6 +21,9 @@ public class IKTarget : MonoBehaviour
     void Update()
     {
 
+        if (!isThrown)
+            return;
+
 
         transform.position = Vector3.Slerp(transform.position, targetPoint, Time.deltaTime * 2);
 
@@ -28,7 +32,7 @@ public class IKTarget : MonoBehaviour
 
         iksystem.length = scale; //of each link
 
-        if (Vector3.Distance(transform.position, targetPoint) < 2)
+        if (Vector3.Distance(transform.position, targetPoint) < 2 )
         { 
             
             //iksystem.dragmode = true;

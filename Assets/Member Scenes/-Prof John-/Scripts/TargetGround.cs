@@ -40,6 +40,7 @@ public class TargetGround : MonoBehaviour
         {
             system.hide();
             target.transform.position = startPos;
+            target.isThrown = false;
 
 
         }
@@ -51,6 +52,7 @@ public class TargetGround : MonoBehaviour
 
             if(Input.GetKeyDown(KeyCode.Mouse0))
             {
+                target.isThrown = true;
                 target.targetPoint = hit.point;
                 prevPoint = hit.point;
                 system.show();
@@ -64,8 +66,6 @@ public class TargetGround : MonoBehaviour
         {
             prevColor = reticule.color;
             prevPoint = target.targetPoint;
-
-
         }
 
 

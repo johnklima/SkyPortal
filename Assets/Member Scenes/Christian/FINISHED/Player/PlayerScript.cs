@@ -35,18 +35,76 @@ public class PlayerScript : MonoBehaviour
 
     public bool isAtWall;
 
+    //and the whip
+    public bool isGrappled = false;
+    private Vector3 grappForward;
+
     
 
     // Start is called before the first frame update
     private void Start()
     {
         grav = transform.GetComponent<gravity>();
+        
     }
     // Update is called once per frame
     void Update()
     {
+
+
+        //gonna put grapple on top
+        if (grapple.target.caught)
+        {
+            //one shot, get the forward
+            if (!isGrappled)
+            {
+
+                // give forward and upward thrust sufficient to get there.
+                //this is gonna be a tough one...
+                grappForward = transform.forward;
+                //one shot velocity
+                grav.velocity = (grappForward * 10.0f + Vector3.up * 20.0f);
+
+
+            }
+            else
+            {
+                //now, next frames find a position
+                grav.enabled = false;
+                isGrappled = true;
+                //calculate a sine wave from point to point based on player's first forward
+                transform.position = Vector3.Slerp(transform.position,
+                                                    grapple.target.targetPoint,
+                                                    Time.deltaTime * 10.0f);
+
+
+
+                /*
+                //am I there? (check only xz as i assume i have good trajectory)
+                Vector3 p1 = transform.position;
+                Vector3 p2 = grapple.target.targetPoint;
+                p1.y = p2.y = 0;
+
+                if (Vector3.Distance(transform.position, grapple.target.targetPoint) < 2)
+                {
+                    grapple.target.caught = false;
+                    grapple.target.isThrown = false;
+                    isGrappled = false;
+                    grapple.hide();
+
+
+                }
+                */
+
+                return;
+            }
+        }
+        else
+        {
+            isGrappled = false;
+        }
         //isRunning = Input.GetKey(KeyCode.LeftShift); // Allows for a very cool high skill mechanic double jump && Adjust falling speed mid air
-        
+
         isRunning = Input.GetKey(KeyCode.LeftShift) && isGrounded; // Does not allow the above && makes run only function when grounded
 
         
