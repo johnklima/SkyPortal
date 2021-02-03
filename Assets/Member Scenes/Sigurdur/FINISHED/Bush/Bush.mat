@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Bush
-  m_Shader: {fileID: -6465566751694194690, guid: 1b80a24354452334c871e15bec76c08c, type: 3}
+  m_Shader: {fileID: -6465566751694194690, guid: 8901cbad3a4d4284e976352aef741b2d, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -20,11 +20,11 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - Texture2D_8B111432:
-        m_Texture: {fileID: 2800000, guid: 114508ee90b2ca04995e70b9fbffe11a, type: 3}
+        m_Texture: {fileID: 2800000, guid: f84218d72a83bff4cb90f848680c1501, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - Texture2D_8FAB1DD2:
-        m_Texture: {fileID: 2800000, guid: 0128675036452fa498ba5b9018f34dd0, type: 3}
+        m_Texture: {fileID: 2800000, guid: a29be8815c2eba84092ef3577fb02eac, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BaseMap:
