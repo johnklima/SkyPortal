@@ -56,8 +56,9 @@ GameObject:
   - component: {fileID: 8349137229467601982}
   - component: {fileID: 4931938048606258075}
   - component: {fileID: 7175699648092845905}
-  m_Layer: 0
-  m_Name: Island3 (3)
+  - component: {fileID: 5772810319807025691}
+  m_Layer: 8
+  m_Name: PF_Island4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -129,6 +130,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &5772810319807025691
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8689071781125265028}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 8517845974106457609, guid: b2758c954c0720b44b0e3932fff342d6, type: 3}
 --- !u!1001 &4844530093021094507
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -199,6 +214,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: ee95fbf73fd0a7745a1674a08dfe09c4, type: 3}
       propertyPath: m_Name
       value: Flower2 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ee95fbf73fd0a7745a1674a08dfe09c4, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ee95fbf73fd0a7745a1674a08dfe09c4, type: 3}
@@ -283,6 +302,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Flower2
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ee95fbf73fd0a7745a1674a08dfe09c4, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ee95fbf73fd0a7745a1674a08dfe09c4, type: 3}
 --- !u!1 &7906845582231523464 stripped
@@ -365,6 +388,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: ee95fbf73fd0a7745a1674a08dfe09c4, type: 3}
       propertyPath: m_Name
       value: Flower2 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ee95fbf73fd0a7745a1674a08dfe09c4, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ee95fbf73fd0a7745a1674a08dfe09c4, type: 3}
