@@ -20,17 +20,53 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="027939e5-7c2f-4db4-9f74-cc92c988d5a2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.SkyPortal/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SkyPortal/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.SkyPortal/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SkyPortal/.idea/indexLayout.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.SkyPortal/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SkyPortal/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/-Project Folder-/Project_Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/-Project Folder-/Project_Scene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Member Scenes/Miguel/Assets/Textures/Mineral_04_Blue_initialShadingGroup_Emission.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Member Scenes/Miguel/Assets/Textures/Mineral_04_Blue_initialShadingGroup_Emission.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Member Scenes/Miguel/Assets/Textures/Mineral_04_Green_initialShadingGroup_AlbedoTransparency.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Member Scenes/Miguel/Assets/Textures/Mineral_04_Green_initialShadingGroup_AlbedoTransparency.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Member Scenes/Miguel/Assets/Textures/Mineral_04_Green_initialShadingGroup_Emission.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Member Scenes/Miguel/Assets/Textures/Mineral_04_Green_initialShadingGroup_Emission.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Member Scenes/Miguel/Assets/Textures/Mineral_04_Red_initialShadingGroup_AlbedoTransparency.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Member Scenes/Miguel/Assets/Textures/Mineral_04_Red_initialShadingGroup_AlbedoTransparency.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Member Scenes/Miguel/Assets/Textures/Mineral_04_Red_initialShadingGroup_Emission.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Member Scenes/Miguel/Assets/Textures/Mineral_04_Red_initialShadingGroup_Emission.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Member Scenes/Miguel/Assets/Textures/Mineral_04_Teal_initialShadingGroup_AlbedoTransparency.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Member Scenes/Miguel/Assets/Textures/Mineral_04_Teal_initialShadingGroup_AlbedoTransparency.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Member Scenes/Miguel/Assets/Textures/Mineral_04_Teal_initialShadingGroup_Emission.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Member Scenes/Miguel/Assets/Textures/Mineral_04_Teal_initialShadingGroup_Emission.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Member Scenes/Miguel/Assets/Textures/Mineral_04_Yellow_initialShadingGroup_AlbedoTransparency.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Member Scenes/Miguel/Assets/Textures/Mineral_04_Yellow_initialShadingGroup_AlbedoTransparency.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Member Scenes/Miguel/Assets/Textures/Mineral_04_Yellow_initialShadingGroup_Emission.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Member Scenes/Miguel/Assets/Textures/Mineral_04_Yellow_initialShadingGroup_Emission.png.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Member Scenes/Miguel/Miguel_Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Member Scenes/Miguel/Miguel_Scene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Member Scenes/Sigurdur/Sigurdur_Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Member Scenes/Sigurdur/Sigurdur_Scene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Member Scenes/Sigurdur/TESTING/Bush.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Member Scenes/Sigurdur/TESTING/Bush.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Member Scenes/Sigurdur/TESTING/Bush/Bush.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Member Scenes/Sigurdur/TESTING/Bush/Bush.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Member Scenes/Sigurdur/TESTING/Bush/Bush.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Member Scenes/Sigurdur/TESTING/Bush/Bush.mat.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Member Scenes/Sigurdur/TESTING/Bush/bush.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Member Scenes/Sigurdur/TESTING/Bush/bush.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Member Scenes/Sigurdur/TESTING/Bush/bush.shadergraph" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Member Scenes/Sigurdur/TESTING/Bush/bush.shadergraph" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Member Scenes/Sigurdur/TESTING/Bush/bush.shadergraph.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Member Scenes/Sigurdur/TESTING/Bush/bush.shadergraph.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Member Scenes/Sigurdur/TESTING/Bush/bush2.obj" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Member Scenes/Sigurdur/TESTING/Bush/bush2.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Member Scenes/Sigurdur/TESTING/Bush/bush2.obj.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Member Scenes/Sigurdur/TESTING/Bush/bush2.obj.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Member Scenes/Sigurdur/TESTING/Bush/bush_alpha.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Member Scenes/Sigurdur/TESTING/Bush/bush_alpha.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Member Scenes/Sigurdur/TESTING/Shrub.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Member Scenes/Sigurdur/TESTING/Shrub.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Member Scenes/Sigurdur/TESTING/Shrub/Shrub.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Member Scenes/Sigurdur/TESTING/Shrub/Shrub.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Member Scenes/Sigurdur/TESTING/Shrub/Shrub.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Member Scenes/Sigurdur/TESTING/Shrub/Shrub.mat.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Member Scenes/Sigurdur/TESTING/Shrub/shrub.shadergraph" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Member Scenes/Sigurdur/TESTING/Shrub/shrub.shadergraph" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Member Scenes/Sigurdur/TESTING/Shrub/shrub.shadergraph.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Member Scenes/Sigurdur/TESTING/Shrub/shrub.shadergraph.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Member Scenes/Sigurdur/TESTING/Shrub/shrub_alphathin.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Member Scenes/Sigurdur/TESTING/Shrub/shrub_alphathin.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Member Scenes/Sigurdur/TESTING/Shrub/shrub_mesh8.obj" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Member Scenes/Sigurdur/TESTING/Shrub/shrub_mesh8.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Member Scenes/Sigurdur/TESTING/Shrub/shrub_mesh8.obj.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Member Scenes/Sigurdur/TESTING/Shrub/shrub_mesh8.obj.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Member Scenes/Sigurdur/TESTING/Shrub/shrub_pic6.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Member Scenes/Sigurdur/TESTING/Shrub/shrub_pic6.png.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Member Scenes/Sindre S/SindresS_Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Member Scenes/Sindre S/SindresS_Scene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Member Scenes/Stefan/Stefan_Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Member Scenes/Stefan/Stefan_Scene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Member Scenes/Stefan/TESTING/Portal_Controller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Member Scenes/Stefan/TESTING/Portal_Controller.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Member Scenes/Stefan/TESTING/Portal_timer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Member Scenes/Stefan/TESTING/Portal_timer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Member Scenes/Stefan/TESTING/Portal_timer.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Member Scenes/Stefan/TESTING/Portal_timer.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Islands/StartIsland.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Islands/StartIsland.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Islands/StartIsland.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Islands/StartIsland.prefab.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Islands/PF_Island1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Islands/PF_Island1.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Islands/PF_Island1.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Islands/PF_Island1.prefab.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Islands/PF_Island10.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Islands/PF_Island10.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Islands/PF_Island10.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Islands/PF_Island10.prefab.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Islands/PF_Island5.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Islands/PF_Island5.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Islands/PF_Island5.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Islands/PF_Island5.prefab.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Islands/PF_Island6.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Islands/PF_Island6.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Islands/PF_Island6.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Islands/PF_Island6.prefab.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Islands/PF_Island7.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Islands/PF_Island7.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Islands/PF_Island7.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Islands/PF_Island7.prefab.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Islands/PF_Island8.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Islands/PF_Island8.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Islands/PF_Island8.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Islands/PF_Island8.prefab.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Islands/PF_Island9.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Islands/PF_Island9.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Islands/PF_Island9.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Islands/PF_Island9.prefab.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Islands/StartIsland.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Islands/StartIsland.prefab.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -111,6 +147,7 @@
       <workItem from="1612177698553" duration="2079000" />
       <workItem from="1612202203163" duration="1000" />
       <workItem from="1612267794275" duration="573000" />
+      <workItem from="1612354776190" duration="37000" />
     </task>
     <servers />
   </component>

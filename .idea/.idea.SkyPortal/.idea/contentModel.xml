@@ -13,6 +13,7 @@
         </e>
         <e p="Controller.cs" t="Include" />
         <e p="Ground.cs" t="Include" />
+        <e p="IKTarget.cs" t="Include" />
         <e p="Member Scenes" t="Include">
           <e p="-Prof John-" t="Include">
             <e p="Scripts" t="Include">
@@ -39,6 +40,7 @@
               <e p="SimpleCameraController.cs" t="Include" />
               <e p="SineWave.cs" t="Include" />
               <e p="Spring.cs" t="Include" />
+              <e p="TargetGround.cs" t="Include" />
             </e>
           </e>
           <e p="Adne" t="Include">
@@ -113,7 +115,6 @@
           </e>
         </e>
         <e p="PlayerGeom.cs" t="Include" />
-        <e p="TargetGround.cs" t="Include" />
         <e p="TextMesh Pro" t="Include">
           <e p="Fonts" t="Include">
             <e p="LiberationSans - OFL.txt" t="Include" />
