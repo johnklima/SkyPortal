@@ -11,8 +11,13 @@ public class IKSystem : MonoBehaviour
     private IKSegment firstSegment = null;
 
     public float length = 1; //applied to geom scale
+    public bool dragmode = false;
+    public bool reachmode = true;
 
-    int childcount;
+    public int childcount;
+
+    bool isHidden = true;
+
     void Awake()    {
 
         //lets buffer our segements in an array
@@ -42,6 +47,7 @@ public class IKSystem : MonoBehaviour
         //now assign c == 0
         segments[0].child = segments[1];
 
+        hide(); //the links
 
     }
 
@@ -54,6 +60,8 @@ public class IKSystem : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (isHidden)
+            return;
 
         for (int i = 0; i < childcount; i++)
         {
@@ -65,21 +73,52 @@ public class IKSystem : MonoBehaviour
         }
 
 
-        //if you want simple drag, uncomment below, and comment reach
-        //lastSegment.drag(target.position);
+        //if you want simple drag
+        if (dragmode && !reachmode)
+        {
+            lastSegment.drag(target.position);
+        }
 
         //call reach on the last
-        lastSegment.reach(target.position);
+        if (!dragmode && reachmode)
+        {
+            lastSegment.reach(target.position);
+            
+            //and forward update on the first
+            //we needed to maintain that first segment original position
+            //which is the position of the IK system itself
 
-        //and forward update on the first
-        //we needed to maintain that first segment original position
-        //which is the position of the IK system itself
+            //COMMENT NEXT LINE AND IK ROOT WILL FOLLLOW TARGET:
+            firstSegment.transform.position = transform.position;
+            firstSegment.transform.rotation = transform.parent.rotation;
+            firstSegment.updateSegmentAndChildren();
+        }
+        
+        //potential transition state between modes
+        if (dragmode && reachmode)
+        {
 
-        //COMMENT NEXT LINE AND IK ROOT WILL FOLLLOW TARGET:
-        firstSegment.transform.position = transform.position;
-        firstSegment.transform.rotation = transform.parent.rotation;
+        }
 
-        firstSegment.updateSegmentAndChildren();
+
+
+    }
+    public void hide() 
+    {
+        for (int i = 0; i < childcount; i++)
+        {
+            segments[i].transform.position = Vector3.zero;
+        }
+        isHidden = true;
+    }
+    public void show()
+    {
+        for (int i = 0; i < childcount; i++)
+        {
+            //maybe something here?
+            
+        }
+        isHidden = false;
 
     }
 }

@@ -7,9 +7,12 @@ using UnityEngine.UI;
 public class TargetGround : MonoBehaviour
 {
     public IKTarget target;
+    public IKSystem system;
+
     public Image reticule;
     Color prevColor;
     Vector3 prevPoint;
+    Vector3 startPos;
 
    
 
@@ -17,7 +20,7 @@ public class TargetGround : MonoBehaviour
     void Start()
     {
         prevColor = reticule.color;
-        prevPoint = target.transform.position;
+        prevPoint = startPos = target.transform.position;
         
     }
 
@@ -31,19 +34,28 @@ public class TargetGround : MonoBehaviour
         target.targetPoint= prevPoint;  //the default LOCAL position 
                                         //as child of player
 
+
+        //disengage on klickright
+        if (Input.GetKeyDown(KeyCode.Mouse1))
+        {
+            system.hide();
+            target.transform.position = startPos;
+
+
+        }
+
         if (Physics.Raycast(transform.position, transform.forward, out hit, 20.0f, mask))
         {
             //make public the normal of the current polygon I am standing on
             //hitNormal = hit.normal;
 
-            if(Input.GetKey(KeyCode.Mouse0))
+            if(Input.GetKeyDown(KeyCode.Mouse0))
             {
                 target.targetPoint = hit.point;
                 prevPoint = hit.point;
+                system.show();
+                
             }
-                 
-
-
 
             reticule.color = Color.red;
 
@@ -52,6 +64,10 @@ public class TargetGround : MonoBehaviour
         {
             prevColor = reticule.color;
             prevPoint = target.targetPoint;
+
+
         }
+
+
     }
 }
