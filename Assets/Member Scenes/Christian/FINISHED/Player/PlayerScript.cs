@@ -65,13 +65,14 @@ public class PlayerScript : MonoBehaviour
                 //one shot velocity
                 grav.velocity = (grappForward * 10.0f + Vector3.up * 20.0f);
 
+                isGrappled = true;
 
             }
             else
             {
                 //now, next frames find a position
                 grav.enabled = false;
-                isGrappled = true;
+                
                 //calculate a sine wave from point to point based on player's first forward
                 transform.position = Vector3.Slerp(transform.position,
                                                     grapple.target.targetPoint,
@@ -79,7 +80,7 @@ public class PlayerScript : MonoBehaviour
 
 
 
-                /*
+                
                 //am I there? (check only xz as i assume i have good trajectory)
                 Vector3 p1 = transform.position;
                 Vector3 p2 = grapple.target.targetPoint;
@@ -91,10 +92,11 @@ public class PlayerScript : MonoBehaviour
                     grapple.target.isThrown = false;
                     isGrappled = false;
                     grapple.hide();
+                    grav.enabled = false;
 
 
                 }
-                */
+                
 
                 return;
             }
