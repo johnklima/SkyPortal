@@ -39,8 +39,8 @@ public class TargetGround : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Mouse1))
         {
             system.hide();
-            target.transform.position = startPos;
-            target.isThrown = false;
+            target.reset();
+
 
 
         }

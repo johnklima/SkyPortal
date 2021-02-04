@@ -25,8 +25,8 @@ public class IKTarget : MonoBehaviour
         if (!isThrown)
             return;
 
-
-        transform.position = Vector3.Slerp(transform.position, targetPoint, Time.deltaTime * 10);
+        //slerp to the target point to create some motion
+        transform.position = Vector3.Slerp(transform.position, targetPoint, Time.deltaTime * 30);
 
         float scale = Vector3.Distance(transform.position, transform.parent.position);
         scale = scale / iksystem.childcount;  
@@ -50,5 +50,12 @@ public class IKTarget : MonoBehaviour
             wave.enabled = true;
         }
             
+    }
+
+    public void reset()
+    {
+        transform.position = Vector3.zero;
+        isThrown = false;
+        caught = false;
     }
 }
