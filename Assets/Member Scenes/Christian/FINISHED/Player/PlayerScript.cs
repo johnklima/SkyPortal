@@ -71,35 +71,19 @@ public class PlayerScript : MonoBehaviour
             else
             {
                 //now, next frames find a position
-                grav.enabled = false;
+                //grav.enabled = false;
                 
                 //calculate a sine wave from point to point based on player's first forward
-                transform.position = Vector3.Slerp(transform.position,
-                                                    grapple.target.targetPoint,
-                                                    Time.deltaTime * 10.0f);
+                //transform.position = Vector3.Slerp(transform.position,
+                //                                    grapple.target.targetPoint,
+                //                                    Time.deltaTime * 10.0f);
 
-
+              
 
                 
-                //am I there? (check only xz as i assume i have good trajectory)
-                Vector3 p1 = transform.position;
-                Vector3 p2 = grapple.target.targetPoint;
-                p1.y = p2.y = 0;
-
-                if (Vector3.Distance(transform.position, grapple.target.targetPoint) < 2)
-                {
-                    grapple.target.caught = false;
-                    grapple.target.isThrown = false;
-                    isGrappled = false;
-                    grapple.hide();
-                    grav.enabled = false;
-
-
-                }
-                
-
-                return;
             }
+
+            return;
         }
         else
         {
