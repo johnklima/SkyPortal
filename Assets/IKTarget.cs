@@ -9,12 +9,13 @@ public class IKTarget : MonoBehaviour
     public IKSystem iksystem;
     public bool caught = false;
     public bool isThrown = false;
-    
+    SineWave wave;
 
     // Start is called before the first frame update
     void Start()
     {
         targetPoint = transform.position;
+        wave = transform.GetComponent<SineWave>();
     }
 
     // Update is called once per frame
@@ -24,28 +25,37 @@ public class IKTarget : MonoBehaviour
         if (!isThrown)
             return;
 
-
-        transform.position = Vector3.Slerp(transform.position, targetPoint, Time.deltaTime * 2);
+        //slerp to the target point to create some motion
+        transform.position = Vector3.Slerp(transform.position, targetPoint, Time.deltaTime * 30);
 
         float scale = Vector3.Distance(transform.position, transform.parent.position);
-        scale = scale / iksystem.childcount;  //we have 20 links in total
+        scale = scale / iksystem.childcount;  
 
         iksystem.length = scale; //of each link
 
-        if (Vector3.Distance(transform.position, targetPoint) < 2 )
+        if (Vector3.Distance(transform.position, targetPoint) < 1 )
         { 
             
             //iksystem.dragmode = true;
             //iksystem.reachmode = false;
             caught = true;
+            wave.enabled = false;
             
-        }            
-        else
+        }
+        else if (Vector3.Distance(transform.position, targetPoint) > 5)
         {
             //iksystem.dragmode = false;
             //iksystem.reachmode = true;
-            caught = false; 
+            caught = false;
+            wave.enabled = true;
         }
             
+    }
+
+    public void reset()
+    {
+        transform.position = Vector3.zero;
+        isThrown = false;
+        caught = false;
     }
 }

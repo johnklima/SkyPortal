@@ -39,13 +39,14 @@ public class TargetGround : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Mouse1))
         {
             system.hide();
-            target.transform.position = startPos;
-            target.isThrown = false;
+            target.reset();
+
 
 
         }
 
-        if (Physics.Raycast(transform.position, transform.forward, out hit, 20.0f, mask))
+        float dist = system.childcount; // how many unit length links in our chain
+        if (Physics.Raycast(transform.position, transform.forward, out hit, dist, mask))
         {
             //make public the normal of the current polygon I am standing on
             //hitNormal = hit.normal;
