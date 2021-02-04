@@ -53,7 +53,7 @@ public class PlayerScript : MonoBehaviour
 
 
         //gonna put grapple on top
-        if (grapple.target.caught)
+        if (grapple.target.caught || isGrappled)
         {
             //one shot, get the forward
             if (!isGrappled)
@@ -62,44 +62,44 @@ public class PlayerScript : MonoBehaviour
                 grappForward = transform.forward;
                 //a one shot acceleration, aka explosion
                 Vector3 boom = grapple.target.fire(transform.position, grapple.target.targetPoint);
-                grav.applyImpulse( boom );
+                grav.applyImpulse( boom + grappForward * 10.0f + Vector3.up * 10.0f);
 
-                Debug.Log("HELLO FIRE " + boom.ToString());
-                // give forward and upward thrust sufficient to get there.
-                //this is gonna be a tough one...
-                //grappForward = transform.forward;
-                //one shot velocity
-                //grav.velocity = (grappForward * 10.0f + Vector3.up * 20.0f);
-
+                Debug.Log("HELLO FIRE " + boom.ToString());        
+                
+                
                 isGrappled = true;
-                grav.friction = false;
-
             }
             else
             {
                 //once over the target, kill xy velocity
                 Vector3 pos = transform.position;
                 pos.y = 0;
-                Vector3 targ = grapple.target.targetPoint;
+                
+                Vector3 targ = grapple.target.transform.position;
                 targ.y = 0;
-                if(Vector3.Distance(pos,targ) < 1 )
+                
+                if(Vector3.Distance(pos,targ) < 3 )
                 {
-                    grapple.hide();
-                    grapple.target.reset();
-                    grav.friction = true;
+                    Debug.Log("HELLO UNGRAPPLE");
+                    
+                    grapple.target.reset();                    
+                    isGrappled = false;
+                    grav.velocity *= 0;
                 }
             }
 
+            
             return;
         }
         else
         {
             isGrappled = false;
-            
+            grav.friction = false; 
+
         }
         //isRunning = Input.GetKey(KeyCode.LeftShift); // Allows for a very cool high skill mechanic double jump && Adjust falling speed mid air
 
-        grav.friction = false; //always false if not grappled
+        
 
         isRunning = Input.GetKey(KeyCode.LeftShift) && isGrounded; // Does not allow the above && makes run only function when grounded
 

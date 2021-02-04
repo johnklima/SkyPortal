@@ -67,7 +67,7 @@ public class IKTarget : MonoBehaviour
     {
         
 
-        return calculateIterativeTrajectory(startPos, targPos,0);      
+        return calculateIterativeTrajectory(startPos, targPos,70);      
 
  
     }
