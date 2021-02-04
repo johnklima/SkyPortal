@@ -15,7 +15,6 @@ public class gravity : MonoBehaviour {
     public Vector3 jump = new Vector3(0, 0, 0); 
     public Vector3 bounce = new Vector3(0, 0, 0); 
     public Vector3 thrust = new Vector3(0, 0, 0);               //player applied thrust vector
-    public Vector3 impulse = new Vector3(0, 0, 0);
 
     public float mass = 1.0f;
     public float energy = 10000.0f;
@@ -84,22 +83,17 @@ public class gravity : MonoBehaviour {
         finalForce += thrust;
         
         acceleration = finalForce / mass;
-        
-
         velocity += acceleration * dt;
         
         //jump is a oneshot impulse
         velocity += jump;
         //bounce is also
         velocity += bounce;
-        //as is impulse??
-        velocity += impulse;
 
-        //resets
+        //reset thrust
         thrust = Vector3.zero;
         jump = Vector3.zero;
         bounce = Vector3.zero;
-        impulse = Vector3.zero;
 
         //clamp velocity (terminal velocity)
         //clampVelocity(100.0f); //meters per second max
@@ -146,32 +140,15 @@ public class gravity : MonoBehaviour {
         {
             controller.isGrounded = false;
         }
-
+        
 
         //add friction on x/z
-        if (controller.isGrounded)
-        {
-            //ground friction
-            Vector3 temp = velocity;
-            temp *= 0.8f;
-            velocity.x = temp.x;
-            velocity.z = temp.z;
-        }
-        else
-        {
-            //air resistance
-            Vector3 temp = velocity;
-            temp *= 0.1f;
-            velocity.x = temp.x;
-            velocity.z = temp.z;
-        }
+        Vector3 temp = velocity;
+        temp *= 0.8f;
+        velocity.x = temp.x;
+        velocity.z = temp.z;
 
     }
-    public void applyImpulse(Vector3 imp)
-    {
-        impulse = imp;
-    }
-
     public void clampVelocity(float max)
     {
         //GENERAL RULE OF VELOCITY : don't let them go too fast!!!        
