@@ -6,7 +6,7 @@ using UnityEngine;
 
 public class PlayerScript : MonoBehaviour
 {
-    gravity grav;
+    public gravity grav;
     public IKSystem grapple;
 
     // Player Specs
@@ -59,11 +59,17 @@ public class PlayerScript : MonoBehaviour
             if (!isGrappled)
             {
 
+
+                //a one shot acceleration, aka explosion
+                Vector3 boom = grapple.target.fire(transform.position, grapple.target.targetPoint);
+                grav.applyImpulse( boom );
+
+                Debug.Log("HELLO FIRE " + boom.ToString());
                 // give forward and upward thrust sufficient to get there.
                 //this is gonna be a tough one...
-                grappForward = transform.forward;
+                //grappForward = transform.forward;
                 //one shot velocity
-                grav.velocity = (grappForward * 10.0f + Vector3.up * 20.0f);
+                //grav.velocity = (grappForward * 10.0f + Vector3.up * 20.0f);
 
                 isGrappled = true;
 
