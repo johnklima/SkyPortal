@@ -54,7 +54,7 @@ public class TargetGround : MonoBehaviour
             if(Input.GetKeyDown(KeyCode.Mouse0))
             {
                 target.isThrown = true;
-                target.targetPoint = hit.point;
+                target.targetPoint = hit.point + transform.forward * 5 + Vector3.up * 10;
                 prevPoint = hit.point;
                 system.show();
                 
