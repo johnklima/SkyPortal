@@ -5,9 +5,9 @@ using UnityEngine;
 public class FlowerHover: MonoBehaviour
 {
 
-   private float degreesPerSecond = Random.Range(10f, 20f);
-   private float amplitude = Random.Range(0.03f, 0.09f);
-   private float frequency = Random.Range(0.2f, 0.8f);
+    private float degreesPerSecond;
+    private float amplitude;
+    private float frequency;
 
     // Position Storage Variables
     Vector3 posOffset = new Vector3();
@@ -40,9 +40,4 @@ public class FlowerHover: MonoBehaviour
 
     }
 
-
-    void DestroyObjeckt()
-    {
-        Destroy(gameObject);
-    }
 }
