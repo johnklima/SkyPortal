@@ -65,16 +65,14 @@ public class IKTarget : MonoBehaviour
     }
     public Vector3 fire(Vector3 startPos, Vector3 targPos)
     {
-        targPos.y += 10;
+        
 
-        float f = calculateIterativeTrajectory(startPos, targPos,0);
+        return calculateIterativeTrajectory(startPos, targPos,0);      
 
-       
-
-        return (targPos - startPos).normalized * f;
+ 
     }
 
-    float calculateIterativeTrajectory(Vector3 startPoint, Vector3 endPoint, float desiredAngle)
+    Vector3 calculateIterativeTrajectory(Vector3 startPoint, Vector3 endPoint, float desiredAngle)
     {
         
         Vector3 t;
@@ -154,9 +152,7 @@ public class IKTarget : MonoBehaviour
 
                 //create an initial force 
                 float sqrtcheck = (trydistance * GRAVITY) / f;
-                if (sqrtcheck < 0)
-                    f = f; //meaningless ;)
-                else
+                if (sqrtcheck > 0)
                     Vo = Mathf.Sqrt(sqrtcheck);
 
                 //find the vector of it in our trajectory planar space
@@ -179,9 +175,7 @@ public class IKTarget : MonoBehaviour
                 else
                 {
                     sqrtcheck = 2 * H / GRAVITY;
-                    if (sqrtcheck < 0)
-                        f = f;
-                    else
+                    if (sqrtcheck > 0)         
                     {
                         float dnt = Mathf.Sqrt(sqrtcheck);           // time from max height to impact
                         rng = Vx * (upt + dnt);
@@ -192,54 +186,30 @@ public class IKTarget : MonoBehaviour
                     trydistance -= (rng - flatdistance) / 2;		//using a binary zero-in, it takes about 8 iterations to arrive at target
                 else if (rng < flatdistance)
                     trydistance += (flatdistance - rng) / 2;
-
+                
+                
+                Debug.Log("ITERS = " + iters);
             }
             else
             {
+                
                 iters = 64;
             }
             iters++;
         }
 
-        Vector3 angV = p2; //p2 was our flat direction vector above
-
-        //we need to rotate that by our actual launch angle
-        angV = Quaternion.AngleAxis(Mathf.Rad2Deg * angle, player.transform.right) * angV;
-        
-
-
-        /*
-        //convert the launch angle into a 2d vector (here we need an yz vector)
-        float Vyy = Mathf.Sin(angle);
-        float Vz = Mathf.Cos(angle);
-
-        Vector3 angV = Vector3.zero;
-        angV += new Vector3(0, Vyy, Vz);
+        Vector3 angV = new Vector3 (player.grappForward.x, 0, player.grappForward.z);
         angV.Normalize();
+        Vector3 side = Vector3.Cross(angV, Vector3.up);
+        side.Normalize();
+        //we need to rotate that by our actual launch angle
+        angV = Quaternion.AngleAxis(Mathf.Rad2Deg * angle, side) * angV;
+             
+        
+        return angV * Vo;   //multiply by calculated "powder charge"   
 
 
-
-        //get world XY vector to target into a rotation matrix (colums oh woe is me :( )
-        //we use this to rotate the 2d trajectory into our world coordinate system
-        P1.y = 0;
-        Vector3 fwd = P1.normalized;
-        Matrix4x4 rotation ;
-
-
-        Vector3 newRight = fwd.UnitCross(NiPoint3::UNIT_Z);
-        Vector3 newUp = newRight.UnitCross(fwd);
-        rotation = Matrix4x4.(newRight, fwd, newUp);
-
-
-
-        //VERY IMPORTANT: multiplier order is CRITICAL when rotating a vector by a matrix
-        angV = rotation* angV;       //and we HAVE to use operator overload because there is no function gamebryo
-
-        */
-        Vector3 ret = angV * Vo;   //multiply by calculated "powder charge"   
-
-
-        return Vo;
+        
 
     }
 }

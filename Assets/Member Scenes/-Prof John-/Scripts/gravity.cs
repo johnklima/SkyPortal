@@ -16,6 +16,7 @@ public class gravity : MonoBehaviour {
     public Vector3 bounce = new Vector3(0, 0, 0); 
     public Vector3 thrust = new Vector3(0, 0, 0);               //player applied thrust vector
     public Vector3 impulse = new Vector3(0, 0, 0);
+    public bool friction = false;
 
     public float mass = 1.0f;
     public float energy = 10000.0f;
@@ -154,16 +155,18 @@ public class gravity : MonoBehaviour {
             //ground friction
             Vector3 temp = velocity;
             temp *= 0.8f;
+            
             velocity.x = temp.x;
             velocity.z = temp.z;
+
+            friction = false;
+
         }
-        else
+        else if (friction)
         {
-            //air resistance
-            Vector3 temp = velocity;
-            temp *= 0.1f;
-            velocity.x = temp.x;
-            velocity.z = temp.z;
+            //air resistance ??
+            velocity *= 0.8f;
+            Debug.Log("HELLO FRICTION");
         }
 
     }
