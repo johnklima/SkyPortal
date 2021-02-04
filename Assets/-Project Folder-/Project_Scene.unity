@@ -4840,7 +4840,7 @@ MonoBehaviour:
   iksystem: {fileID: 744200917}
   caught: 0
   isThrown: 0
-  player: {fileID: 0}
+  player: {fileID: 1359849866}
 --- !u!114 &1024127418
 MonoBehaviour:
   m_ObjectHideFlags: 0
