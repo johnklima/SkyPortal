@@ -62,6 +62,7 @@
               </e>
               <e p="Player" t="Include">
                 <e p="CameraController.cs" t="Include" />
+                <e p="FovChange.cs" t="Include" />
                 <e p="PlayerScript.cs" t="Include" />
                 <e p="SlopeDetection.cs" t="Include" />
                 <e p="WallDetection.cs" t="Include" />
@@ -97,6 +98,7 @@
           <e p="Sindre S" t="Include">
             <e p="TESTING" t="Include">
               <e p="Pickup_Items" t="Include">
+                <e p="FlowerHover.cs" t="Include" />
                 <e p="RotateAndHover.cs" t="Include" />
               </e>
             </e>

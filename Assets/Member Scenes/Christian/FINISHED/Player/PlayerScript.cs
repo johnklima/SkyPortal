@@ -40,6 +40,8 @@ public class PlayerScript : MonoBehaviour
     public Vector3 grappForward;
 
     
+    // To be able to check if movement is happening
+    public Vector2 inputDir;
 
     // Start is called before the first frame update
     private void Start()
@@ -50,8 +52,6 @@ public class PlayerScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
-
         //gonna put grapple on top
         if (grapple.target.caught || isGrappled)
         {
@@ -68,6 +68,10 @@ public class PlayerScript : MonoBehaviour
                 
                 
                 isGrappled = true;
+                
+                // To allow JetPacking after being launched
+                isJumping = true;
+
             }
             else
             {
@@ -97,9 +101,8 @@ public class PlayerScript : MonoBehaviour
             grav.friction = false; 
 
         }
-        //isRunning = Input.GetKey(KeyCode.LeftShift); // Allows for a very cool high skill mechanic double jump && Adjust falling speed mid air
-
         
+        //isRunning = Input.GetKey(KeyCode.LeftShift); // Allows for a very cool high skill mechanic double jump && Adjust falling speed mid air
 
         isRunning = Input.GetKey(KeyCode.LeftShift) && isGrounded; // Does not allow the above && makes run only function when grounded
 
@@ -107,7 +110,7 @@ public class PlayerScript : MonoBehaviour
         // Move inputs
         
         Vector2 input = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
-        Vector2 inputDir = input.normalized;
+        inputDir = input.normalized;
 
         // Inputs combined with velocity to apply the gravity
         //Vector3 move = new Vector3(inputDir.x, grav.velocity.y, inputDir.y);
