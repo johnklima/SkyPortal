@@ -130,6 +130,9 @@ public class gravity : MonoBehaviour {
                 {
                     controller.isAtWall = true;
                     bounce = hitNormal * 4;
+                    controller.isJumping = true;
+                    controller.isAtWall = false; // Disables at wall so we can move again
+
                 }
                 else 
                 {

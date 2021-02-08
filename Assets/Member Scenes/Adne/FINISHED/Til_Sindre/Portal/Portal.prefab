@@ -92,6 +92,8 @@ GameObject:
   - component: {fileID: 2463122403296994236}
   - component: {fileID: 2463122403296994226}
   - component: {fileID: 2463122403296994237}
+  - component: {fileID: 1291040764967795818}
+  - component: {fileID: 6996805575296725607}
   m_Layer: 0
   m_Name: Portal_Entrance
   m_TagString: Untagged
@@ -162,6 +164,34 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &1291040764967795818
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2463122403296994239}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.69, y: 0.61, z: 0.27}
+  m_Center: {x: 0, y: -0.000000059604645, z: 0.06}
+--- !u!114 &6996805575296725607
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2463122403296994239}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53b18bea333036541846843a3f62a0a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player_collider: {fileID: 0}
+  player_camera: {fileID: 0}
+  connected_portal: {fileID: 0}
 --- !u!1 &2463122403859258679
 GameObject:
   m_ObjectHideFlags: 0
@@ -672,7 +702,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4056159533953833519}
-  m_LocalRotation: {x: -0, y: 1, z: -0, w: 0.0000029504295}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
   m_LocalPosition: {x: 21.83, y: -4.6909, z: -2.0717}
   m_LocalScale: {x: 2.9411323, y: 2.9411323, z: 2.9411323}
   m_Children:
@@ -715,6 +745,7 @@ GameObject:
   - component: {fileID: 4283410351319200205}
   - component: {fileID: 1415982244886907015}
   - component: {fileID: 2486882513983482899}
+  - component: {fileID: 1273310473397508763}
   m_Layer: 0
   m_Name: Shell
   m_TagString: Untagged
@@ -785,3 +816,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &1273310473397508763
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5028150766129554166}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -2432090755550338912, guid: 2261514138a3b314790da276e04c4e85, type: 3}

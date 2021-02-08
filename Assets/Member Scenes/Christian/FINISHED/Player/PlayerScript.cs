@@ -93,7 +93,7 @@ public class PlayerScript : MonoBehaviour
             }
 
             
-            return;
+            //return;
         }
         else
         {
@@ -160,6 +160,11 @@ public class PlayerScript : MonoBehaviour
 
             }
             
+        }
+
+        else
+        {
+            isJumping = true;
         }
 
         // Fires off The Jetpack Function bellow update

@@ -39,19 +39,23 @@ public class FovChange : MonoBehaviour
                 break;
             
             case false:
-                if(_playerScript.isGrounded)
-                {mainCamera.fieldOfView = Mathf.Lerp(currentFov, minFov, fovChangeSpeed * Time.deltaTime);}
-                else
+                // if(_playerScript.isGrounded)
+                // {mainCamera.fieldOfView = Mathf.Lerp(currentFov, minFov, fovChangeSpeed * Time.deltaTime);}
+                // else
+                // {
+                //     if (timerReadOnly <= 0)
+                //     {
+                //         mainCamera.fieldOfView = Mathf.Lerp(currentFov, minFov, fovChangeSpeed * Time.deltaTime);
+                //     }
+                // }
+                if (timerReadOnly <= 0)
                 {
-                    if (timerReadOnly <= 0)
-                    {
-                        mainCamera.fieldOfView = Mathf.Lerp(currentFov, minFov, fovChangeSpeed * Time.deltaTime);
-                    }
+                    mainCamera.fieldOfView = Mathf.Lerp(currentFov, minFov, fovChangeSpeed * Time.deltaTime);
                 }
                 break;
         }
 
-        if (_playerScript.isGrounded)
+        if (_playerScript.isGrounded && _playerScript.isRunning)
         {
             timerReadOnly = resetTime;
         }
@@ -62,5 +66,6 @@ public class FovChange : MonoBehaviour
                 timerReadOnly -= Time.deltaTime;
             }
         }
+
     }
 }

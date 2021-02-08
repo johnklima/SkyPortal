@@ -6,6 +6,7 @@ TagManager:
   tags:
   - TitleScreen
   - UIManager
+  - Portal_timer
   layers:
   - Default
   - TransparentFX
