@@ -45,7 +45,7 @@ public class TargetGround : MonoBehaviour
 
         }
 
-        float dist = system.childcount; // how many unit length links in our chain
+        float dist = system.childcount - 0.05f; // how many unit length links in our chain
         if (Physics.Raycast(transform.position, transform.forward, out hit, dist, mask))
         {
             //make public the normal of the current polygon I am standing on

@@ -165,12 +165,7 @@ public class gravity : MonoBehaviour {
             friction = false;
 
         }
-        else if (friction)
-        {
-            //air resistance ??
-            velocity *= 0.8f;
-            Debug.Log("HELLO FRICTION");
-        }
+
 
     }
     public void applyImpulse(Vector3 imp)

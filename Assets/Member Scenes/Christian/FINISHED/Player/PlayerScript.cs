@@ -58,11 +58,13 @@ public class PlayerScript : MonoBehaviour
             //one shot, get the forward
             if (!isGrappled)
             {
+
+                
                 //get his forward at this moment
                 grappForward = transform.forward;
                 //a one shot acceleration, aka explosion
                 Vector3 boom = grapple.target.fire(transform.position, grapple.target.targetPoint);
-                grav.applyImpulse( boom + grappForward * 10.0f + Vector3.up * 10.0f);
+                grav.applyImpulse( boom + grappForward * 2.0f + Vector3.up * 2.0f);
 
                 Debug.Log("HELLO FIRE " + boom.ToString());        
                 
@@ -75,13 +77,14 @@ public class PlayerScript : MonoBehaviour
             }
             else
             {
-                //once over the target, kill xy velocity
+               
+                //once over the target, kill velocity, let them drop
                 Vector3 pos = transform.position;
                 pos.y = 0;
                 
                 Vector3 targ = grapple.target.transform.position;
                 targ.y = 0;
-                
+                //just check flat planar distance xz
                 if(Vector3.Distance(pos,targ) < 3 )
                 {
                     Debug.Log("HELLO UNGRAPPLE");
@@ -89,17 +92,18 @@ public class PlayerScript : MonoBehaviour
                     grapple.target.reset();                    
                     isGrappled = false;
                     grav.velocity *= 0;
-                }
-            }
+                }    
 
-            
+
+
+            }
+            isGrounded = false;
             //return;
         }
         else
         {
             isGrappled = false;
-            grav.friction = false; 
-
+            
         }
         
         //isRunning = Input.GetKey(KeyCode.LeftShift); // Allows for a very cool high skill mechanic double jump && Adjust falling speed mid air

@@ -7,8 +7,8 @@ public class IKSystem : MonoBehaviour
     public IKSegment[] segments;
     public IKTarget target = null;
 
-    private IKSegment lastSegment = null;
-    private IKSegment firstSegment = null;
+    public IKSegment lastSegment = null;
+    public IKSegment firstSegment = null;
 
     public PlayerScript player;
 
@@ -89,8 +89,7 @@ public class IKSystem : MonoBehaviour
             //and forward update on the first
             //we needed to maintain that first segment original position
             //which is the position of the IK system itself
-
-            //COMMENT NEXT LINE AND IK ROOT WILL FOLLLOW TARGET:
+            
             firstSegment.transform.position = transform.position;
             firstSegment.transform.rotation = transform.parent.rotation;
             firstSegment.updateSegmentAndChildren();

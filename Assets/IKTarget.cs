@@ -30,7 +30,7 @@ public class IKTarget : MonoBehaviour
             return;
 
         //slerp to the target point to create some motion
-        transform.position = Vector3.Slerp(transform.position, targetPoint, Time.deltaTime * 30);
+        transform.position = Vector3.Slerp(transform.position, targetPoint, Time.deltaTime * 10);
 
         float scale = Vector3.Distance(transform.position, transform.parent.position);
         scale = scale / iksystem.childcount;  
@@ -43,18 +43,28 @@ public class IKTarget : MonoBehaviour
             //iksystem.dragmode = true;
             //iksystem.reachmode = false;
             caught = true;
-            wave.enabled = false;
+            wave.enabled = true;
             
             
         }
-        else if (Vector3.Distance(transform.position, targetPoint) > 5)
+        else if (Vector3.Distance(transform.position, targetPoint) > 5 && !caught)
         {
             //iksystem.dragmode = false;
             //iksystem.reachmode = true;
             caught = false;
             wave.enabled = true;
         }
-            
+        else if (Vector3.Distance(transform.position, targetPoint) > 3 && caught)
+        {
+            // if caught but target is too far, player has broken the grapple
+            // we need to constrain as if on a rope?
+            reset();
+            iksystem.hide();
+
+
+        }
+
+
     }
 
     public void reset()
@@ -62,6 +72,9 @@ public class IKTarget : MonoBehaviour
         transform.position = Vector3.zero;
         isThrown = false;
         caught = false;
+        iksystem.dragmode = false;
+        iksystem.reachmode = true;
+
     }
     public Vector3 fire(Vector3 startPos, Vector3 targPos)
     {
