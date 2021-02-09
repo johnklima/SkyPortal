@@ -72,7 +72,7 @@ public class PlayerScript : MonoBehaviour
                 isGrappled = true;
                 
                 // To allow JetPacking after being launched
-                isJumping = true;
+                //isJumping = true;
 
             }
             else
@@ -97,6 +97,7 @@ public class PlayerScript : MonoBehaviour
 
 
             }
+
             isGrounded = false;
             //return;
         }
@@ -115,6 +116,17 @@ public class PlayerScript : MonoBehaviour
         
         Vector2 input = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
         inputDir = input.normalized;
+
+
+        //<JPK> IS THIS THE FIX???
+        if(input.magnitude > 0.5f) // a normalized vector sould have mag of 1
+        {
+            grapple.target.reset();
+            isGrappled = false;
+            grapple.hide();
+
+        }
+
 
         // Inputs combined with velocity to apply the gravity
         //Vector3 move = new Vector3(inputDir.x, grav.velocity.y, inputDir.y);
@@ -196,6 +208,13 @@ public class PlayerScript : MonoBehaviour
         if (isJumping && fuel > 0 && Input.GetKey(KeyCode.Space) && timerBeforeJetPack <= 0)
         {
             isUsingJetpack = true;
+
+
+            //<JPK> IS THIS THE FIX???
+            grapple.target.reset();
+            isGrappled = false;
+            grapple.hide();
+
 
             //<JPK> below is prolly ok, but the "else" i'm not so sure of
             // This just ensures that when isUsingJetpack is true then we actually move upwards
