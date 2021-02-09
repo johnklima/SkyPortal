@@ -119,7 +119,7 @@ public class PlayerScript : MonoBehaviour
 
 
         //<JPK> IS THIS THE FIX???
-        if(input.magnitude > 0.5f) // a normalized vector sould have mag of 1
+        if(inputDir.magnitude > 0.5f) // a normalized vector sould have mag of 1
         {
             grapple.target.reset();
             isGrappled = false;
