@@ -40,8 +40,7 @@ public class TargetGround : MonoBehaviour
         {
             system.hide();
             target.reset();
-
-
+            
 
         }
 
