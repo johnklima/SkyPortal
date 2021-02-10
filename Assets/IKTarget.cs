@@ -141,7 +141,7 @@ public class IKTarget : MonoBehaviour
         float Y = endPoint.y - startPoint.y;
 
         //are we firing down a hill?
-        if(endPoint.y < startPoint.y)
+        if(endPoint.y < startPoint.y && false)
         {
             angle *= -0.5f;
         }
