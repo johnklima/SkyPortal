@@ -62,6 +62,7 @@
               </e>
               <e p="Player" t="Include">
                 <e p="CameraController.cs" t="Include" />
+                <e p="FootSteps.cs" t="Include" />
                 <e p="FovChange.cs" t="Include" />
                 <e p="PlayerScript.cs" t="Include" />
                 <e p="SlopeDetection.cs" t="Include" />

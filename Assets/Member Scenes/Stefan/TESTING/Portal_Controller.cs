@@ -11,6 +11,7 @@ public class Portal_controller : MonoBehaviour
     //public Collider player_collider;
     public GameObject player_camera;
     public GameObject connected_portal;
+    public AudioSource ac;
 
     // Start is called before the first frame update
     void Start()
@@ -43,6 +44,7 @@ public class Portal_controller : MonoBehaviour
                 if (player)
                 {
                     timer.timer = 5;
+                    ac.Play();
                     player.transform.position = new Vector3(connected_portal.transform.position.x, connected_portal.transform.position.y, connected_portal.transform.position.z);
                     player_camera.transform.rotation = connected_portal.transform.rotation;
                 }
