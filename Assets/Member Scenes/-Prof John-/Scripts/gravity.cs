@@ -84,15 +84,17 @@ public class gravity : MonoBehaviour {
         finalForce.Set(0, GRAVITY_CONSTANT * mass, 0);
         finalForce += thrust;
         
-        acceleration = finalForce / mass;
-        
+        acceleration = finalForce / mass;        
 
         velocity += acceleration * dt;
         
         //jump is a oneshot impulse
         velocity += jump;
-        //bounce is also
-        velocity += bounce;
+
+        //bounce is also, but not if grappled
+        if(!controller.isGrappled)
+            velocity += bounce;
+
         //as is impulse??
         velocity += impulse;
 
