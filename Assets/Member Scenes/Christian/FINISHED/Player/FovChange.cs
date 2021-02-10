@@ -19,6 +19,8 @@ public class FovChange : MonoBehaviour
     public float resetTime = 0.3f;
     [Header("The Timer Only For (Debug Purposes)")]
     public float timerReadOnly = 0.3f;
+    public AudioSource ac;
+    public float volumeIncreaseSpeed = 0.05f;
     private void Start()
     {
         timerReadOnly = resetTime;
@@ -65,6 +67,20 @@ public class FovChange : MonoBehaviour
             {
                 timerReadOnly -= Time.deltaTime;
             }
+        }
+
+        if (mainCamera.fieldOfView > 75)
+        {
+            if (ac.volume < 0.5)
+
+            {
+                ac.volume += Time.deltaTime * volumeIncreaseSpeed;
+            }
+        }
+        else
+        {
+            if(!_playerScript.isUsingJetpack)
+            ac.volume -= Time.deltaTime * volumeIncreaseSpeed;
         }
 
     }

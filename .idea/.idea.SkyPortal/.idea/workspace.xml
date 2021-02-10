@@ -20,7 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="027939e5-7c2f-4db4-9f74-cc92c988d5a2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Member Scenes/-Prof John-/Scripts/TargetGround.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Member Scenes/-Prof John-/Scripts/TargetGround.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.SkyPortal/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SkyPortal/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/-Project Folder-/Project_Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/-Project Folder-/Project_Scene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/IKTarget.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/IKTarget.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Member Scenes/Christian/FINISHED/Player/FovChange.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Member Scenes/Christian/FINISHED/Player/FovChange.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,10 +52,10 @@
         <option value="$PROJECT_DIR$/Assets/RandRotate.cs" />
         <option value="$PROJECT_DIR$/Assets/Member Scenes/Christian/FINISHED/Player/PlayerScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Member Scenes/-Prof John-/Scripts/gravity.cs" />
-        <option value="$PROJECT_DIR$/Assets/Member Scenes/Christian/FINISHED/Player/FovChange.cs" />
         <option value="$PROJECT_DIR$/Assets/Member Scenes/Christian/FINISHED/Player/FootSteps.cs" />
         <option value="$PROJECT_DIR$/Assets/Member Scenes/Stefan/TESTING/Portal_controller.cs" />
         <option value="$PROJECT_DIR$/Assets/Member Scenes/-Prof John-/Scripts/TargetGround.cs" />
+        <option value="$PROJECT_DIR$/Assets/Member Scenes/Christian/FINISHED/Player/FovChange.cs" />
       </list>
     </option>
   </component>
@@ -109,6 +112,7 @@
       <workItem from="1612791069667" duration="5448000" />
       <workItem from="1612900803385" duration="398000" />
       <workItem from="1612967856205" duration="1501000" />
+      <workItem from="1612983455801" duration="1444000" />
     </task>
     <servers />
   </component>
