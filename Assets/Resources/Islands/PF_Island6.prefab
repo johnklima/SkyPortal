@@ -1609,10 +1609,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: PSCollisionMist
       objectReference: {fileID: 0}
-    - target: {fileID: 1828143594424570189, guid: 39ccea5bfba12b741a43b9a8412294b6, type: 3}
-      propertyPath: MinDistance
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 8462130622728303505, guid: 39ccea5bfba12b741a43b9a8412294b6, type: 3}
       propertyPath: m_RootOrder
       value: 12
