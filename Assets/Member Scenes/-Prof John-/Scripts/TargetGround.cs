@@ -50,18 +50,20 @@ public class TargetGround : MonoBehaviour
         {
             //make public the normal of the current polygon I am standing on
             //hitNormal = hit.normal;
+           // if (hit.point.y > transform.position.y)
+            { 
+                if (Input.GetKeyDown(KeyCode.Mouse0))
+                {
+                    target.isThrown = true;
+                    target.targetPoint = hit.point + transform.forward * 10 + Vector3.up * 10;
+                    prevPoint = hit.point;
+                    system.show();
 
-            if(Input.GetKeyDown(KeyCode.Mouse0))
-            {
-                target.isThrown = true;
-                target.targetPoint = hit.point + transform.forward * 10 + Vector3.up * 10;
-                prevPoint = hit.point;
-                system.show();
-                
+                }
+
+                reticule.color = Color.red;
+
             }
-
-            reticule.color = Color.red;
-
         }
         else
         {
