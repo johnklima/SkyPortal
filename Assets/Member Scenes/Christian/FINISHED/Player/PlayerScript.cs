@@ -85,7 +85,7 @@ public class PlayerScript : MonoBehaviour
                 Vector3 targ = grapple.target.transform.position;
                 targ.y = 0;
                 //just check flat planar distance xz
-                if(Vector3.Distance(pos,targ) < 3 )
+                if(Vector3.Distance(pos,targ) < 1 )
                 {
                     Debug.Log("HELLO UNGRAPPLE");
                     
