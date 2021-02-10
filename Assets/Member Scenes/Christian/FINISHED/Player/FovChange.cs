@@ -34,7 +34,7 @@ public class FovChange : MonoBehaviour
     {
         currentFov = mainCamera.fieldOfView;
         
-        switch (_playerScript.isRunning && _playerScript.isGrounded && _playerScript.inputDir.magnitude > 0)
+        switch (_playerScript.isRunning && _playerScript.isGrounded && _playerScript.inputDir.magnitude > 0 || _playerScript.isGrappled)
         {
             case true:
                 mainCamera.fieldOfView = Mathf.Lerp(currentFov, maxFov, fovChangeSpeed * Time.deltaTime);
@@ -69,7 +69,7 @@ public class FovChange : MonoBehaviour
             }
         }
 
-        if (mainCamera.fieldOfView > 75)
+        if (mainCamera.fieldOfView > 75 || _playerScript.isUsingJetpack)
         {
             if (ac.volume < 0.5)
 
@@ -79,8 +79,9 @@ public class FovChange : MonoBehaviour
         }
         else
         {
-            if(!_playerScript.isUsingJetpack)
-            ac.volume -= Time.deltaTime * volumeIncreaseSpeed;
+            if(!_playerScript.isUsingJetpack && !_playerScript.isJumping)
+            ac.volume -= Time.deltaTime * 1.4f;
+            
         }
 
     }

@@ -20,9 +20,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="027939e5-7c2f-4db4-9f74-cc92c988d5a2" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.SkyPortal/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SkyPortal/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.SkyPortal/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SkyPortal/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/-Project Folder-/Audio/CollectibleConstant.wav.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/-Project Folder-/Audio/CollectibleConstant.wav.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/-Project Folder-/Audio/Footstep.wav.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/-Project Folder-/Audio/Footstep.wav.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/-Project Folder-/Audio/Footstep2.wav.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/-Project Folder-/Audio/Footstep2.wav.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/-Project Folder-/Audio/WindGust.wav.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/-Project Folder-/Audio/WindGust.wav.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/-Project Folder-/Project_Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/-Project Folder-/Project_Scene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/IKTarget.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/IKTarget.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Member Scenes/Christian/FINISHED/Player/FovChange.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Member Scenes/Christian/FINISHED/Player/FovChange.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -37,6 +41,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Member Scenes/Christian/FINISHED/UI/JetpackBar.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Member Scenes/Christian/FINISHED/Player/WallDetection.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../UnityGames/GravityBox/Assets/ProceduralGeneration/LevelBuilder.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/JetpackSound.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -56,6 +61,7 @@
         <option value="$PROJECT_DIR$/Assets/Member Scenes/Stefan/TESTING/Portal_controller.cs" />
         <option value="$PROJECT_DIR$/Assets/Member Scenes/-Prof John-/Scripts/TargetGround.cs" />
         <option value="$PROJECT_DIR$/Assets/Member Scenes/Christian/FINISHED/Player/FovChange.cs" />
+        <option value="$PROJECT_DIR$/Assets/JetpackSound.cs" />
       </list>
     </option>
   </component>
@@ -112,7 +118,7 @@
       <workItem from="1612791069667" duration="5448000" />
       <workItem from="1612900803385" duration="398000" />
       <workItem from="1612967856205" duration="1501000" />
-      <workItem from="1612983455801" duration="1444000" />
+      <workItem from="1612983455801" duration="4789000" />
     </task>
     <servers />
   </component>
@@ -135,5 +141,11 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1612986888573">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1612986888573" />
   </component>
 </project>
