@@ -211,7 +211,7 @@ public class IKTarget : MonoBehaviour
                     trydistance += (flatdistance - rng) / 2;
                 
                 
-                Debug.Log("ITERS = " + iters);
+                //Debug.Log("ITERS = " + iters);
             }
             else
             {

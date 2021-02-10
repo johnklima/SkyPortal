@@ -39,6 +39,7 @@ public class PlayerScript : MonoBehaviour
     public bool isGrappled = false;
     public Vector3 grappForward;
 
+    float landTimer;
     
     // To be able to check if movement is happening
     public Vector2 inputDir;
@@ -83,20 +84,22 @@ public class PlayerScript : MonoBehaviour
 
 
         //gonna put grapple on top
-        if (grapple.target.caught || (isGrappled && !isGrounded) )
+        if (grapple.target.caught || (isGrappled) )
         {
             //one shot, get the forward
             if (!isGrappled)
             {
-
-                
+                landTimer = Time.time; //give some time before we cancel grapple
+                                       //because we are grounded. aka dont cancel
+                                       //for a few moments after launch
+                               
                 //get his forward at this moment
                 grappForward = transform.forward;
                 //a one shot acceleration, aka explosion
                 Vector3 boom = grapple.target.fire(transform.position, grapple.target.targetPoint);
                 grav.applyImpulse( boom + grappForward * 2.0f + Vector3.up * 2.0f);
 
-                Debug.Log("HELLO FIRE " + boom.ToString());        
+                //Debug.Log("HELLO FIRE " + boom.ToString());        
                 
                 
                 isGrappled = true;
@@ -117,16 +120,13 @@ public class PlayerScript : MonoBehaviour
                 if(Vector3.Distance(pos,targ) < 1 )
                 {
                     Debug.Log("HELLO UNGRAPPLE");
-                    
-                    grapple.target.reset();                    
-                    isGrappled = false;
+
+                    resetGrapple();
                     grav.velocity *= 0;
                 }
+
                 isGrounded = false;
-
-            }
-
-            
+            }            
             //return;
         }
         else
@@ -136,12 +136,11 @@ public class PlayerScript : MonoBehaviour
         }
 
         //if on the ground, reset grapple
-        if(isGrounded && isGrappled)
+        if(isGrounded && isGrappled && Time.time - landTimer > 0.75f)
         {
             Debug.Log("HELLO UNGRAPPLE GROUNDED");
 
-            grapple.target.reset();
-            isGrappled = false;
+            resetGrapple();
             grav.velocity *= 0;
 
         }
