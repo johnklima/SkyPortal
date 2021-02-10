@@ -95,6 +95,9 @@ public class gravity : MonoBehaviour {
         if(!controller.isGrappled)
             velocity += bounce;
 
+        if (controller.isGrappled && Vector3.Magnitude(bounce) > 0.1f)
+            controller.resetGrapple();
+
         //as is impulse??
         velocity += impulse;
 

@@ -140,6 +140,12 @@ public class IKTarget : MonoBehaviour
 
         float Y = endPoint.y - startPoint.y;
 
+        //are we firing down a hill?
+        if(endPoint.y < startPoint.y)
+        {
+            angle *= -0.5f;
+        }
+
         // perform the trajectory calculation to arrive at the gun powder charge aka 
         // target velocity for the distance we desire, based on launch angle
         float rng = 0;
@@ -167,6 +173,8 @@ public class IKTarget : MonoBehaviour
                 float sqrtcheck = (trydistance * GRAVITY) / f;
                 if (sqrtcheck > 0)
                     Vo = Mathf.Sqrt(sqrtcheck);
+                else
+                    Debug.Log("sqrtcheck < 0 initial force");
 
                 //find the vector of it in our trajectory planar space
                 float Vy = Vo * Mathf.Sin(angle);
@@ -193,6 +201,8 @@ public class IKTarget : MonoBehaviour
                         float dnt = Mathf.Sqrt(sqrtcheck);           // time from max height to impact
                         rng = Vx * (upt + dnt);
                     }
+                    else
+                        Debug.Log("sqrtcheck < 0 H / Gravity");
                 }
 
                 if (rng > flatdistance)

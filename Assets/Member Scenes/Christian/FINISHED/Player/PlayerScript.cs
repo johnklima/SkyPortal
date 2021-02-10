@@ -43,6 +43,17 @@ public class PlayerScript : MonoBehaviour
     // To be able to check if movement is happening
     public Vector2 inputDir;
 
+    //convenient place to proliferate grapple through ik and targets
+    public void resetGrapple() 
+    {
+        Debug.Log("HELLO RESET UNGRAPPLE");
+        grapple.hide();
+        grapple.target.reset();
+        isGrappled = false;
+        grav.velocity *= 0;
+
+    }
+
     // Start is called before the first frame update
     private void Start()
     {
