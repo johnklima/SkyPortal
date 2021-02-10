@@ -63,6 +63,24 @@ public class PlayerScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+        Vector3 pos = transform.position;
+        Vector3 targ = grapple.target.transform.position;
+
+
+        //check if i tried to grapple as i am falling to hell
+        if (Vector3.Distance(pos, targ) > grapple.childcount -1 
+                                        && 
+                                        (grapple.target.caught 
+                                        || isGrappled
+                                        || grapple.target.isThrown) )
+        {
+            Debug.Log("GRAPPLED FALLING");
+            grav.velocity *= 0;
+            resetGrapple();
+            //player should now jetpack to save themselves
+        }
+
         //gonna put grapple on top
         if (grapple.target.caught || isGrappled)
         {
@@ -87,13 +105,11 @@ public class PlayerScript : MonoBehaviour
 
             }
             else
-            {
-               
+            {                
                 //once over the target, kill velocity, let them drop
-                Vector3 pos = transform.position;
+                pos = transform.position;
+                targ = grapple.target.transform.position;
                 pos.y = 0;
-                
-                Vector3 targ = grapple.target.transform.position;
                 targ.y = 0;
                 //just check flat planar distance xz
                 if(Vector3.Distance(pos,targ) < 1 )
