@@ -34,7 +34,7 @@ public class PlayerScript : MonoBehaviour
     public bool isRunning;
 
     public bool isAtWall;
-
+    public bool isInFreefall;
     //and the whip
     public bool isGrappled = false;
     public Vector3 grappForward;
@@ -77,12 +77,13 @@ public class PlayerScript : MonoBehaviour
         {
             Debug.Log("GRAPPLED FALLING");
             grav.velocity *= 0;
-            resetGrapple();
+            isInFreefall = true;
             //player should now jetpack to save themselves
         }
 
+
         //gonna put grapple on top
-        if (grapple.target.caught || isGrappled)
+        if (grapple.target.caught || (isGrappled && !isGrounded) )
         {
             //one shot, get the forward
             if (!isGrappled)
@@ -99,6 +100,7 @@ public class PlayerScript : MonoBehaviour
                 
                 
                 isGrappled = true;
+                isGrounded = false;
                 
                 // To allow JetPacking after being launched
                 //isJumping = true;
@@ -119,13 +121,12 @@ public class PlayerScript : MonoBehaviour
                     grapple.target.reset();                    
                     isGrappled = false;
                     grav.velocity *= 0;
-                }    
-
-
+                }
+                isGrounded = false;
 
             }
 
-            isGrounded = false;
+            
             //return;
         }
         else
@@ -133,7 +134,18 @@ public class PlayerScript : MonoBehaviour
             isGrappled = false;
             
         }
-        
+
+        //if on the ground, reset grapple
+        if(isGrounded && isGrappled)
+        {
+            Debug.Log("HELLO UNGRAPPLE GROUNDED");
+
+            grapple.target.reset();
+            isGrappled = false;
+            grav.velocity *= 0;
+
+        }
+
         //isRunning = Input.GetKey(KeyCode.LeftShift); // Allows for a very cool high skill mechanic double jump && Adjust falling speed mid air
 
         isRunning = Input.GetKey(KeyCode.LeftShift) && isGrounded; // Does not allow the above && makes run only function when grounded
@@ -232,15 +244,22 @@ public class PlayerScript : MonoBehaviour
         if(isAtWall) return;
 
         // First we need to check if the player is jumping so they dont overlap, during this we also have a timer for some finesse
-        if (isJumping && fuel > 0 && Input.GetKey(KeyCode.Space) && timerBeforeJetPack <= 0)
+        if (isJumping && fuel > 0 && Input.GetKey(KeyCode.Space) 
+                      && timerBeforeJetPack <= 0 
+                      || isInFreefall)
         {
             isUsingJetpack = true;
 
 
             //<JPK> IS THIS THE FIX???
-            grapple.target.reset();
-            isGrappled = false;
-            grapple.hide();
+           // if(!isInFreefall) // give the player a margin of slack ??
+            {
+                grapple.target.reset();
+                isGrappled = false;
+                grapple.hide();
+                isInFreefall = false;
+            }
+
 
 
             //<JPK> below is prolly ok, but the "else" i'm not so sure of
