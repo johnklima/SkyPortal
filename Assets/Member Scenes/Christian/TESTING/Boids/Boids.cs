@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEditor.Experimental.GraphView;
-using UnityEngine;
-using Random = UnityEngine.Random;
+﻿using UnityEngine;
 
 public class Boids : MonoBehaviour
 {
@@ -20,7 +15,7 @@ public class Boids : MonoBehaviour
 
     public Vector3 velocity;
 
-    public Transform[] points;
+    public GameObject[] points;
     public int destinationPoint;
     public bool pathPending;
     public float distToSwitchPoints;
@@ -29,14 +24,25 @@ public class Boids : MonoBehaviour
     public float returnCooldown = 0f;
     public bool playerClose = false;
 
+    private AudioSource _audioSource;
+    public AudioClip[] audioClips;
+    
+
 
     // Start is called before the first frame update
     void Start()
     {
+        _audioSource = transform.GetComponent<AudioSource>();
+        int rand = Random.Range(0, 6);
+        _audioSource.clip = audioClips[rand];
+        _audioSource.Play();
+
+        points = GameObject.FindGameObjectsWithTag("Waypoint");
+        
         flock = transform.parent;
         
-        Vector3 pos = new Vector3(Random.Range(0f,3f),Random.Range(0f,3f),Random.Range(0f,3f));
-        Vector3 look = new Vector3(Random.Range(0f,3f),Random.Range(0f,3f),Random.Range(0f,3f));
+        Vector3 pos = new Vector3(0,0,0);
+        Vector3 look = new Vector3(0,0,0);
 
         float speed = Random.Range(0f, 10f);
 
@@ -172,7 +178,7 @@ public class Boids : MonoBehaviour
 
         pathPending = true;
 
-        destination = points[destinationPoint].position;
+        destination = points[destinationPoint].transform.position;
 
         destinationPoint = (destinationPoint + 1) % points.Length;
 
@@ -185,7 +191,7 @@ public class Boids : MonoBehaviour
             GoToNextPoint();
         }
 
-        if (pathPending && transform.position.magnitude > distToSwitchPoints)
+        if (pathPending && transform.position.magnitude < distToSwitchPoints)
         {
             pathPending = false;
         }

@@ -328,6 +328,36 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 3951720283882819620, guid: 40a2f9d70ea5fdf4a9290a8f00997503, type: 3}
+--- !u!1 &67151014
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 67151015}
+  m_Layer: 0
+  m_Name: BoidWayPoint (1)
+  m_TagString: Waypoint
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &67151015
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 67151014}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 38.6, y: -58.475266, z: -89.43}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 43
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &81612951 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4680855215058346550, guid: b730753292c65044a99229f5a28ff3cc, type: 3}
@@ -778,6 +808,36 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!1 &117870757
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 117870758}
+  m_Layer: 0
+  m_Name: BoidWayPoint (5)
+  m_TagString: Waypoint
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &117870758
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 117870757}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 89.6, y: 44.7, z: 51.6}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 47
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &127894961 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4680855215205789428, guid: b730753292c65044a99229f5a28ff3cc, type: 3}
@@ -2118,6 +2178,36 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!1 &301636678
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 301636679}
+  m_Layer: 0
+  m_Name: BoidWayPoint (4)
+  m_TagString: Waypoint
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &301636679
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 301636678}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 257.9, y: 26.7, z: 51.6}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 46
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &320317454
 GameObject:
   m_ObjectHideFlags: 0
@@ -3465,6 +3555,36 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 8517845974106457609, guid: b2758c954c0720b44b0e3932fff342d6, type: 3}
+--- !u!1 &490726318
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 490726319}
+  m_Layer: 0
+  m_Name: BoidWayPoint (7)
+  m_TagString: Waypoint
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &490726319
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 490726318}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 41.6, y: 7.5, z: 90.9}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 49
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &510964669
 GameObject:
   m_ObjectHideFlags: 0
@@ -3784,6 +3904,36 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1963a41bad499f4eb2e2e6928ebf9d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &597440669
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 597440670}
+  m_Layer: 0
+  m_Name: BoidWayPoint (8)
+  m_TagString: Waypoint
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &597440670
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 597440669}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 41.6, y: 61.7, z: 15.8}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 50
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &607975515
 GameObject:
   m_ObjectHideFlags: 0
@@ -4874,6 +5024,36 @@ Transform:
   m_Father: {fileID: 158338352}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &748751643
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 748751644}
+  m_Layer: 0
+  m_Name: BoidWayPoint
+  m_TagString: Waypoint
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &748751644
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 748751643}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -58.4, y: 10.73, z: -11.21}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 42
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &807770384
 GameObject:
   m_ObjectHideFlags: 0
@@ -5250,6 +5430,36 @@ MonoBehaviour:
   jetpackStarting: 0
   jetpackSustaining: 0
   jetpackEnding: 0
+--- !u!1 &908024677
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 908024678}
+  m_Layer: 0
+  m_Name: BoidWayPoint (2)
+  m_TagString: Waypoint
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &908024678
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 908024677}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 192.3, y: 48.3, z: -38.7}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 44
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &918283562
 GameObject:
   m_ObjectHideFlags: 0
@@ -5729,6 +5939,683 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 3951720283882819620, guid: 40a2f9d70ea5fdf4a9290a8f00997503, type: 3}
+--- !u!1001 &983276564
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1088030115, guid: 24cd0e7897672354381fd6191e127186, type: 3}
+      propertyPath: DopplerLevel
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1088030115, guid: 24cd0e7897672354381fd6191e127186, type: 3}
+      propertyPath: reverbZoneMixCustomCurve.m_Curve.Array.data[0].value
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 210057438780226304, guid: 24cd0e7897672354381fd6191e127186, type: 3}
+      propertyPath: speed
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 210057438780226304, guid: 24cd0e7897672354381fd6191e127186, type: 3}
+      propertyPath: points.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 210057438780226304, guid: 24cd0e7897672354381fd6191e127186, type: 3}
+      propertyPath: distToSwitchPoints
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 254852806852220069, guid: 24cd0e7897672354381fd6191e127186, type: 3}
+      propertyPath: speed
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 254852806852220069, guid: 24cd0e7897672354381fd6191e127186, type: 3}
+      propertyPath: points.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 254852806852220069, guid: 24cd0e7897672354381fd6191e127186, type: 3}
+      propertyPath: distToSwitchPoints
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 490563167382045066, guid: 24cd0e7897672354381fd6191e127186, type: 3}
+      propertyPath: speed
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 490563167382045066, guid: 24cd0e7897672354381fd6191e127186, type: 3}
+      propertyPath: points.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 490563167382045066, guid: 24cd0e7897672354381fd6191e127186, type: 3}
+      propertyPath: distToSwitchPoints
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 950356115744150122, guid: 24cd0e7897672354381fd6191e127186, type: 3}
+      propertyPath: DopplerLevel
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 950356115744150122, guid: 24cd0e7897672354381fd6191e127186, type: 3}
+      propertyPath: reverbZoneMixCustomCurve.m_Curve.Array.data[0].value
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1162770014524218002, guid: 24cd0e7897672354381fd6191e127186, type: 3}
+      propertyPath: speed
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1162770014524218002, guid: 24cd0e7897672354381fd6191e127186, type: 3}
+      propertyPath: points.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1162770014524218002, guid: 24cd0e7897672354381fd6191e127186, type: 3}
+      propertyPath: distToSwitchPoints
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 1210611431813840145, guid: 24cd0e7897672354381fd6191e127186, type: 3}
+      propertyPath: speed
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1210611431813840145, guid: 24cd0e7897672354381fd6191e127186, type: 3}
+      propertyPath: points.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1210611431813840145, guid: 24cd0e7897672354381fd6191e127186, type: 3}
+      propertyPath: distToSwitchPoints
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 1445082449346230681, guid: 24cd0e7897672354381fd6191e127186, type: 3}
+      propertyPath: DopplerLevel
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1445082449346230681, guid: 24cd0e7897672354381fd6191e127186, type: 3}
+      propertyPath: reverbZoneMixCustomCurve.m_Curve.Array.data[0].value
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1607565402502883596, guid: 24cd0e7897672354381fd6191e127186, type: 3}
+      propertyPath: speed
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1607565402502883596, guid: 24cd0e7897672354381fd6191e127186, type: 3}
+      propertyPath: points.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1607565402502883596, guid: 24cd0e7897672354381fd6191e127186, type: 3}
+      propertyPath: distToSwitchPoints
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 1801948496307056115, guid: 24cd0e7897672354381fd6191e127186, type: 3}
+      propertyPath: DopplerLevel
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1801948496307056115, guid: 24cd0e7897672354381fd6191e127186, type: 3}
+      propertyPath: reverbZoneMixCustomCurve.m_Curve.Array.data[0].value
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1838035160179529242, guid: 24cd0e7897672354381fd6191e127186, type: 3}
+      propertyPath: DopplerLevel
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1838035160179529242, guid: 24cd0e7897672354381fd6191e127186, type: 3}
+      propertyPath: reverbZoneMixCustomCurve.m_Curve.Array.data[0].value
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1841533900879033290, guid: 24cd0e7897672354381fd6191e127186, type: 3}
+      propertyPath: speed
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1841533900879033290, guid: 24cd0e7897672354381fd6191e127186, type: 3}
+      propertyPath: points.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1841533900879033290, guid: 24cd0e7897672354381fd6191e127186, type: 3}
+      propertyPath: distToSwitchPoints
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 1889305461977985281, guid: 24cd0e7897672354381fd6191e127186, type: 3}
+      propertyPath: speed
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1889305461977985281, guid: 24cd0e7897672354381fd6191e127186, type: 3}
+      propertyPath: points.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1889305461977985281, guid: 24cd0e7897672354381fd6191e127186, type: 3}
+      propertyPath: distToSwitchPoints
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 2047074552468100991, guid: 24cd0e7897672354381fd6191e127186, type: 3}
+      propertyPath: DopplerLevel
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2047074552468100991, guid: 24cd0e7897672354381fd6191e127186, type: 3}
+      propertyPath: reverbZoneMixCustomCurve.m_Curve.Array.data[0].value
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2082187240236543030, guid: 24cd0e7897672354381fd6191e127186, type: 3}
+      propertyPath: DopplerLevel
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2082187240236543030, guid: 24cd0e7897672354381fd6191e127186, type: 3}
+      propertyPath: reverbZoneMixCustomCurve.m_Curve.Array.data[0].value
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2437896163043230851, guid: 24cd0e7897672354381fd6191e127186, type: 3}
+      propertyPath: speed
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2437896163043230851, guid: 24cd0e7897672354381fd6191e127186, type: 3}
+      propertyPath: points.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2437896163043230851, guid: 24cd0e7897672354381fd6191e127186, type: 3}
+      propertyPath: distToSwitchPoints
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 2513820748286970981, guid: 24cd0e7897672354381fd6191e127186, type: 3}
+      propertyPath: DopplerLevel
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2513820748286970981, guid: 24cd0e7897672354381fd6191e127186, type: 3}
+      propertyPath: reverbZoneMixCustomCurve.m_Curve.Array.data[0].value
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2803998281010614607, guid: 24cd0e7897672354381fd6191e127186, type: 3}
+      propertyPath: speed
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2803998281010614607, guid: 24cd0e7897672354381fd6191e127186, type: 3}
+      propertyPath: points.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2803998281010614607, guid: 24cd0e7897672354381fd6191e127186, type: 3}
+      propertyPath: distToSwitchPoints
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 2888147365239141896, guid: 24cd0e7897672354381fd6191e127186, type: 3}
+      propertyPath: DopplerLevel
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2888147365239141896, guid: 24cd0e7897672354381fd6191e127186, type: 3}
+      propertyPath: reverbZoneMixCustomCurve.m_Curve.Array.data[0].value
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3072295619223722959, guid: 24cd0e7897672354381fd6191e127186, type: 3}
+      propertyPath: speed
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 3072295619223722959, guid: 24cd0e7897672354381fd6191e127186, type: 3}
+      propertyPath: points.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3072295619223722959, guid: 24cd0e7897672354381fd6191e127186, type: 3}
+      propertyPath: distToSwitchPoints
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 3107465583388025506, guid: 24cd0e7897672354381fd6191e127186, type: 3}
+      propertyPath: DopplerLevel
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3107465583388025506, guid: 24cd0e7897672354381fd6191e127186, type: 3}
+      propertyPath: reverbZoneMixCustomCurve.m_Curve.Array.data[0].value
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3250138886979173311, guid: 24cd0e7897672354381fd6191e127186, type: 3}
+      propertyPath: speed
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 3250138886979173311, guid: 24cd0e7897672354381fd6191e127186, type: 3}
+      propertyPath: points.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3250138886979173311, guid: 24cd0e7897672354381fd6191e127186, type: 3}
+      propertyPath: distToSwitchPoints
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 3346957155812723631, guid: 24cd0e7897672354381fd6191e127186, type: 3}
+      propertyPath: DopplerLevel
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3346957155812723631, guid: 24cd0e7897672354381fd6191e127186, type: 3}
+      propertyPath: reverbZoneMixCustomCurve.m_Curve.Array.data[0].value
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3416204433675425354, guid: 24cd0e7897672354381fd6191e127186, type: 3}
+      propertyPath: speed
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 3416204433675425354, guid: 24cd0e7897672354381fd6191e127186, type: 3}
+      propertyPath: points.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3416204433675425354, guid: 24cd0e7897672354381fd6191e127186, type: 3}
+      propertyPath: distToSwitchPoints
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 3425578814325067264, guid: 24cd0e7897672354381fd6191e127186, type: 3}
+      propertyPath: DopplerLevel
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3425578814325067264, guid: 24cd0e7897672354381fd6191e127186, type: 3}
+      propertyPath: reverbZoneMixCustomCurve.m_Curve.Array.data[0].value
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4106999736946979858, guid: 24cd0e7897672354381fd6191e127186, type: 3}
+      propertyPath: speed
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4106999736946979858, guid: 24cd0e7897672354381fd6191e127186, type: 3}
+      propertyPath: points.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4106999736946979858, guid: 24cd0e7897672354381fd6191e127186, type: 3}
+      propertyPath: distToSwitchPoints
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 4106999737616256166, guid: 24cd0e7897672354381fd6191e127186, type: 3}
+      propertyPath: m_Name
+      value: Flock
+      objectReference: {fileID: 0}
+    - target: {fileID: 4106999737616256167, guid: 24cd0e7897672354381fd6191e127186, type: 3}
+      propertyPath: m_RootOrder
+      value: 41
+      objectReference: {fileID: 0}
+    - target: {fileID: 4106999737616256167, guid: 24cd0e7897672354381fd6191e127186, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -67.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4106999737616256167, guid: 24cd0e7897672354381fd6191e127186, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.3622732
+      objectReference: {fileID: 0}
+    - target: {fileID: 4106999737616256167, guid: 24cd0e7897672354381fd6191e127186, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -3.413254
+      objectReference: {fileID: 0}
+    - target: {fileID: 4106999737616256167, guid: 24cd0e7897672354381fd6191e127186, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4106999737616256167, guid: 24cd0e7897672354381fd6191e127186, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4106999737616256167, guid: 24cd0e7897672354381fd6191e127186, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4106999737616256167, guid: 24cd0e7897672354381fd6191e127186, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4106999737616256167, guid: 24cd0e7897672354381fd6191e127186, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4106999737616256167, guid: 24cd0e7897672354381fd6191e127186, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4106999737616256167, guid: 24cd0e7897672354381fd6191e127186, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4138710268086691447, guid: 24cd0e7897672354381fd6191e127186, type: 3}
+      propertyPath: DopplerLevel
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4138710268086691447, guid: 24cd0e7897672354381fd6191e127186, type: 3}
+      propertyPath: reverbZoneMixCustomCurve.m_Curve.Array.data[0].value
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4298705794146660276, guid: 24cd0e7897672354381fd6191e127186, type: 3}
+      propertyPath: DopplerLevel
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4298705794146660276, guid: 24cd0e7897672354381fd6191e127186, type: 3}
+      propertyPath: reverbZoneMixCustomCurve.m_Curve.Array.data[0].value
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4350619956184706555, guid: 24cd0e7897672354381fd6191e127186, type: 3}
+      propertyPath: DopplerLevel
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4350619956184706555, guid: 24cd0e7897672354381fd6191e127186, type: 3}
+      propertyPath: reverbZoneMixCustomCurve.m_Curve.Array.data[0].value
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4488797499649126781, guid: 24cd0e7897672354381fd6191e127186, type: 3}
+      propertyPath: speed
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4488797499649126781, guid: 24cd0e7897672354381fd6191e127186, type: 3}
+      propertyPath: points.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4488797499649126781, guid: 24cd0e7897672354381fd6191e127186, type: 3}
+      propertyPath: distToSwitchPoints
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 4529454575552085032, guid: 24cd0e7897672354381fd6191e127186, type: 3}
+      propertyPath: DopplerLevel
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4529454575552085032, guid: 24cd0e7897672354381fd6191e127186, type: 3}
+      propertyPath: reverbZoneMixCustomCurve.m_Curve.Array.data[0].value
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4707071531954994791, guid: 24cd0e7897672354381fd6191e127186, type: 3}
+      propertyPath: DopplerLevel
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4707071531954994791, guid: 24cd0e7897672354381fd6191e127186, type: 3}
+      propertyPath: reverbZoneMixCustomCurve.m_Curve.Array.data[0].value
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5027785929991704992, guid: 24cd0e7897672354381fd6191e127186, type: 3}
+      propertyPath: speed
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5027785929991704992, guid: 24cd0e7897672354381fd6191e127186, type: 3}
+      propertyPath: points.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5027785929991704992, guid: 24cd0e7897672354381fd6191e127186, type: 3}
+      propertyPath: distToSwitchPoints
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 5190727295899691365, guid: 24cd0e7897672354381fd6191e127186, type: 3}
+      propertyPath: speed
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5190727295899691365, guid: 24cd0e7897672354381fd6191e127186, type: 3}
+      propertyPath: points.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5190727295899691365, guid: 24cd0e7897672354381fd6191e127186, type: 3}
+      propertyPath: distToSwitchPoints
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 5264345914538545640, guid: 24cd0e7897672354381fd6191e127186, type: 3}
+      propertyPath: DopplerLevel
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5264345914538545640, guid: 24cd0e7897672354381fd6191e127186, type: 3}
+      propertyPath: reverbZoneMixCustomCurve.m_Curve.Array.data[0].value
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5378262233582786131, guid: 24cd0e7897672354381fd6191e127186, type: 3}
+      propertyPath: speed
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5378262233582786131, guid: 24cd0e7897672354381fd6191e127186, type: 3}
+      propertyPath: points.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5378262233582786131, guid: 24cd0e7897672354381fd6191e127186, type: 3}
+      propertyPath: distToSwitchPoints
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 5854251444734328779, guid: 24cd0e7897672354381fd6191e127186, type: 3}
+      propertyPath: DopplerLevel
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5854251444734328779, guid: 24cd0e7897672354381fd6191e127186, type: 3}
+      propertyPath: reverbZoneMixCustomCurve.m_Curve.Array.data[0].value
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6139010909523609871, guid: 24cd0e7897672354381fd6191e127186, type: 3}
+      propertyPath: speed
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 6139010909523609871, guid: 24cd0e7897672354381fd6191e127186, type: 3}
+      propertyPath: points.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6139010909523609871, guid: 24cd0e7897672354381fd6191e127186, type: 3}
+      propertyPath: distToSwitchPoints
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170466689971580105, guid: 24cd0e7897672354381fd6191e127186, type: 3}
+      propertyPath: speed
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170466689971580105, guid: 24cd0e7897672354381fd6191e127186, type: 3}
+      propertyPath: points.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170466689971580105, guid: 24cd0e7897672354381fd6191e127186, type: 3}
+      propertyPath: distToSwitchPoints
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 6226921932482502931, guid: 24cd0e7897672354381fd6191e127186, type: 3}
+      propertyPath: DopplerLevel
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6226921932482502931, guid: 24cd0e7897672354381fd6191e127186, type: 3}
+      propertyPath: reverbZoneMixCustomCurve.m_Curve.Array.data[0].value
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6400645258561397005, guid: 24cd0e7897672354381fd6191e127186, type: 3}
+      propertyPath: speed
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 6400645258561397005, guid: 24cd0e7897672354381fd6191e127186, type: 3}
+      propertyPath: points.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6400645258561397005, guid: 24cd0e7897672354381fd6191e127186, type: 3}
+      propertyPath: distToSwitchPoints
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 6481349808282719495, guid: 24cd0e7897672354381fd6191e127186, type: 3}
+      propertyPath: speed
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 6481349808282719495, guid: 24cd0e7897672354381fd6191e127186, type: 3}
+      propertyPath: points.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6481349808282719495, guid: 24cd0e7897672354381fd6191e127186, type: 3}
+      propertyPath: distToSwitchPoints
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 6554257364105812096, guid: 24cd0e7897672354381fd6191e127186, type: 3}
+      propertyPath: speed
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 6554257364105812096, guid: 24cd0e7897672354381fd6191e127186, type: 3}
+      propertyPath: points.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6554257364105812096, guid: 24cd0e7897672354381fd6191e127186, type: 3}
+      propertyPath: distToSwitchPoints
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 6742161623019538165, guid: 24cd0e7897672354381fd6191e127186, type: 3}
+      propertyPath: speed
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 6742161623019538165, guid: 24cd0e7897672354381fd6191e127186, type: 3}
+      propertyPath: points.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6742161623019538165, guid: 24cd0e7897672354381fd6191e127186, type: 3}
+      propertyPath: distToSwitchPoints
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 6958630730616271796, guid: 24cd0e7897672354381fd6191e127186, type: 3}
+      propertyPath: speed
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 6958630730616271796, guid: 24cd0e7897672354381fd6191e127186, type: 3}
+      propertyPath: points.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6958630730616271796, guid: 24cd0e7897672354381fd6191e127186, type: 3}
+      propertyPath: distToSwitchPoints
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 7220559162616273034, guid: 24cd0e7897672354381fd6191e127186, type: 3}
+      propertyPath: DopplerLevel
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7220559162616273034, guid: 24cd0e7897672354381fd6191e127186, type: 3}
+      propertyPath: reverbZoneMixCustomCurve.m_Curve.Array.data[0].value
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7480615559534261376, guid: 24cd0e7897672354381fd6191e127186, type: 3}
+      propertyPath: speed
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7480615559534261376, guid: 24cd0e7897672354381fd6191e127186, type: 3}
+      propertyPath: points.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7480615559534261376, guid: 24cd0e7897672354381fd6191e127186, type: 3}
+      propertyPath: distToSwitchPoints
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 7767200521556669721, guid: 24cd0e7897672354381fd6191e127186, type: 3}
+      propertyPath: speed
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7767200521556669721, guid: 24cd0e7897672354381fd6191e127186, type: 3}
+      propertyPath: points.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7767200521556669721, guid: 24cd0e7897672354381fd6191e127186, type: 3}
+      propertyPath: distToSwitchPoints
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 7813426233988898309, guid: 24cd0e7897672354381fd6191e127186, type: 3}
+      propertyPath: DopplerLevel
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7813426233988898309, guid: 24cd0e7897672354381fd6191e127186, type: 3}
+      propertyPath: reverbZoneMixCustomCurve.m_Curve.Array.data[0].value
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7851389988687717291, guid: 24cd0e7897672354381fd6191e127186, type: 3}
+      propertyPath: speed
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7851389988687717291, guid: 24cd0e7897672354381fd6191e127186, type: 3}
+      propertyPath: points.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7851389988687717291, guid: 24cd0e7897672354381fd6191e127186, type: 3}
+      propertyPath: distToSwitchPoints
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 8093392083163814672, guid: 24cd0e7897672354381fd6191e127186, type: 3}
+      propertyPath: DopplerLevel
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8093392083163814672, guid: 24cd0e7897672354381fd6191e127186, type: 3}
+      propertyPath: reverbZoneMixCustomCurve.m_Curve.Array.data[0].value
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8159325723483427416, guid: 24cd0e7897672354381fd6191e127186, type: 3}
+      propertyPath: DopplerLevel
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8159325723483427416, guid: 24cd0e7897672354381fd6191e127186, type: 3}
+      propertyPath: reverbZoneMixCustomCurve.m_Curve.Array.data[0].value
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8260226906577908338, guid: 24cd0e7897672354381fd6191e127186, type: 3}
+      propertyPath: DopplerLevel
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8260226906577908338, guid: 24cd0e7897672354381fd6191e127186, type: 3}
+      propertyPath: reverbZoneMixCustomCurve.m_Curve.Array.data[0].value
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8355234960775045887, guid: 24cd0e7897672354381fd6191e127186, type: 3}
+      propertyPath: DopplerLevel
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8355234960775045887, guid: 24cd0e7897672354381fd6191e127186, type: 3}
+      propertyPath: reverbZoneMixCustomCurve.m_Curve.Array.data[0].value
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8360676629442207423, guid: 24cd0e7897672354381fd6191e127186, type: 3}
+      propertyPath: DopplerLevel
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8360676629442207423, guid: 24cd0e7897672354381fd6191e127186, type: 3}
+      propertyPath: reverbZoneMixCustomCurve.m_Curve.Array.data[0].value
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8382519045544543787, guid: 24cd0e7897672354381fd6191e127186, type: 3}
+      propertyPath: speed
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8382519045544543787, guid: 24cd0e7897672354381fd6191e127186, type: 3}
+      propertyPath: points.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8382519045544543787, guid: 24cd0e7897672354381fd6191e127186, type: 3}
+      propertyPath: distToSwitchPoints
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 8412176541746139021, guid: 24cd0e7897672354381fd6191e127186, type: 3}
+      propertyPath: speed
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8412176541746139021, guid: 24cd0e7897672354381fd6191e127186, type: 3}
+      propertyPath: points.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8412176541746139021, guid: 24cd0e7897672354381fd6191e127186, type: 3}
+      propertyPath: distToSwitchPoints
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 8574464725052782610, guid: 24cd0e7897672354381fd6191e127186, type: 3}
+      propertyPath: speed
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8574464725052782610, guid: 24cd0e7897672354381fd6191e127186, type: 3}
+      propertyPath: points.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8574464725052782610, guid: 24cd0e7897672354381fd6191e127186, type: 3}
+      propertyPath: distToSwitchPoints
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 8629317495343739901, guid: 24cd0e7897672354381fd6191e127186, type: 3}
+      propertyPath: DopplerLevel
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8629317495343739901, guid: 24cd0e7897672354381fd6191e127186, type: 3}
+      propertyPath: reverbZoneMixCustomCurve.m_Curve.Array.data[0].value
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8639911320829491870, guid: 24cd0e7897672354381fd6191e127186, type: 3}
+      propertyPath: DopplerLevel
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8639911320829491870, guid: 24cd0e7897672354381fd6191e127186, type: 3}
+      propertyPath: reverbZoneMixCustomCurve.m_Curve.Array.data[0].value
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8980219562933288295, guid: 24cd0e7897672354381fd6191e127186, type: 3}
+      propertyPath: DopplerLevel
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8980219562933288295, guid: 24cd0e7897672354381fd6191e127186, type: 3}
+      propertyPath: reverbZoneMixCustomCurve.m_Curve.Array.data[0].value
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9219806924996800568, guid: 24cd0e7897672354381fd6191e127186, type: 3}
+      propertyPath: DopplerLevel
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9219806924996800568, guid: 24cd0e7897672354381fd6191e127186, type: 3}
+      propertyPath: reverbZoneMixCustomCurve.m_Curve.Array.data[0].value
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 24cd0e7897672354381fd6191e127186, type: 3}
 --- !u!1 &995101853
 GameObject:
   m_ObjectHideFlags: 0
@@ -9487,6 +10374,36 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 28
   m_LocalEulerAnglesHint: {x: 0, y: 177.719, z: 0}
+--- !u!1 &1598372464
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1598372465}
+  m_Layer: 0
+  m_Name: BoidWayPoint (9)
+  m_TagString: Waypoint
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1598372465
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1598372464}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -25.3, y: 19.2, z: 26.7}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 51
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1616894798 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4680855216008777081, guid: b730753292c65044a99229f5a28ff3cc, type: 3}
@@ -11391,6 +12308,36 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1879824373}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1889322518
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1889322519}
+  m_Layer: 0
+  m_Name: BoidWayPoint (6)
+  m_TagString: Waypoint
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1889322519
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1889322518}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -8.2, y: 7.5, z: 51.6}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 48
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1889692925
 GameObject:
   m_ObjectHideFlags: 0
@@ -13149,6 +14096,36 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b730753292c65044a99229f5a28ff3cc, type: 3}
+--- !u!1 &1982934985
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1982934986}
+  m_Layer: 0
+  m_Name: BoidWayPoint (3)
+  m_TagString: Waypoint
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1982934986
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1982934985}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 257.9, y: -90.4, z: 169.8}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 45
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2025131416 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4680855215360678100, guid: b730753292c65044a99229f5a28ff3cc, type: 3}
