@@ -41,7 +41,7 @@ public class TargetGround : MonoBehaviour
             system.hide();
             target.reset();
             
-
+            GrappleImpactSounds.instance.HasLetGoOfGrapple();
         }
 
         float dist = system.childcount - 0.05f; // how many unit length links in our chain
@@ -57,6 +57,7 @@ public class TargetGround : MonoBehaviour
                     target.targetPoint = hit.point + transform.forward * 10 + Vector3.up * 10;
                     prevPoint = hit.point;
                     system.show();
+                    GrappleImpactSounds.instance.PlayGrappleHitSound();
 
                 }
 
@@ -68,6 +69,11 @@ public class TargetGround : MonoBehaviour
         {
             prevColor = reticule.color;
             prevPoint = target.targetPoint;
+
+            if (Input.GetKeyDown(KeyCode.Mouse0))
+            {
+                GrappleImpactSounds.instance.PlayGrappleMissSound();
+            }
         }
 
 

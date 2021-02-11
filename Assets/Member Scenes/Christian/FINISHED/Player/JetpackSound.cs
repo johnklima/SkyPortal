@@ -45,7 +45,7 @@ public class JetpackSound : MonoBehaviour
         
         // if we were using the jetpack and now we've stopped we need play jetpack off sound
         
-        if (!ps.isUsingJetpack && jetpackStarting && !jetpackEnding  || !ps.isUsingJetpack && jetpackSustaining && !jetpackEnding) 
+        if (!ps.isUsingJetpack && jetpackStarting && !jetpackEnding && !ps.isGrappled || !ps.isUsingJetpack && jetpackSustaining && !jetpackEnding && !ps.isGrappled) 
         {
             if (!jetpackEnding)
             {

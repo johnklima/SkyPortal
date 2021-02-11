@@ -52,6 +52,7 @@ public class PlayerScript : MonoBehaviour
         grapple.target.reset();
         isGrappled = false;
         grav.velocity *= 0;
+        GrappleImpactSounds.instance.HasLetGoOfGrapple();
 
     }
 
@@ -245,7 +246,8 @@ public class PlayerScript : MonoBehaviour
         // First we need to check if the player is jumping so they dont overlap, during this we also have a timer for some finesse
         if (isJumping && fuel > 0 && Input.GetKey(KeyCode.Space) 
                       && timerBeforeJetPack <= 0 
-                      || isInFreefall)
+                      || isInFreefall && fuel > 0 && Input.GetKey(KeyCode.Space) 
+                      && timerBeforeJetPack <= 0)
         {
             isUsingJetpack = true;
 

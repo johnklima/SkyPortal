@@ -14,7 +14,6 @@
         <e p="Controller.cs" t="Include" />
         <e p="Ground.cs" t="Include" />
         <e p="IKTarget.cs" t="Include" />
-        <e p="JetpackSound.cs" t="Include" />
         <e p="Member Scenes" t="Include">
           <e p="-Prof John-" t="Include">
             <e p="Scripts" t="Include">
@@ -65,6 +64,8 @@
                 <e p="CameraController.cs" t="Include" />
                 <e p="FootSteps.cs" t="Include" />
                 <e p="FovChange.cs" t="Include" />
+                <e p="GrappleImpactSounds.cs" t="Include" />
+                <e p="JetpackSound.cs" t="Include" />
                 <e p="PlayerScript.cs" t="Include" />
                 <e p="SlopeDetection.cs" t="Include" />
                 <e p="WallDetection.cs" t="Include" />

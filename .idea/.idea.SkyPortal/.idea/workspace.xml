@@ -20,9 +20,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="027939e5-7c2f-4db4-9f74-cc92c988d5a2" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.SkyPortal/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SkyPortal/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.SkyPortal/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SkyPortal/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/-Project Folder-/Project_Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/-Project Folder-/Project_Scene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Member Scenes/Christian/FINISHED/Player/FootSteps.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Member Scenes/Christian/FINISHED/Player/FootSteps.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/JetpackSound.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/JetpackSound.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Member Scenes/-Prof John-/Scripts/TargetGround.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Member Scenes/-Prof John-/Scripts/TargetGround.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Member Scenes/Adne/FINISHED/Til_Sindre/Portal/Portal.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Member Scenes/Adne/FINISHED/Til_Sindre/Portal/Portal.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Member Scenes/Christian/FINISHED/Player/PlayerScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Member Scenes/Christian/FINISHED/Player/PlayerScript.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Member Scenes/Jonathan/FINISHED/Script/CrystalCollector.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Member Scenes/Jonathan/FINISHED/Script/CrystalCollector.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Member Scenes/Jonathan/Item_Crystal Variant.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Member Scenes/Jonathan/Item_Crystal Variant.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Member Scenes/Jonathan/Item_Crystal Variant.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Member Scenes/Jonathan/Item_Crystal Variant.prefab.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Member Scenes/Jonathan/Jonathan_Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Member Scenes/Jonathan/Jonathan_Scene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Member Scenes/Jonathan/TESTING/CollectiblePickup.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Member Scenes/Jonathan/TESTING/CollectiblePickup.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Member Scenes/Jonathan/TESTING/CollectiblePickup.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Member Scenes/Jonathan/TESTING/CollectiblePickup.prefab.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,7 +48,6 @@
     <setting file="file://$PROJECT_DIR$/Assets/Member Scenes/Christian/FINISHED/UI/JetpackBar.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Member Scenes/Christian/FINISHED/Player/WallDetection.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../UnityGames/GravityBox/Assets/ProceduralGeneration/LevelBuilder.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/JetpackSound.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -50,13 +61,15 @@
         <option value="$PROJECT_DIR$/Assets/Member Scenes/Jonathan/FINISHED/Script/CrystalCollector.cs" />
         <option value="$PROJECT_DIR$/Assets/UIManager.cs" />
         <option value="$PROJECT_DIR$/Assets/RandRotate.cs" />
-        <option value="$PROJECT_DIR$/Assets/Member Scenes/Christian/FINISHED/Player/PlayerScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Member Scenes/-Prof John-/Scripts/gravity.cs" />
         <option value="$PROJECT_DIR$/Assets/Member Scenes/Stefan/TESTING/Portal_controller.cs" />
-        <option value="$PROJECT_DIR$/Assets/Member Scenes/-Prof John-/Scripts/TargetGround.cs" />
         <option value="$PROJECT_DIR$/Assets/Member Scenes/Christian/FINISHED/Player/FovChange.cs" />
         <option value="$PROJECT_DIR$/Assets/JetpackSound.cs" />
         <option value="$PROJECT_DIR$/Assets/Member Scenes/Christian/FINISHED/Player/FootSteps.cs" />
+        <option value="$PROJECT_DIR$/Assets/GrappleImpactSounds.cs" />
+        <option value="$PROJECT_DIR$/Assets/Member Scenes/Christian/FINISHED/Player/GrappleImpactSounds.cs" />
+        <option value="$PROJECT_DIR$/Assets/Member Scenes/-Prof John-/Scripts/TargetGround.cs" />
+        <option value="$PROJECT_DIR$/Assets/Member Scenes/Christian/FINISHED/Player/PlayerScript.cs" />
       </list>
     </option>
   </component>
@@ -114,6 +127,7 @@
       <workItem from="1612900803385" duration="398000" />
       <workItem from="1612967856205" duration="1501000" />
       <workItem from="1612983455801" duration="9234000" />
+      <workItem from="1613002131938" duration="1860000" />
     </task>
     <servers />
   </component>
