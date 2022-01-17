@@ -23,17 +23,10 @@
       <change beforePath="$PROJECT_DIR$/.idea/.idea.SkyPortal/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SkyPortal/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.SkyPortal/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SkyPortal/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/-Project Folder-/Project_Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/-Project Folder-/Project_Scene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/JetpackSound.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/JetpackSound.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Member Scenes/-Prof John-/Scripts/TargetGround.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Member Scenes/-Prof John-/Scripts/TargetGround.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Member Scenes/Adne/FINISHED/Til_Sindre/Portal/Portal.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Member Scenes/Adne/FINISHED/Til_Sindre/Portal/Portal.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Member Scenes/Christian/FINISHED/Player/PlayerScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Member Scenes/Christian/FINISHED/Player/PlayerScript.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Member Scenes/Jonathan/FINISHED/Script/CrystalCollector.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Member Scenes/Jonathan/FINISHED/Script/CrystalCollector.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Member Scenes/Jonathan/Item_Crystal Variant.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Member Scenes/Jonathan/Item_Crystal Variant.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Member Scenes/Jonathan/Item_Crystal Variant.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Member Scenes/Jonathan/Item_Crystal Variant.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Member Scenes/Jonathan/Jonathan_Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Member Scenes/Jonathan/Jonathan_Scene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Member Scenes/Jonathan/TESTING/CollectiblePickup.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Member Scenes/Jonathan/TESTING/CollectiblePickup.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Member Scenes/Jonathan/TESTING/CollectiblePickup.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Member Scenes/Jonathan/TESTING/CollectiblePickup.prefab.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Member Scenes/Christian/Christian_Scene.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Member Scenes/Christian/Christian_Scene.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Member Scenes/Christian/TESTING/Boids/Boids.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Member Scenes/Christian/TESTING/Boids/Boids.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -52,7 +45,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Member Scenes/Christian/TESTING/Boids/Boids.cs" />
         <option value="$PROJECT_DIR$/Assets/Member Scenes/Christian/TESTING/PlayerScript/Respawn.cs" />
         <option value="$PROJECT_DIR$/Assets/Member Scenes/Christian/FINISHED/Player/SlopeDetection.cs" />
         <option value="$PROJECT_DIR$/Assets/Member Scenes/Christian/FINISHED/Player/WallDetection.cs" />
@@ -70,6 +62,7 @@
         <option value="$PROJECT_DIR$/Assets/Member Scenes/Christian/FINISHED/Player/GrappleImpactSounds.cs" />
         <option value="$PROJECT_DIR$/Assets/Member Scenes/-Prof John-/Scripts/TargetGround.cs" />
         <option value="$PROJECT_DIR$/Assets/Member Scenes/Christian/FINISHED/Player/PlayerScript.cs" />
+        <option value="$PROJECT_DIR$/Assets/Member Scenes/Christian/TESTING/Boids/Boids.cs" />
       </list>
     </option>
   </component>
@@ -128,6 +121,7 @@
       <workItem from="1612967856205" duration="1501000" />
       <workItem from="1612983455801" duration="9234000" />
       <workItem from="1613002131938" duration="1860000" />
+      <workItem from="1613043501950" duration="1440000" />
     </task>
     <servers />
   </component>
