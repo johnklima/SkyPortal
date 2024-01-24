@@ -6,13 +6,13 @@ public class Boid : MonoBehaviour
 {
 
     public Transform flock;
-    public float cohesionFactor = 0.5f;
-    public float separationFactor = 3.0f;
-    public float allignFactor = 2.0f;
+    public float cohesionFactor = 0.2f;
+    public float separationFactor = 6.0f;
+    public float allignFactor = 1.0f;
     public float constrainFactor = 2.0f;
 
     public float collisionDistance = 6.0f;
-    public float speed = 20.0f;
+    public float speed = 3.0f;
 
     public Vector3 velocity;
 
@@ -93,7 +93,8 @@ public class Boid : MonoBehaviour
     Vector3 separation()
     {
         Vector3 steer = new Vector3(0, 0, 0);
-        int sibs = 0;
+        
+		int sibs = 0;
 
 
         foreach (Transform boid in flock)
